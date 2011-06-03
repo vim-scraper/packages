@@ -1,0 +1,47 @@
+%!PS-Adobe-3.0 Resource-ProcSet
+% Editing of this file is NOT RECOMMENDED.  You run a very good risk of causing
+% all PostScript printing from VIM failing if you do.  PostScript is not called
+% a write-only language for nothing!
+/bd{bind def}bind def/ld{load def}bd/ed{exch def}bd/d/def ld
+/db{dict begin}bd/cde{currentdict end}bd
+/T true d/F false d
+/SO null d/sv{/SO save d}bd/re{SO restore}bd
+/L2 systemdict/languagelevel 2 copy known{get exec}{pop pop 1}ifelse 2 ge d
+/m{moveto}bd/s{show}bd
+/DH F d /FS 0 d
+% Alternative Page Header printing procedures.  To replace the default first
+% comment the default ms procedure (just adda % to the start of the line)
+% and uncomment (remove the % at the start of the line) the ms procedure after
+% the description of the page header printing you would like. 
+% Default
+/ms{m s}bd
+% Underlined
+%/ms{m DH not{dup stringwidth pop ul/DH T d}if s}bd
+% Gray background
+%/ms{m DH not{dup stringwidth pop FS .85 dup dup bg/DH T d}if s}bd
+% Boxed
+%/ms{m DH not{dup stringwidth pop FS gs UW setlinewidth cp BO add 4 -2 roll rectstroke gr/DH T d}if s}bd
+/g{setgray}bd/r{setrgbcolor}bd/sp{showpage}bd
+/gs{gsave}bd/gr{grestore}bd/cp{currentpoint}bd
+/ul{gs UW setlinewidth cp UO add 2 copy newpath m 3 1 roll add exch lineto
+stroke gr}bd
+/bg{gs r cp BO add 4 -2 roll rectfill gr}bd
+/sl{90 rotate 0 exch translate}bd
+L2{
+/sspd{mark exch{setpagedevice}stopped cleartomark}bd
+/nc{1 db/NumCopies ed cde sspd}bd
+/sps{3 db/Orientation ed[3 1 roll]/PageSize ed/ImagingBBox null d cde sspd}bd
+/dt{2 db/Tumble ed/Duplex ed cde sspd}bd
+/c{1 db/Collate ed cde sspd}bd
+}{
+/nc{/#copies ed}bd
+/sps{statusdict/setpage get exec}bd
+/dt{statusdict/settumble 2 copy known{get exec}{pop pop pop}ifelse
+statusdict/setduplexmode 2 copy known{get exec}{pop pop pop}ifelse}bd
+/c{pop}bd
+}ifelse
+/ffs{findfont exch dup /FS ed scalefont d}bd/sf{setfont}bd
+/ref{1 db findfont dup maxlength dict/NFD ed{exch dup/FID ne{exch NFD 3 1 roll
+put}{pop pop}ifelse}forall dup length 256 eq{NFD/Encoding 3 -1 roll
+put}{pop}ifelse dup NFD/FontName 3 -1 roll put NFD definefont pop end}bd
+% vim:ff=unix:

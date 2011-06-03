@@ -1,0 +1,55 @@
+#!/usr/bin/perl
+# dtags v1.2 : perlscript to create tags for delphi/kylix
+# Author : Thorsten Maerz <info@netztorte.de>
+
+use strict;
+
+my $startdir=shift || '.';
+my (@files, $lfn, $fn);
+my (@matches, $longfunc, $shortfunc);
+my $dircmd;
+
+if    ($ENV{'OS'}=~/WINNT/i)	{ $dircmd="cmd /c dir /b /s $startdir"; }
+elsif ($ENV{'OS'}=~/WIN/i)	{ $dircmd="command /c dir /b /s $startdir"; }
+else 				{ $dircmd="find $startdir"; }
+
+# search delphi/kylix files
+open(DIRPIPE,$dircmd."|");
+while(<DIRPIPE>) {  /\.dpr$|\.pas$/i && push(@files,$_) ;}
+close(DIRPIPE);
+
+# pipe through "sort"
+open(OUTPIPE,'|sort');
+
+# scan files
+foreach $lfn (@files) { 
+print STDERR $lfn;
+  # strip <cr>
+  chomp($lfn);
+  # strip startdir
+  $fn=substr($lfn,length($startdir)+1);
+  # read files
+  open(INFILE,$lfn);
+  while(<INFILE>) {
+    # strip <cr> and leading whitespaces
+    chomp;
+    s/^\s*//;
+    # extract function names
+    if (/(function|procedure|property)\s([^(;: ]+)/i) { push(@matches,$2); }
+  };
+  foreach (@matches) {
+    # skip "procedure of object"
+    next if /^of$/i;
+    next if /^\s*$/;
+    # strip object identifier
+    if (/[^.]*\.(.*)/) { $shortfunc=$1; }
+    else { $shortfunc=$_ };
+    # show results
+    print OUTPIPE "$shortfunc\t$lfn\t\/\\<$_\\>\n"; 
+  }
+  # clean up for next pass
+  undef @matches;
+  close(INFILE);
+}
+
+close(OUTPIPE);

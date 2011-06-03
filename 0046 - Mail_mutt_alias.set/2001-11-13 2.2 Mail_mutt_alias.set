@@ -1,0 +1,275 @@
+"===============================================================
+" Vim script file
+" 
+" File          : Mail_mutt_alias.set
+" Author        : Luc Hermitte <hermitte@free.fr>
+"                 <URL:http://hermitte.free.fr/vim/>
+" Last update   : 12nd nov 2001
+"
+" Purpose       : extract an alias from the aliases file : ~/.mutt/aliases_file
+" Dependencies	: a.vim		<http://vim.sf.net/scripts>
+" 		  words_tools.vim
+"
+"------------------------------------------------------------
+"
+" Use           : In normal mode  -> ,Ca the_alias
+"                 In command mode -> :Ca the_alias
+"
+" Alternative way: In insert mode, enter <tab> after the pattern of an
+" alias. If only one alias matches the current pattern, the pattern will be
+" replaced by the corresponding alias. If severall patterns match, a choice
+" will be given in a split window.
+"
+" Rem: 
+" (*) <tab> has is classical effect on non-address lines (i.e.: not To:,
+"     Cc: and Bcc: lines).
+" (*) Many functions stolen to the file <grep.vim> authored by Ron Aaron
+"     and extended by Zdenek Sekera.
+" (*) VIM version needed : works fine with VIM 5.7 under Windows-NT
+"
+" Todo:
+" (*) Tag regarding a pattern : <C-t>
+" (*) Test with VIM 5.6 under Solaris
+"===============================================================
+"
+"
+"===============================================================
+" Old stuff
+func! GrepAlias(the_alias)
+    " TODO: execute le grep et le stocke dans une variable... un peu lourd,
+    " devrait y avoir une manière plus légère de réaliser cela...
+    exe 'r!grep "alias[\t ]*' . a:the_alias . '" '.expand('$HOME'). '/.mutt/aliases_file'
+    let line = getline(line("."))
+    " remove the inserted lines
+    undo
+    let msk = 'alias\s*' . a:the_alias 
+    let msk = msk . '\s*\(\(\s*[^< \t]\+\)\+\)\s*<\(.*\)>'
+    return substitute( line, msk, ' \1 <\3>', '')
+endf
+
+func! AppendAlias(the_alias)
+    let lnum = line(".")
+    let addr = GrepAlias(a:the_alias)
+    let line = getline(lnum)
+    call setline( lnum, line . addr )
+endf
+
+command! -nargs=1 Ca :call AppendAlias(<q-args>)
+noremap ,Ca :Ca 
+
+" ===========================================================================
+" New stuff based on <tab> and a possible menu.
+source <sfile>:p:h/a.vim
+
+"----------------------------------------
+" Mapping of <tab>
+" Rem: <cword> is not really adapted, hence GetCurrentWord().
+inoremap <tab> <c-r>=MuttAlias_MapTab(GetCurrentWord())<cr>
+
+"----------------------------------------
+" Extract the address from a Mutt-alias line
+function! MuttAlias_Addr(the_line)
+  let msk = 'alias\s\+\S\+\s\+' 
+  return substitute( a:the_line, msk, '', '')
+endfunction
+
+" Add aliases in place of the current (previous) word.
+function! MuttAliases_PutAddrLines(addrs)
+   let l = line('.')
+   exe l.'s/\s\k\+$//'
+   exe l . "put = a:addrs"
+   if strlen(getline(l)) + strlen(getline(l+1)) < 72
+     exe l
+     normal J
+   endif
+endfunction
+
+
+" Main function
+function! GrepAlias2(the_alias)
+  let buffername = $HOME . '/tmp/search-results-aliases'
+  call FindOrCreateBuffer(buffername,1)	" from a.vim
+  normal 1GdG
+  0 put = '#Aliases corresponding to the current pattern : <'.a:the_alias . '>'
+  1 put = '#Press ENTER or dlb-click on an alias to use it.'
+  2 put = '#-------------------------------------------------------------------'
+  3 put = '-none-of-these-'
+  " only the alias
+  ""exe '$r!grep -i "alias *' . a:the_alias . ".*[\t ]\" " .expand('$HOME').  '/.mutt/aliases_file | sort'
+  " Any substring except the address
+  exe '$r!grep -i "alias *.*' . a:the_alias . "[^\t]*\t\" " .expand('$HOME').  '/.mutt/aliases_file | sort'
+  g/^$/ d
+  let results = line('$')
+  " No result
+  if results == 4
+    bd!
+    echohl ErrorMsg
+    echo "\r" . 'No alias matching <'.a:the_alias.">"
+    echohl None
+    return "\<esc>a"
+  " Only one result
+  elseif results == 5
+    let addr = getline(line('$'))
+    bd!
+    call MuttAliases_PutAddrLines("\t".MuttAlias_Addr(addr))
+    return "\<esc>A"
+  endif
+  " Default return
+  1,$s/alias //
+  "call MuttAlias_Syntax()
+  call MuttAlias_Syntax(a:the_alias)
+  call MuttAliases_Reformat()
+  :5
+
+  return "\<esc>"
+endfunction
+
+
+"----------------------------------------
+" Local mappings
+func! MuttAliases_GrepEditFileLine(lineNum)
+   if a:lineNum > 3
+      let line = getline(a:lineNum)
+      if (line != "-none-of-these-")
+	   " If there are tagged choices
+	 if b:NbTags != 0
+	   %v/\*/d
+	   %s/^.\S\+\s\+//
+	   1,$-1s/$/,
+	   %s/^/\t/
+	   normal vipy
+	   let addrs = @"
+	 else
+	   " Else : return the current line only
+	   let addrs = "\t".MuttAlias_Addr('alias '.line)
+	 endif
+         bd!
+	 call MuttAliases_PutAddrLines(addrs)
+      else
+         bd!
+         echo "\r"
+      endif
+   endif
+endfunc
+
+" Reformat the displayed aliases
+function! MuttAliases_Reformat()
+  set expandtab
+  set tabstop=12
+  retab
+  %s/^\([^#][^<]*\S\)\s*\(<.*>\)/ \1\t\2/
+  set tabstop=39
+endfunction
+
+" Tag / untag the current choice
+function! MuttAliases_DoTag(lineNum)
+   if a:lineNum > 4
+      " If tagged
+      if (getline(a:lineNum)[0] == '*')
+	let b:NbTags = b:NbTags - 1
+	exe a:lineNum.'s/^\*/ /'
+      else
+	let b:NbTags = b:NbTags + 1
+	exe a:lineNum.'s/^ /*/'
+      endif
+      call MuttAliases_NextChoice(1)
+    endif
+endfunction
+
+" Go to the Next (/previous) possible choice.
+function! MuttAliases_NextChoice(isForward)
+  if a:isForward == 1
+    /^\( \|\*\)\S\+/
+  else
+    ?^\( \|\*\)\S\+?
+  endif
+endfunction
+
+" Maps for the (splitted) choice window
+func! MuttAliases_GrepEnterBuf()
+   let b:NbTags = 0
+   " map <enter> to edit a file, also dbl-click
+   nnoremap <cr>          :call MuttAliases_GrepEditFileLine(line("."))<cr>
+   nnoremap <2-LeftMouse> :call MuttAliases_GrepEditFileLine(line("."))<cr>
+   ""nnoremap Q		  :call MuttAliases_Reformat()<cr>
+   nnoremap <Left>	  :set tabstop-=1<cr>
+   nnoremap <Right>	  :set tabstop+=1<cr>
+   nnoremap t		  :call MuttAliases_DoTag(line("."))<cr>
+   nnoremap <tab>	  :call MuttAliases_NextChoice(1)<cr>
+   nnoremap <S-tab>	  :call MuttAliases_NextChoice(0)<cr>
+endfunc
+
+func! MuttAliases_GrepLeaveBuf()
+    unmap <cr>
+    unmap <2-LeftMouse>
+    ""unmap Q
+    unmap <Left>
+    unmap <Right>
+    unmap t
+    unmap <tab>
+    unmap <S-tab>
+endfunc
+
+aug MuttAliases_GrepBuf
+    au!
+    au BufEnter search-results-* call MuttAliases_GrepEnterBuf()
+    au BufLeave search-results-* call MuttAliases_GrepLeaveBuf()
+    ""au VimLeavePre * call GrepCleanup()
+aug END
+
+"----------------------------------------
+" Looks if the header-field of the current line is either To:, Cc: or Bcc:
+function! MuttAlias_MapTab(the_alias)
+  if (strlen(a:the_alias) == 0)  || (a:the_alias !~ '^\S*$')
+    ""echo "-" . a:the_alias . "-\n"
+    return "\t"
+  endif
+  let ok = '^\(\(T[Oo]\)\|\(B\=[Cc][Cc]\)\):'
+  let l = line('.')
+  while l != 0
+    let ll = getline(l)			" Current line
+    if ll =~ '^\S\+:'			" ¿ Is an field ?
+      if ll =~ ok			"   ¿ Is an address field ?
+	let r = GrepAlias2(a:the_alias)	"     Then grep the alias
+	if "\<esc>a" != r 
+	  return r
+	else 
+	  return r."\t"
+	endif
+      else
+	return "\t"			"     Otherwise return <tab>
+      endif
+    else
+      let l = l - 1			"   Otherwise, test previous line
+    endif
+  endwhile
+endfunction
+
+"----------------------------------------
+" Syntax for the (splitted) choice window.
+function! MuttAlias_Syntax(...)
+  if has("syntax")
+    syn clear
+
+    if a:0 > 0
+      ""exe 'syntax region GrepFind start=+\(^\|<\)+ end=/' . a:1 . '>\=/'
+      exe 'syntax match GrepFind /' . a:1 . '/ contained'
+    endif
+    
+    syntax region GrepLine  start='.' end='$' contains=GrepAlias
+    syntax match GrepAlias /^./ contained nextgroup=GrepName contains=GrepFind
+    syntax match GrepName /[^<]\+/ contained nextgroup=GrepAddress contains=GrepFind
+    syntax region GrepAddress start='<' end='>' contained 
+    
+    syntax region GrepExplain start='#' end='$' contains=GrepStart,GrepFind
+    syntax match GrepStart /#/ contained
+    syntax match Statement /-none-of-these-/
+
+    highlight link GrepExplain Comment
+    highlight link GrepFind Search
+    highlight link GrepStart Ignore
+    highlight link GrepLine Normal
+    highlight link GrepAlias SpecialChar
+    highlight link GrepAddress Identifier
+  endif
+endfunction

@@ -1,0 +1,61 @@
+# bash script to open a file in a current GVIM instance
+# requires KDE
+# Version 0.1
+# Author: John C Kendall,  johnk@solvepoint.com
+#
+if [ -z "$1" ];then
+  gvim
+  exit
+fi
+menu=""
+if [ -f ~/.vimopen.last ];then
+  last="`cat ~/.vimopen.last`";
+fi
+menu="$menu new new"
+cnt=0;
+file=$1
+for x in `gvim --serverlist`;do
+  bn=`gvim --servername $x --remote-expr "bufnr('${file}')"`
+  # kdialog -msgbox "x='$x' file='${file}' bn='$bn'"
+  if [ "-1" != "$bn" ];then
+    gvim --servername $x --remote-send ":b $bn<cr>"
+    gvim --servername $x --remote-expr "foreground()"
+    echo $x>~/.vimopen.last
+    exit
+  fi
+  if [ "${x:0:4}" = "GVIM" ]; then
+    buff="`gvim --servername $x --remote-expr 'bufname("%")'`"
+    if [ -z $buff ]; then
+      buff=$x
+    fi
+  else
+    buff=$x
+  fi
+
+  if [ "$x" = "$last" ];then
+    menu="$x $buff $menu"
+  else
+    menu="$menu $x $buff"
+  fi
+  (( cnt++ ))
+done
+if [ $cnt -ge 1 ];then
+  sel=`kdialog --menu "Select Instance" $menu`
+  if [ -z "$sel" ];then
+    exit
+  fi
+else
+  sel="new"
+fi
+echo $sel>~/.vimopen.last
+if [ "$sel" = "new" ];then
+  fn=`basename ${file}`
+  sn=`kdialog --inputbox "Instance Name" "$fn"`
+  if [ -z "$sn" ];then
+    exit
+  fi
+  echo gvim --servername "$sn" --remote-silent ${file}
+  gvim --servername "$sn" ${file}
+else
+  gvim --servername $sel --remote-silent ${file}
+fi

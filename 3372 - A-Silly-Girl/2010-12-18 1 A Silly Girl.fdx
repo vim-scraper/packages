@@ -1,0 +1,4192 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<FinalDraft DocumentType="Script" Template="No" Version="1">
+
+  <Content>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="1/8" Page="1" Title=""/>
+      <Text>EXT : Day. </Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="2/8" Page="1" Title=""/>
+      <Text>In the spring, morning with sun explosion, on the road with one main two way traffic, with old, dirty, </Text>
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="AllCaps">antipathized</Text>
+      <Text> buildings, Madalyn dresses a mini skirt, tightened white top, upper line opens from neck to shoulders, with canvas </Text>
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="AllCaps">bag,is</Text>
+      <Text> walking on the pedestrian </Text>
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="AllCaps">side.A</Text>
+      <Text> truck is running from behind, the driver with an eye glass </Text>
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="AllCaps">outstretches,shouted</Text>
+      <Text>,</Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="2/8" Page="1" Title=""/>
+      <Text>     </Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>            DRIVER                                       </Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>          Hey, baby.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>  MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>          You mother </Text>
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">fucker</Text>
+      <Text>.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>                    [Utter with shock and disgust.]</Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="1/8" Page="1" Title=""/>
+      <Text>This is the first impression Madalyn got when she moved to U town. She goes to attend class in Art Institute, lifted to 7th floor with elevator.</Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="2/8" Page="1" Title=""/>
+      <Text>INT : Classroom.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>Emily</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>   Good morning Madalyn.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>   Good morning Emily.</Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="3/8" Page="1" Title=""/>
+      <Text>Emily comes into and sit next to Madalyn, with jeans, high heel boots, coffee brown sweater, sassy long black hair.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>EMILY</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>    How’s everything? </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>    Good, how are you? </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>EMILY</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>      I’m fine too. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>  What are you reading? </Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="1 1/8" Page="2" Title=""/>
+      <Text> [Emily picks up a book from bag and opens it.]</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>EMILY</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>A novel which is written by Cynthia Burke, do you know her? I read a lot, </Text>
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">i</Text>
+      <Text> like the novel written by female.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>What does she write? Is it gossip or paparazzi? </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>EMILY</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>    Do you like guys? </Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>          [Emily smiles, eye excites.]</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>           Yeah.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>EMILY</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>          </Text>
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">Haha</Text>
+      <Text>...</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>                 [Emily laughs.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>             Do you have a boyfriend? </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>            No. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>EMILY</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>When I first time had a boyfriend, </Text>
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">i</Text>
+      <Text> was 15, he is a model.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>       What are you? </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>EMILY</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>I’m also a model and singer. I show you his picture...</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>          [Emily takes the photo from her wallet.]</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>     Oh, he is so cute. </Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="5/8" Page="3" Title=""/>
+      <Text>Class becomes a little noisy, guys in the other table are restless.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>Instractor</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Benjamin, please make a sentence, use the past tense of </Text>
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">ir</Text>
+      <Text>.         </Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>[It is a Spanish class.]</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>Benjamin</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">Ayer</Text>
+      <Text> </Text>
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">fui</Text>
+      <Text> a </Text>
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">tacobell</Text>
+      <Text> en el </Text>
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">mercado</Text>
+      <Text> del </Text>
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">agricultor</Text>
+      <Text>.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>     ( Yesterday I went to </Text>
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">tacobell</Text>
+      <Text> in Farmer’s Market.)</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>INSTRACTOR</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>   Sebastian, make a sentence. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>Sebastine</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text> </Text>
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">Ayer</Text>
+      <Text> </Text>
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">fui</Text>
+      <Text> al club a </Text>
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">ver</Text>
+      <Text> a mama.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>        ( Yesterday I went to club to see mama.)</Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="1/8" Page="3" Title=""/>
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="1/8" Page="3" Title=""/>
+      <Text>Everyone laughs.</Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="3/8" Page="3" Title=""/>
+      <Text>After the class finishes,</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>EMILY</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Madalyn, If you want to consult with someone, let me know. </Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>I’m 18, but very mature. The first time, oh, it was so big, it hurts. The next day, </Text>
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">i</Text>
+      <Text> couldn’t walk, when </Text>
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">i</Text>
+      <Text> walk down the stairs, like this,</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Emily starts to walk two legs wide open, like sumo in Japan, like a duck.] </Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="1/8" Page="4" Title=""/>
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="2/8" Page="4" Title=""/>
+      <Text>IN the weekend, Madalyn goes to her friend Sammy’s home. It is an all girls home, no boys. Sammy’s mother is a very lovely lady. Sammy’s father is a former karate athelete. Madalyn saw many of his youthful photos which are attached on the wall. Sammy and madalyn are in the dining table, eating. Madalyn holds remote control, switching channels, stops at amertican football league.</Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="3/8" Page="4" Title=""/>
+      <Text>INT. Dining room. Evening. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>Sammy’s father</Text>
+    </Paragraph>
+    <Paragraph Type="General">
+      <Text>         </Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>          Don’t watch it.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[He comes to take remote control, changes channel to The </Text>
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">Incredibles</Text>
+      <Text> (animation, 2004)]</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>SAMMY’S FATHER</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>See, watch this, it is funny.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>         Her mother will not serve you guys.</Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="5/8" Page="4" Title=""/>
+      <Text>Sammy’s father goes to kitchen and comes back.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>SAMMY’S FATHER</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>      Do you want some fruits?                                      </Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>                   [He asks Madalyn.]</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>   Madalyn</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>     </Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>              Yeah.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>SAMMY’S FATHER</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>                    How many slices?</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>              [He brings the bowl of apple.]</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>   MaDALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>               </Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>              Many.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>SAMMY’S FATHER</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>         She is a big girl.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>MADALYN STAYED OVER IN THAT NIGHT, THE NEXT DAY.</Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="2 3/8" Page="5" Title=""/>
+      <Text>INT. sammy’s bedroom. Day.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>MADALYN PICKS UP A PHONE, A MALE IS CALLING.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>           Hello.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text> Male</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Hey, I’m sammy’s cousin. I </Text>
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">heared</Text>
+      <Text> from my aunt. Are you Madalyn? I’ll take you around. I don’t have a girlfriend, do you want?</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>          No, what?</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text> MALE</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>  </Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>    Do you want to date? </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>     </Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>           No.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MALE</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Hmm, do you want to touch my penis?</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>No, I don’t want to touch your penis.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>          [Male hangs out.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="General">
+      <Text>IN THAT EVENING, WHILE SAMMY’S MOTHER IS SERVING DINNER, SHE IS SMILING AT MADALYN. </Text>
+    </Paragraph>
+    <Paragraph Type="General">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>MADALYN FEELS INSULTED TOO MUCH, SHE CRIED IN THAT NIGHT. </Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>A FEW DAYS LATER, MADALYN HAD ANOTHER HANG OVER IN SAMMY’S HOME. IN ANOTHER ROOM, A MALE AND A FEMALE IS TALKING ABOUT HAVING SEX AND LAUGHING, THEY SAY MADALYN...</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>THE MALE’S VOICE... THE PHONE...</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>MADALYN IS AWAKE AND PROVOKED, SHE GOES TO THE LOBBY, BUMPS INTO THE MALE ( THEY ARE MOVING TO THE ENTRANCE), HE iS A LITTLE FAT, WHITE GUY. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN (CONT’D)</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text> </Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>            You.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>THE MALE LAUGHS.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MALE</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Yeah, I’m sammy’s cousin.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>You mother </Text>
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">fucker,did</Text>
+      <Text> you remember what you said on the phone? You don’t need a girlfriend, come on. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MALE</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>  </Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>     Wanna hang out?</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>   [The male is snobbish, looks at Madalyn scornfully.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>THEY GO TO MALE’S APARTMENT, NOT SAMMY’S APARTMENT. THEY GO TO MALE’S BEDROOM.         </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>You mother </Text>
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">fucker</Text>
+      <Text>, I’ll take off cloth by myself.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MALE</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text> </Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>       Let’s do it.</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>MADALYN TAKES OFF HER TOP, JUMPS ON MALE’S BODY, PUSH HIM ON TO THE BED, A COLD KISS AND SITS ON MALE’S THIGH, PULLS OUT MALE’S PENIS.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>MADALYN PUTS THE PENIS INTO HER MOUTH, LICK IT, THEN RIGHT IN THAT MOMENT, SHE STANDS UP, KICK IT HARDLY. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MALE (CONT’D)</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>           AH...</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>                 [Male is shrieking.]</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>        </Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>           You bitch. </Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Male uses his arm to hit Madalyn’s head, strikes her extremely, Madalyn hits male again, they fight violently on bed, then Madalyn storms off.]</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>     </Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>          You </Text>
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">fuck</Text>
+      <Text>.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>MADALYN IS DISAPPOINTED FROM  THIS REVENGE, SHE FEELS DIRTY AND GORY. SHE MOVES OUT THE DORM, RENTS A PRE-WAR HOTEL STYLE ONE BEDROOM APARTMENT IN </Text>
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">87TH</Text>
+      <Text> STREET. ONE DAY SHE GOES TO </Text>
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">STARBUCKS</Text>
+      <Text> TO DO ASSIGNMENT, A MAN (LEOPORDO) IS SITTING NEXT TO HER. MADALYN IS WRITING ON THE PAPER, DOESN’T POP UP SENTENCE. SHE SIPS A CUP OF COFFEE, LOOKS AT PEOPLE WALKING OUTSIDE FROM THE WINDOW. SNUBBY. LEOPORDO STARTS TO TALK TO MADALYN.</Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="2" Page="7" Title=""/>
+      <Text>INT. </Text>
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="AllCaps">starbucks</Text>
+      <Text>. Afternoon.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>It’s getting late outside.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text> </Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Yeah, it’s freezing. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text> </Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>What are you working on?</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Leopord looks at the sketchbook beside Madalyn.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>               </Text>
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">Oh,It’s</Text>
+      <Text> interesting. </Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Leopord looks at Madalyn’s graphic painting.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>               Where are you from?</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>       I’m from Medford.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>            Oh.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>      </Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>       What about you?</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>    I, Live around here. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>          Me too.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>See, we live in the same street.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>     What are you doing? </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>I work on marketing, but I’m also an art dealer.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>          [Leopordo flashes.]</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>     What kind of art?</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDo</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>I go to africa to collect many antiques.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>          Do you have plan in the evening?</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>            No.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDo</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Maybe we can have dinner, get together or something.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>          This is my card. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>            OK.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDo</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>I’ll be back at 8pm, are you still around?</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Yes, I will be here keep working.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDo</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text> </Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>        See you then.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>       See you then.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>LEOPORDO COMES BACK WHEN THE DAY GET LIGHTS OUT. THEY WALK, PASSING THROUGH A FEW RESTAURANTS, ENTERED A BLUE PAINTED, ITALIAN RESTAURANT. THEY ORDERED KITCHEN AND SALAD. </Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="1 6/8" Page="9" Title=""/>
+      <Text>INT. restaurant. Evening.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Do you have brothers and sisters? </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>No,I’m the only child.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>          What about you? </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>I have a brother and a sister. My brother has four kids.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>     Do you like kids?</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>No, kidding, that’s ridiculous.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>           </Text>
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">Hmmm</Text>
+      <Text>.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>            Do you have a boyfriend?</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>           </Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>           Nope.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>           [Madalyn becomes strained.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>            Do you have a girlfriend? </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Yeah, we broke up three months ago.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>What kind of girlfriend? Who is she? </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>     We met in a party... </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>     How old are you? </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>          I’m 25.</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>      How old are you? </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>          I’m 18. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Do you want to come to my apartment to watch movie? </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>            No.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>           What kind of movie do you watch? </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>I like to watch documentary, about birds migrating...  </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>            Oh.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>LATER THEY GO OUT OF THE RESTAURANT, GO TO A BAR. LEOPORDO TRIED TO BUY DRINK FOR MADALYN, MADALYN STOPPED THAT.</Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="2 5/8" Page="11" Title=""/>
+      <Text>INT. bar. Evening.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>      I”</Text>
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">ll</Text>
+      <Text> buy you drink.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>          [She orders them from bartender.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>LEOPORDO IS DRINKING.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text> What did you do for today? </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Yesterday I just went to a friend’s birthday party, woke up at </Text>
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">2pm</Text>
+      <Text> today.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>          Do you have many friends?</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>No, I don’t have a lot of friends, I don’t really go to party. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Well, nice to meet you. </Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>          You don’t have a boyfriend? </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>No, I’ve never had a boyfriend.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>  [Madalyn is not sure about the meaning of a boyfriend.]</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>    Have you ever dated? </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>        Maybe, once...</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>I studied psychology, also art, I also studied anatomy of woman.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>     You studied woman?</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>     A woman’s body.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>  Wow, but you look so old.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>  Are you 18, do I look 18? </Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>LEOPORDO LOOKS AT MADALYN, MADALYN LEANS ON THE COUCH. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO (CONT’D)</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>       Give me your hands.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>             [Leopordo holds Madalyn’s hands.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>               You should feel warm and safe. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text> </Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>    I don’t feel in that way. </Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>LEOPORDO PUSHES MADALYN TO THE COUCH, ADVANCES FORWARD HIS LIP.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>     How about I kiss you? </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>            No. </Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Cast List">
+      <Text>LEOPORDO INTENDS, MADALYN MOVES BACKWARD. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text> Just one kiss, we will know. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>            No. </Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>LEOPORDO’S LIP TOUCHES MADALYN’S LIP. MADALYN RESISTS.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>     Your lip is so soft. </Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>LEOPORDO’S HAND EXTENDS TO MADALYN’S WAIST. MADALYN TAKES IT AWAY. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO (CONT’D)</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Why we don’t go? Where do you live? ... Yeah, we live in the same street. </Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>THEY GET OUT OF THE BAR.</Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="6/8" Page="14" Title=""/>
+      <Text>EXT. outside. Street. Evening. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Let’s go to museum tomorrow, I    don’t want to go to work.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>No, I have to go to school. </Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>LEOPORDO LOOKS AT MADALYN.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Can I send you home, and stop by a few minutes?</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>     No, I don’t know.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>THEY STARTS TO WALK.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>I don’t really meet someone like you in the street, i met them in the party...</Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="4 7/8" Page="14" Title=""/>
+      <Text>EXT. madalyn’s bedroom. Evening. </Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>THEY ARRIVE IN MADALYN’S APARTMENT. IT IS REALLY SMALL. LEOPORDO DOESN’T BELIEVE WHAT HE SEES, DEPRESSED A FEW SECONDS. HE SITS IN THE COUCH. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>  </Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>      Do you have a cup? </Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>       [He starts to smoke, tries to find ashtray.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>LEOPORDO SEES A POEM BOOK ON THE BED, HE OPENS AND LOOKS AT IT. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO (CONT’D)</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text> </Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>           Do you read it?</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>            Yes.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>        I have one too.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>           </Text>
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">Hmmm</Text>
+      <Text>...</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>           Come.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>MADALYN GOES TO SIT BESIDE HIM. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO (CONT’D)</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>If someone just come to your home...</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>You are my friend, I can’t say no. </Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>LEOPORDO STARTS TO KISS HER. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>I studied woman’s body, </Text>
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">i</Text>
+      <Text> know your body.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>LEOPORDO STARTS TO TOUCH MADALYN’S BELLY, STOMACH. HE TOUCHES MADALYN’S PUSSY AND KISS.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>           </Text>
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">Ahh</Text>
+      <Text>...</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>                   [She moans.]</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>       It is too noisy.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>mADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>I don’t have any feeling, i feel my body is a skeleton.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text> </Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>          Skeleton? </Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>             [He’s eyes are flickering.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>LEOPORDO COMES TO KISS HER MORE.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>      It is a pleasure. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text> </Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>       Did you come? </Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">6AM</Text>
+      <Text> IN THE MORNING, LEOPORDO LOOKS AT CELL PHONE.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO (CONT’D)</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>      I messed up too long hours.</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>  </Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>THEY ARE STILL IN THE COUCH. LEOPORDO LOOKS AT MADALYN’S WATCH IN HER ARM.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO (CONT’D)</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text> </Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>          Is it diamond? </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>      No, it is just a few bucks. </Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>              How many girlfriends do you have?</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>          A lot, 17.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>  </Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>            Wow.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>               So yo are a playboy? </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>           </Text>
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">Hmmm</Text>
+      <Text>...</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>          I have to go, </Text>
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">i’ll</Text>
+      <Text> call you in the week. </Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>ONE THURSDAY, LEOPORDO CALLS MADALYN, THEY TAKE A CAB TO GO TO A MODERN ART MUSEUM IN THE AFTERNOON. </Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>THEY SEE A NAKED PLASTIC HUMAN BODY FLOATING IN THE MIDDLE AIR, WITH ARM AND LEG CUT DOWN. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>     It is very painful.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>            Do you want to get married? </Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>            [Asks Leopordo.]</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>No, never that’s stupid, but i like woman...</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>To pick up a girl, hook up??</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>It’s life, you don’t need to think about yesterday and tomorrow, just today and in this moment.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Are you good at it? I think you’re good at it.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Woman are crazy, </Text>
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">i</Text>
+      <Text> make them happy.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>What happened after that? </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>They just want to be with you always, call you all the time.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>           Then?</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>     Then </Text>
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">i</Text>
+      <Text> just broke up.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>   For how long it continued?</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>About three months, but they were very happy.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>AFTER MUSEUM, THEY GO TO LEOPORDO’S APARTMENT. IT IS ON THE </Text>
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">14TH</Text>
+      <Text> FLOOR, ONE HUGE 1 BEDROOM APARTMENT. MADALYN IS SHOCKED. </Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>LEOPORDO LEADS MADALYN TO THE BEDROOM. HE TOUCHES HER PUSSY, SUCK HER BREAST AND NIPPLES. MADALYN OPENS HER LEG, THEN SHE IS ON THE TOP. LEOPORDO IS UNDER HER SKIRT, SUCKS HER PUSSY, THEN MADALYN MOVES BACKWARD, ON LEOPORDO’S PENIS, MOVES ON IT. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO (CONT’D)</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>  Let’s do it. Hard, like a cowboy.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>MADALYN TAKES OFF HER TOP, ONLY WEARS A PANTY. SHE LEANS BACK, LEOPORDO STRAIGHTS UP, TOUCHES HER BELLY, TO HER BREAST, TO THE ARM, AND HER FINGERS, CROSSED, LIKE A BOW. MADALYN CONTINUES TO MOVE HARD WITH THE PENIS, UNTIL LEOPORDO INJECTS, WHITE LIQUID COMES OUT. LEOPORDO TAKES A TISSUE PAPER TO WIPE. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO (CONT’D)</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Did you come? You’re very happy. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>            No.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>          You lie.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>MOMENTS LATER.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO (CONT’D)</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>      Do you want to stay here? </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>      No, I’ll go back.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>          [She becomes very frightened and nervous.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text> </Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>MADALYN TAKES ELEVATOR TO GO DOWN, TO THE STREET, IT IS QUITE, SLIGHTLY WINDY ON THE STREET. MADALYN LOOKS AT A MOVIE POSTER,” BECOMING JANE “, FEELS SULLEN. SHE COMES BACK TO HER SMALL APARTMENT, GOES TO BATHROOM IN THE AISLE, RELIEVED.</Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="2 7/8" Page="19" Title=""/>
+      <Text>INT. MADALYN’S APARTMENT. EVENING. </Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>A FEW DAYS LATER, IN THE LATE EVENING, LEOPORDO KNOCKS MADALYN’S DOOR.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>   How are you, my friend?</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>    I had a meeting, very hard meeting, can you massage me?</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>MADALYN MASSAGES HIM, LEOPORDO BEGINS TO KISS HER. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>I don’t want to do this anymore.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Where is the wardrobe? I like clothe, wear that skirt...</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text> </Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>What are you doing tomorrow?</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Tomorrow we go to my friend’s bachelor party, we go to Canada, we drive.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>      Bachelor party? </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>  He’s getting married, stupid.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>What are you doing on bachelor party?</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Wow, don’t tell anyone, his fiance doesn’t know, we have friends, girls, Canadian woman, they are very beautiful, they kiss in front of us.”</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>    Is it a strip club?</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>   Hahaha... don’t say it.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>             Come.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>LEOPORDO SITS ON THE CHAIR, PULLS OFF THE STRING OF MADALYN’S CAMISOLE, KISS HER NIPPLE, HIS FINGER UNLOCKS THE BUTTON OF HER PANTS. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text> </Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>           Stop.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>        What’s wrong?</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>                You’re not beautiful. </Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>LEOPORDO USES HIS FINGER TO CLICK MADALYN’S HEAD. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>If I’m not beautiful, why you’re with me?</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Well, I didn’t really want to, but you’re pretty, you’re such a pretty girl, you fox, you turn me on.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>LEOPORDO STARTS TO BURY HIS HEAD INTO MADALYN’S BREAST AGAIN.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>   Today I met another guy.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>What? How many boyfriends do you have? 1000? </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>      I’m not into you. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Let’s have fun, don’t care about others. </Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Woman are crazy, 2 years ago, </Text>
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">i</Text>
+      <Text> received a letter from my ex girl friend, it hurts me. I’m easily bored, just kick off. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>I just want to talk, do you vote? </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Forget about the vote. I don’t talk, I’m busy. I’d like to take the girl I like and enjoy it. </Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>LEOPORDO STARTS TO SMOKE.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Leopordo, you’re not handsome. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Am I, woman like me, they say you’re handsome. You’re not beautiful. </Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>IN THAT EVENING, LEOPORDO SLEEPS, PRONE ON THE BED, MADALYN LOOKS AT HIM FROM THE DOOR, IT LOOKS LIKE A WOMAN. </Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="1 4/8" Page="22" Title=""/>
+      <Text>INT. SUSIE’S HOUSE. LATE AFTERNOON. </Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>THE DAY LATER, MADALYN GET A CALL FROM A FRIEND FROM ELEMENTARY SCHOOL. SHE IS IN THE TOWN WITH HER HUSBAND, THEY HAVEN’T SEEN EACH OTHER IN 6 YEARS. </Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>MADALYN GOES TO THEIR HOUSE IN THE LATE AFTERNOON. THEY GREAT EACH OTHER WITH IMPRESSION. MADALYN SEES SUSIE’S WEDDING PHOTO ON THE TABLE. SUSIE ALREADY GREW UP AS A BRIDE AND A WIFE. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>You didn’t tell me your wedding.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>Susie</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Yeah, in the last October, with small family and friends, you are not there in that time. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>So you eventually went to medical school? </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>SUSIE</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Yeah, I’m in post graduate, my husband is a medical researcher, works in the town. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>     How did you meet? </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>SUSIE</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Through family’s friends. You haven’t changed so far since then, how about you, still single or do you have a boyfriend?</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>I never had a boyfriend, i only have a partner, we often quarrel. Did you hear about Paola, how is she? </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>SUSIE</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Oh, yeah, she’s also got married. She just gave birth to a twins this June, one boy and one girl.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>WHY EVERYONE GETS WEDDED SO SOON?? MADALYN FEELS SO COLD.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>SUSIE</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Do you want to stay here for a while? My husband will come back late, we will have dinner.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>         No, thanks. </Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>MADALYN LEAVES SUSIE, COMES BACK. IN THE TRAIN, SHE FEELS VERY LONELY, DARK AND ASHAMED. </Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="1 2/8" Page="23" Title=""/>
+      <Text>INT. LEOPORDO’S APARTMENT. EVENING.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>A FEW DAYS LATER, LEOPORDO CALLS MADALYN.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>   Do you want to come over? </Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>MADALYN GOES TO HIS APARTMENT.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Christmas is coming, do you come </Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>back home?</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Yes, but just one day, i hate family. Where are you going? </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>I don’t go home, i”ll go to some party.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Oh, that’s good, good luck. </Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>MADALYN SEES LEOPORDO’S APARTMENT, GLASSES ARE BURIED SMOKED CIGARETTES EVERYWHERE, ALCOHOL BOTTLES EVERYWHERE. </Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>LEOPORDO STARTS TO DRINK WHISKEY. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO (CONT’D)</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Madalyn, i don’t have a space for you, for any woman, life is too short.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text> </Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>      You’re selfish.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>     We don’t have time.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>         We escape.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>LEOPORDO LAUGHS.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>IN THAT NIGHT, MADALYN HAD A BAD DREAM. SHE IS MAKING LOVE AND PREGNANT WITH A STRANGER. IN THE MORNING, SHE LOOKS AT LEOPORDO IN THAT WAY. SHE LEAVES THE APARTMENT. SHE FEELS SHE DOESN’T WANT ANYTHING FROM LEOPORDO ANYMORE.</Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="3/8" Page="25" Title=""/>
+      <Text>INT. Madalyn’s apartment.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>MADALYN IS LONELY AND COLD, SHE LAYS ON THE BED, COULDN’T GET UP FOR THREE DAYS. SHE DIDN’T GO TO SCHOOL. HER FRIEND TEXTS HER, WHAT HAPPENED, WITH NO ANSWER. HER MIND IS SWELLING UP AND CRACKS, COULDN’T FOCUS ON ANYTHING. </Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>SHE LAYS ON THE FLOOR, POSTS AN AD ON </Text>
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">CRAIGSLIST</Text>
+      <Text>, SEEKING FOR A ROOMMATE.                                                                         </Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>SHE GETS MANY RESPONSES. SHE STARTS TO MEET MANY GIRLS. ONE GIRL IS CALLED KATHERINE, A STUDENT FROM FASHION INSTITUTE. SHE ALSO COMES FROM SMALL TOWN. </Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="4/8" Page="25" Title=""/>
+      <Text>INT. COFFEE SHOP. DAY. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>KATHERINE</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>       Hi, </Text>
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">i’m</Text>
+      <Text> Katherine.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Hi, my name is Madalyn. I just think why we don’t move into a 2 bedroom apartment, since now </Text>
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">i</Text>
+      <Text> live alone...</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>KATHERINE</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Yes, me too. Next semester starts at February, </Text>
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">i</Text>
+      <Text> need an apartment as soon as possible. I’d love to share it with you. </Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>THEY MOVES INTO A </Text>
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">GOGEOUS</Text>
+      <Text> 2 BEDROOM APARTMENT IN A </Text>
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">GOGEOUS</Text>
+      <Text> STREET. </Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="1 1/8" Page="25" Title=""/>
+      <Text>INT. madalyn and katherine’s apartment</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>KATHERINE</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Girls like us, </Text>
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">i</Text>
+      <Text> haven’t had a boy friend in four years, even though we hang out, we slept in a hotel, he didn’t touch me.</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>I really like some guys, they are models, so beautiful. I went to meet them, always dress nicely, but when </Text>
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">i</Text>
+      <Text> got home, no furniture, all plastic, easily fitted, so bad.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>    No one will like us.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>KATHERINE</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>   It is really like twilight. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>    Are you a designer? </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>KATHERINE</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">Yes,i’m</Text>
+      <Text> learning fashion, but maybe not create my own clothing line, but to manage client’s.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>What’s your goal in life? </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>KATHERINE</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>To be a master in fashion business. </Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>I’d like to go out a lot, i have a night job in club, you know. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>     Are you a dancer?</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>KATHERINE</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>No, i’m a bartender. Do you like dance?</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>      Yes, i like it. </Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="1/8" Page="26" Title=""/>
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="1 4/8" Page="27" Title=""/>
+      <Text>INT. mADALYN and katherine’s APARTMENT.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>THE DAY LATER, LEOPORDO CALLS MADALYN.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Hey, how are you doing? Do you want to come over?</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>                       No.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>   Do you want me to come by? </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>No, err, </Text>
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">i</Text>
+      <Text> changed the address. I live with a roommate. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Oh, really? You live with a roommate. So you’re not live in there?</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>     No, </Text>
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">i</Text>
+      <Text> moved out. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>   Where do you live now? </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>          Err, Franklin Park. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Are you </Text>
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">ok</Text>
+      <Text>? Let’s go out. I just came back from Colorado, in a flight, </Text>
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">i</Text>
+      <Text> had a dream about you. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>           Well.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>  I’ll be there in 15 minutes.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>AT </Text>
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">9PM</Text>
+      <Text>, LEOPORDO CALLS. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO (CONT’D)</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>        Hi, </Text>
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">i’m</Text>
+      <Text> downstairs. </Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>MADALYN GOES DOWN. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO (CONT’D)</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Madalyn, you live here, </Text>
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">i</Text>
+      <Text> missed you. </Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>          [He stars to hug and kiss her.]</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Dress up, let’s go to a club.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>     No, </Text>
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">i</Text>
+      <Text> don’t want to. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Why? Let’s go to a bar outside to drink.</Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="6/8" Page="28" Title=""/>
+      <Text>INT. BAR. EVENING.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>THEY GO TO A BAR, MADALYN BOUGHT TWO BOTTLES OF BEER. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>       How are you, my friend?</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>          Not bad. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Is she, your roommate there, in the apartment? </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>No, she goes to club every night. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Can </Text>
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">i</Text>
+      <Text> come up to your room? </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>             No. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>    I can take care of you. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>    It is not necessary. </Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="1 2/8" Page="29" Title=""/>
+      <Text>EXT. OUTSIDE. EVENING.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>THEY GO OUT.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>LEOPORDO KISSES MADALYN, IN THE MOUTH, NECK, VERY INTENSELY. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Come to my apartment, let’s do it again. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>            No. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>I pay you. Let’s go to shopping, </Text>
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">Dior</Text>
+      <Text>, J Crew, </Text>
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">i</Text>
+      <Text> buy you shoes, clothes, 2000, 3000 dollars.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>            No. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>       I pay you rent. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>        I’ll go back.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Madalyn, let’s go to hotel. I take off tomorrow, </Text>
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">i</Text>
+      <Text> take you...</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>You’re not my boyfriend, who are you? </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>I know, you should find some one to fit you, we are not, </Text>
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">i</Text>
+      <Text> can’t promise.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>        That’s hurt.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEOPORDO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>  Did I hurt you? I’m sorry. </Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>MADALYN TURNS BACK, GOES UP TO HER ROOM. SHE CRIED IN A WEEK. SHE FEELS HER HEART IS TWISTED. </Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="3 5/8" Page="30" Title=""/>
+      <Text>INT. gallery hall. Evening. </Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>A FEW WEEKS LATER, MADALYN HAS HER ART WORK EXHIBITION IN A GALLERY WITH OTHER CLASSMATES. IN THAT EVENING, IT HAS A POETRY READING WORKSHOP. MADALYN DECIDES TO STAY FOR A WHILE. </Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>TAD IS READING A POETRY IN FRONT OF THE HALL.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>                       TAD</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>You are my million color rainbow,</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>It’s the only wonder that if </Text>
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">i</Text>
+      <Text> can reach you,</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>I’ve been humbled in one thousand years,</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>You burn bright in me from dust mud.</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>You brown hair and amble eye,</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Is my flamboyant sheet,</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">Warmly,herbally</Text>
+      <Text> scented. </Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>You are the wind,</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Dance in the air,</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Around me, </Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>I smoke you,</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Makes me fully awake.</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>You are my lovely dear,</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>My imaginary friend,</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>My counterpart,</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">Goodnight</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>My dear. </Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>AN APPLAUSE. MADALYN IS SITTING IN THE MIDDLE OF THE SEAT. AFTER THIS READING, TAD HAS A CHANCE TO COME TO SIT NEXT TO MADALYN. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>TAD</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>           Hi.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>  Your words are amazing.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>TAD</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>         Thanks.</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Do you want to have a cup of tea? </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>       Yes, I’m glad.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>TAD</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>    You look stressful.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>How do you think about love? </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>TAD</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>I don’t look at people as animal to pursue. I’m non-sexual. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>I know there are only male and female, </Text>
+      <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">i</Text>
+      <Text> didn’t see the third type, who is not a man, not yet a woman, who takes part from me, takes part from you, who communicates between us.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>TAD</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>We’re all fine here, you’re safe with me. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>     It’s a pleasure.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>TAD</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>I don’t understand, maybe it’s like ice cream.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>But I’ve never forgot to look at them as their soul.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>TAD</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>    You’re doing right.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MADALYN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Sexy people easily get hurt.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>TAD</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Don’t let them bother you. </Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>DAYS LATER, KATHERINE FINDS MADALYN DIED IN HER ROOM, WITH A TRICKLING HOLE IN HER HEAD, AND A GUN IN HER HAND. </Text>
+    </Paragraph>
+    <Paragraph Type="General">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="General">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="General">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="General">
+      <Text>                        </Text>
+    </Paragraph>
+    <Paragraph Type="General">
+      <Text>                                                        </Text>
+    </Paragraph>
+    <Paragraph Type="General">
+      <Text>                                                        (END)</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text> (CONT’D)</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text> (CONT’D)</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>     </Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text> (CONT’D)</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text> (CONT’D)</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Parenthetical">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Transition">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text> (CONT’D)</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text> (CONT’D)</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text> (CONT’D)</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>            </Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="1/8" Page="34" Title=""/>
+      <Text>      </Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="1/8" Page="34" Title=""/>
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="1/8" Page="34" Title=""/>
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="1/8" Page="34" Title=""/>
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="1/8" Page="34" Title=""/>
+      <Text>                         </Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="1/8" Page="34" Title=""/>
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="1/8" Page="34" Title=""/>
+      <Text>                  </Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="1/8" Page="34" Title=""/>
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="1/8" Page="34" Title=""/>
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="1/8" Page="34" Title=""/>
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="1/8" Page="34" Title=""/>
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="1/8" Page="35" Title=""/>
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="1/8" Page="35" Title=""/>
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="1/8" Page="35" Title=""/>
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="2/8" Page="35" Title=""/>
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text> (CONT’D)</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text> (CONT’D)</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="1/8" Page="35" Title=""/>
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="1/8" Page="35" Title=""/>
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="1/8" Page="35" Title=""/>
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="1/8" Page="35" Title=""/>
+      <Text>                           </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>                </Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>                 </Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>           </Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="1/8" Page="36" Title=""/>
+      <Text>      </Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="1/8" Page="36" Title=""/>
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="1/8" Page="36" Title=""/>
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="1/8" Page="36" Title=""/>
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="1/8" Page="36" Title=""/>
+      <Text>                         </Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="1/8" Page="36" Title=""/>
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="1/8" Page="36" Title=""/>
+      <Text>                  </Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="1/8" Page="36" Title=""/>
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="1/8" Page="36" Title=""/>
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="1/8" Page="36" Title=""/>
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="1/8" Page="36" Title=""/>
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="1/8" Page="36" Title=""/>
+      <Text></Text>
+    </Paragraph>
+  </Content>
+
+  <HeaderAndFooter FooterFirstPage="Yes" FooterVisible="No" HeaderFirstPage="No" HeaderVisible="Yes" StartingPage="1">
+    <Header>
+      <Paragraph Alignment="Left" FirstIndent="0.00" Leading="Regular" LeftIndent="1.25" RightIndent="-1.00" SpaceBefore="0" Spacing="1" StartsNewPage="No">
+        <Text AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">	</Text>
+        <DynamicLabel Type="Last Revised"/>
+        <Text AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">	</Text>
+        <DynamicLabel Type="Page #"/>
+        <Text AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">.</Text>
+        <Tabstops>
+          <Tabstop Position="4.50" Type="Center"/>
+          <Tabstop Position="7.25" Type="Right"/>
+        </Tabstops>
+      </Paragraph>
+    </Header>
+    <Footer>
+      <Paragraph Alignment="Right" FirstIndent="0.00" Leading="Regular" LeftIndent="1.25" RightIndent="-1.25" SpaceBefore="0" Spacing="1" StartsNewPage="No">
+        <Text AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style=""> </Text>
+      </Paragraph>
+    </Footer>
+  </HeaderAndFooter>
+
+  <SpellCheckIgnoreLists>
+    <IgnoredRanges/>
+    <IgnoredWords/>
+  </SpellCheckIgnoreLists>
+
+  <PageLayout BackgroundColor="#FFFFFFFFFFFF" BottomMargin="72" BreakDialogueAndActionAtSentences="Yes" DocumentLeading="Normal" FooterMargin="36" ForegroundColor="#000000000000" HeaderMargin="36" InvisiblesColor="#808080808080" TopMargin="72" UsesSmartQuotes="Yes">
+    <AutoCastList AddParentheses="Yes" AutomaticallyGenerate="No" CastListElement="Cast List"/>
+  </PageLayout>
+
+  <WindowState Height="692" Left="124" Mode="Normal" Top="100" Width="634"/>
+
+  <TextState Scaling="125" Selection="20371,20371" ShowInvisibles="No"/>
+
+  <ElementSettings Type="General">
+    <FontSpec AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style=""/>
+    <ParagraphSpec Alignment="Left" FirstIndent="0.00" Leading="Regular" LeftIndent="1.50" RightIndent="7.50" SpaceBefore="0" Spacing="1" StartsNewPage="No"/>
+    <Behavior PaginateAs="General" ReturnKey="General" Shortcut="0"/>
+  </ElementSettings>
+
+  <ElementSettings Type="Scene Heading">
+    <FontSpec AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="AllCaps"/>
+    <ParagraphSpec Alignment="Left" FirstIndent="0.00" Leading="Regular" LeftIndent="1.50" RightIndent="7.50" SpaceBefore="24" Spacing="1" StartsNewPage="No"/>
+    <Behavior PaginateAs="Scene Heading" ReturnKey="Action" Shortcut="1"/>
+  </ElementSettings>
+
+  <ElementSettings Type="Action">
+    <FontSpec AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style=""/>
+    <ParagraphSpec Alignment="Left" FirstIndent="0.00" Leading="Regular" LeftIndent="1.50" RightIndent="7.50" SpaceBefore="12" Spacing="1" StartsNewPage="No"/>
+    <Behavior PaginateAs="Action" ReturnKey="Action" Shortcut="2"/>
+  </ElementSettings>
+
+  <ElementSettings Type="Character">
+    <FontSpec AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="AllCaps"/>
+    <ParagraphSpec Alignment="Left" FirstIndent="0.00" Leading="Regular" LeftIndent="3.50" RightIndent="7.25" SpaceBefore="12" Spacing="1" StartsNewPage="No"/>
+    <Behavior PaginateAs="Character" ReturnKey="Dialogue" Shortcut="3"/>
+  </ElementSettings>
+
+  <ElementSettings Type="Parenthetical">
+    <FontSpec AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style=""/>
+    <ParagraphSpec Alignment="Left" FirstIndent="-0.10" Leading="Regular" LeftIndent="3.00" RightIndent="5.50" SpaceBefore="0" Spacing="1" StartsNewPage="No"/>
+    <Behavior PaginateAs="Parenthetical" ReturnKey="Dialogue" Shortcut="4"/>
+  </ElementSettings>
+
+  <ElementSettings Type="Dialogue">
+    <FontSpec AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style=""/>
+    <ParagraphSpec Alignment="Left" FirstIndent="0.00" Leading="Regular" LeftIndent="2.50" RightIndent="6.00" SpaceBefore="0" Spacing="1" StartsNewPage="No"/>
+    <Behavior PaginateAs="Dialogue" ReturnKey="Action" Shortcut="5"/>
+  </ElementSettings>
+
+  <ElementSettings Type="Transition">
+    <FontSpec AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="AllCaps"/>
+    <ParagraphSpec Alignment="Right" FirstIndent="0.00" Leading="Regular" LeftIndent="5.50" RightIndent="7.10" SpaceBefore="12" Spacing="1" StartsNewPage="No"/>
+    <Behavior PaginateAs="Transition" ReturnKey="Scene Heading" Shortcut="6"/>
+  </ElementSettings>
+
+  <ElementSettings Type="Shot">
+    <FontSpec AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="AllCaps"/>
+    <ParagraphSpec Alignment="Left" FirstIndent="0.00" Leading="Regular" LeftIndent="1.50" RightIndent="7.50" SpaceBefore="24" Spacing="1" StartsNewPage="No"/>
+    <Behavior PaginateAs="Scene Heading" ReturnKey="Action" Shortcut="7"/>
+  </ElementSettings>
+
+  <ElementSettings Type="Cast List">
+    <FontSpec AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="AllCaps"/>
+    <ParagraphSpec Alignment="Left" FirstIndent="0.00" Leading="Regular" LeftIndent="1.50" RightIndent="7.50" SpaceBefore="0" Spacing="1" StartsNewPage="No"/>
+    <Behavior PaginateAs="Action" ReturnKey="Action" Shortcut="8"/>
+  </ElementSettings>
+
+  <TitlePage>
+    <HeaderAndFooter FooterFirstPage="Yes" FooterVisible="No" HeaderFirstPage="No" HeaderVisible="Yes" StartingPage="1">
+      <Header>
+        <Paragraph Alignment="Right" FirstIndent="0.00" Leading="Regular" LeftIndent="1.25" RightIndent="-1.25" SpaceBefore="0" Spacing="1" StartsNewPage="No">
+          <DynamicLabel Type="Page #"/>
+          <Text AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">.</Text>
+        </Paragraph>
+      </Header>
+      <Footer>
+        <Paragraph Alignment="Right" FirstIndent="0.00" Leading="Regular" LeftIndent="1.25" RightIndent="-1.25" SpaceBefore="0" Spacing="1" StartsNewPage="No">
+          <Text AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style=""></Text>
+        </Paragraph>
+      </Footer>
+    </HeaderAndFooter>
+    <Content>
+      <Paragraph Alignment="Left" FirstIndent="0.00" Leading="Regular" LeftIndent="1.00" RightIndent="7.50" SpaceBefore="0" Spacing="1" StartsNewPage="No">
+        <Text AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style=""></Text>
+      </Paragraph>
+      <Paragraph Alignment="Left" FirstIndent="0.00" Leading="Regular" LeftIndent="1.00" RightIndent="7.50" SpaceBefore="0" Spacing="1" StartsNewPage="No">
+        <Text AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style=""></Text>
+      </Paragraph>
+      <Paragraph Alignment="Left" FirstIndent="0.00" Leading="Regular" LeftIndent="1.00" RightIndent="7.50" SpaceBefore="0" Spacing="1" StartsNewPage="No">
+        <Text AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style=""></Text>
+      </Paragraph>
+      <Paragraph Alignment="Left" FirstIndent="0.00" Leading="Regular" LeftIndent="1.00" RightIndent="7.50" SpaceBefore="0" Spacing="1" StartsNewPage="No">
+        <Text AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style=""></Text>
+      </Paragraph>
+      <Paragraph Alignment="Left" FirstIndent="0.00" Leading="Regular" LeftIndent="1.00" RightIndent="7.50" SpaceBefore="0" Spacing="1" StartsNewPage="No">
+        <Text AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style=""></Text>
+      </Paragraph>
+      <Paragraph Alignment="Left" FirstIndent="0.00" Leading="Regular" LeftIndent="1.00" RightIndent="7.50" SpaceBefore="0" Spacing="1" StartsNewPage="No">
+        <Text AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style=""></Text>
+      </Paragraph>
+      <Paragraph Alignment="Left" FirstIndent="0.00" Leading="Regular" LeftIndent="1.00" RightIndent="7.50" SpaceBefore="0" Spacing="1" StartsNewPage="No">
+        <Text AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style=""></Text>
+      </Paragraph>
+      <Paragraph Alignment="Left" FirstIndent="0.00" Leading="Regular" LeftIndent="1.00" RightIndent="7.50" SpaceBefore="0" Spacing="1" StartsNewPage="No">
+        <Text AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style=""></Text>
+      </Paragraph>
+      <Paragraph Alignment="Left" FirstIndent="0.00" Leading="Regular" LeftIndent="1.00" RightIndent="7.50" SpaceBefore="0" Spacing="1" StartsNewPage="No">
+        <Text AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style=""></Text>
+      </Paragraph>
+      <Paragraph Alignment="Left" FirstIndent="0.00" Leading="Regular" LeftIndent="1.00" RightIndent="7.50" SpaceBefore="0" Spacing="1" StartsNewPage="No">
+        <Text AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style=""></Text>
+      </Paragraph>
+      <Paragraph Alignment="Left" FirstIndent="0.00" Leading="Regular" LeftIndent="1.00" RightIndent="7.50" SpaceBefore="0" Spacing="1" StartsNewPage="No">
+        <Text AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style=""></Text>
+      </Paragraph>
+      <Paragraph Alignment="Left" FirstIndent="0.00" Leading="Regular" LeftIndent="1.00" RightIndent="7.50" SpaceBefore="0" Spacing="1" StartsNewPage="No">
+        <Text AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style=""></Text>
+      </Paragraph>
+      <Paragraph Alignment="Left" FirstIndent="0.00" Leading="Regular" LeftIndent="1.00" RightIndent="7.50" SpaceBefore="0" Spacing="1" StartsNewPage="No">
+        <Text AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style=""></Text>
+      </Paragraph>
+      <Paragraph Alignment="Left" FirstIndent="0.00" Leading="Regular" LeftIndent="1.00" RightIndent="7.50" SpaceBefore="0" Spacing="1" StartsNewPage="No">
+        <Text AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style=""></Text>
+      </Paragraph>
+      <Paragraph Alignment="Left" FirstIndent="0.00" Leading="Regular" LeftIndent="1.00" RightIndent="7.50" SpaceBefore="0" Spacing="1" StartsNewPage="No">
+        <Text AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style=""></Text>
+      </Paragraph>
+      <Paragraph Alignment="Left" FirstIndent="0.00" Leading="Regular" LeftIndent="1.00" RightIndent="7.50" SpaceBefore="0" Spacing="1" StartsNewPage="No">
+        <Text AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style=""></Text>
+      </Paragraph>
+      <Paragraph Alignment="Left" FirstIndent="0.00" Leading="Regular" LeftIndent="1.00" RightIndent="7.50" SpaceBefore="0" Spacing="1" StartsNewPage="No">
+        <Text AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style=""></Text>
+      </Paragraph>
+      <Paragraph Alignment="Center" FirstIndent="0.00" Leading="Regular" LeftIndent="1.00" RightIndent="7.50" SpaceBefore="0" Spacing="1" StartsNewPage="No">
+        <Text AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="Underline+AllCaps">A silly girl</Text>
+      </Paragraph>
+      <Paragraph Alignment="Center" FirstIndent="0.00" Leading="Regular" LeftIndent="1.00" RightIndent="7.50" SpaceBefore="0" Spacing="1" StartsNewPage="No">
+        <Text AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style=""></Text>
+      </Paragraph>
+      <Paragraph Alignment="Center" FirstIndent="0.00" Leading="Regular" LeftIndent="1.00" RightIndent="7.50" SpaceBefore="0" Spacing="1" StartsNewPage="No">
+        <Text AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style=""></Text>
+      </Paragraph>
+      <Paragraph Alignment="Center" FirstIndent="0.00" Leading="Regular" LeftIndent="1.00" RightIndent="7.50" SpaceBefore="0" Spacing="1" StartsNewPage="No">
+        <Text AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style=""></Text>
+      </Paragraph>
+      <Paragraph Alignment="Center" FirstIndent="0.00" Leading="Regular" LeftIndent="1.00" RightIndent="7.50" SpaceBefore="0" Spacing="1" StartsNewPage="No">
+        <Text AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">Written by</Text>
+      </Paragraph>
+      <Paragraph Alignment="Center" FirstIndent="0.00" Leading="Regular" LeftIndent="1.00" RightIndent="7.50" SpaceBefore="0" Spacing="1" StartsNewPage="No">
+        <Text AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style=""></Text>
+      </Paragraph>
+      <Paragraph Alignment="Center" FirstIndent="0.00" Leading="Regular" LeftIndent="1.00" RightIndent="7.50" SpaceBefore="0" Spacing="1" StartsNewPage="No">
+        <Text AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style=""></Text>
+      </Paragraph>
+      <Paragraph Alignment="Center" FirstIndent="0.00" Leading="Regular" LeftIndent="1.00" RightIndent="7.50" SpaceBefore="0" Spacing="1" StartsNewPage="No">
+        <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">Keiko</Text>
+        <Text AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style=""> </Text>
+        <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">Hirayama</Text>
+      </Paragraph>
+      <Paragraph Alignment="Center" FirstIndent="0.00" Leading="Regular" LeftIndent="1.00" RightIndent="7.50" SpaceBefore="0" Spacing="1" StartsNewPage="No">
+        <Text AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style=""></Text>
+      </Paragraph>
+      <Paragraph Alignment="Center" FirstIndent="0.00" Leading="Regular" LeftIndent="1.00" RightIndent="7.50" SpaceBefore="0" Spacing="1" StartsNewPage="No">
+        <Text AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style=""></Text>
+      </Paragraph>
+      <Paragraph Alignment="Center" FirstIndent="0.00" Leading="Regular" LeftIndent="1.00" RightIndent="7.50" SpaceBefore="0" Spacing="1" StartsNewPage="No">
+        <Text AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style=""></Text>
+      </Paragraph>
+      <Paragraph Alignment="Center" FirstIndent="0.00" Leading="Regular" LeftIndent="1.00" RightIndent="7.50" SpaceBefore="0" Spacing="1" StartsNewPage="No">
+        <Text AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style=""></Text>
+      </Paragraph>
+      <Paragraph Alignment="Center" FirstIndent="0.00" Leading="Regular" LeftIndent="1.00" RightIndent="7.50" SpaceBefore="0" Spacing="1" StartsNewPage="No">
+        <Text AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">Based on true story</Text>
+      </Paragraph>
+      <Paragraph Alignment="Center" FirstIndent="0.00" Leading="Regular" LeftIndent="1.00" RightIndent="7.50" SpaceBefore="0" Spacing="1" StartsNewPage="No">
+        <Text AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style=""></Text>
+      </Paragraph>
+      <Paragraph Alignment="Center" FirstIndent="0.00" Leading="Regular" LeftIndent="1.00" RightIndent="7.50" SpaceBefore="0" Spacing="1" StartsNewPage="No">
+        <Text AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style=""></Text>
+      </Paragraph>
+      <Paragraph Alignment="Center" FirstIndent="0.00" Leading="Regular" LeftIndent="1.00" RightIndent="7.50" SpaceBefore="0" Spacing="1" StartsNewPage="No">
+        <Text AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style=""></Text>
+      </Paragraph>
+      <Paragraph Alignment="Center" FirstIndent="0.00" Leading="Regular" LeftIndent="1.00" RightIndent="7.50" SpaceBefore="0" Spacing="1" StartsNewPage="No">
+        <Text AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style=""></Text>
+      </Paragraph>
+      <Paragraph Alignment="Center" FirstIndent="0.00" Leading="Regular" LeftIndent="1.00" RightIndent="7.50" SpaceBefore="0" Spacing="1" StartsNewPage="No">
+        <Text AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style=""></Text>
+      </Paragraph>
+      <Paragraph Alignment="Center" FirstIndent="0.00" Leading="Regular" LeftIndent="1.00" RightIndent="7.50" SpaceBefore="0" Spacing="1" StartsNewPage="No">
+        <Text AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style=""></Text>
+      </Paragraph>
+      <Paragraph Alignment="Center" FirstIndent="0.00" Leading="Regular" LeftIndent="1.00" RightIndent="7.50" SpaceBefore="0" Spacing="1" StartsNewPage="No">
+        <Text AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style=""></Text>
+      </Paragraph>
+      <Paragraph Alignment="Center" FirstIndent="0.00" Leading="Regular" LeftIndent="1.00" RightIndent="7.50" SpaceBefore="0" Spacing="1" StartsNewPage="No">
+        <Text AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style=""></Text>
+      </Paragraph>
+      <Paragraph Alignment="Center" FirstIndent="0.00" Leading="Regular" LeftIndent="1.00" RightIndent="7.50" SpaceBefore="0" Spacing="1" StartsNewPage="No">
+        <Text AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style=""></Text>
+      </Paragraph>
+      <Paragraph Alignment="Center" FirstIndent="0.00" Leading="Regular" LeftIndent="1.00" RightIndent="7.50" SpaceBefore="0" Spacing="1" StartsNewPage="No">
+        <Text AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style=""></Text>
+      </Paragraph>
+      <Paragraph Alignment="Center" FirstIndent="0.00" Leading="Regular" LeftIndent="1.00" RightIndent="7.50" SpaceBefore="0" Spacing="1" StartsNewPage="No">
+        <Text AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style=""></Text>
+      </Paragraph>
+      <Paragraph Alignment="Center" FirstIndent="0.00" Leading="Regular" LeftIndent="1.00" RightIndent="7.50" SpaceBefore="0" Spacing="1" StartsNewPage="No">
+        <Text AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style=""></Text>
+      </Paragraph>
+      <Paragraph Alignment="Left" FirstIndent="0.00" Leading="Regular" LeftIndent="1.00" RightIndent="7.50" SpaceBefore="0" Spacing="1" StartsNewPage="No">
+        <Text AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style=""></Text>
+      </Paragraph>
+      <Paragraph Alignment="Left" FirstIndent="0.00" Leading="Regular" LeftIndent="1.00" RightIndent="7.50" SpaceBefore="0" Spacing="1" StartsNewPage="No">
+        <Text AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style=""></Text>
+      </Paragraph>
+      <Paragraph Alignment="Full" FirstIndent="0.00" Leading="Regular" LeftIndent="1.00" RightIndent="7.50" SpaceBefore="0" Spacing="1" StartsNewPage="No">
+        <Text AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style=""></Text>
+      </Paragraph>
+      <Paragraph Alignment="Full" FirstIndent="0.00" Leading="Regular" LeftIndent="1.00" RightIndent="7.50" SpaceBefore="0" Spacing="1" StartsNewPage="No">
+        <Text AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style=""></Text>
+      </Paragraph>
+      <Paragraph Alignment="Full" FirstIndent="0.00" Leading="Regular" LeftIndent="1.00" RightIndent="7.50" SpaceBefore="0" Spacing="1" StartsNewPage="No">
+        <Text AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style=""></Text>
+      </Paragraph>
+      <Paragraph Alignment="Full" FirstIndent="0.00" Leading="Regular" LeftIndent="1.00" RightIndent="7.50" SpaceBefore="0" Spacing="1" StartsNewPage="No">
+        <Text AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style=""></Text>
+      </Paragraph>
+      <Paragraph Alignment="Full" FirstIndent="0.00" Leading="Regular" LeftIndent="1.00" RightIndent="7.50" SpaceBefore="0" Spacing="1" StartsNewPage="No">
+        <Text AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style=""></Text>
+      </Paragraph>
+      <Paragraph Alignment="Full" FirstIndent="0.00" Leading="Regular" LeftIndent="1.00" RightIndent="7.50" SpaceBefore="0" Spacing="1" StartsNewPage="No">
+        <Text AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style=""></Text>
+      </Paragraph>
+      <Paragraph Alignment="Full" FirstIndent="0.00" Leading="Regular" LeftIndent="1.00" RightIndent="7.50" SpaceBefore="0" Spacing="1" StartsNewPage="No">
+        <Text AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style=""></Text>
+      </Paragraph>
+      <Paragraph Alignment="Full" FirstIndent="0.00" Leading="Regular" LeftIndent="1.00" RightIndent="7.50" SpaceBefore="0" Spacing="1" StartsNewPage="No">
+        <Text AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style=""></Text>
+      </Paragraph>
+      <Paragraph Alignment="Full" FirstIndent="0.00" Leading="Regular" LeftIndent="1.00" RightIndent="7.50" SpaceBefore="0" Spacing="1" StartsNewPage="No">
+        <Text AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">Address : 1812 S. Corinth </Text>
+        <Text AdornmentStyle="-1" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">ave</Text>
+        <Text AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">, #6, Los Angeles, CA 90025</Text>
+      </Paragraph>
+      <Paragraph Alignment="Full" FirstIndent="0.00" Leading="Regular" LeftIndent="1.00" RightIndent="7.50" SpaceBefore="0" Spacing="1" StartsNewPage="No">
+        <Text AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style="">Phone Number: (424)901-9223</Text>
+      </Paragraph>
+    </Content>
+    <TextState Scaling="100" Selection="191,191" ShowInvisibles="No"/>
+  </TitlePage>
+
+  <ScriptNoteDefinitions Active="1">
+    <ScriptNoteDefinition Color="#000000000000" ID="1" Marker="!" Name="Important"/>
+    <ScriptNoteDefinition Color="#000000000000" ID="2" Marker="?" Name="Information"/>
+    <ScriptNoteDefinition Color="#000000000000" ID="3" Marker="*" Name="Suggestion"/>
+  </ScriptNoteDefinitions>
+
+  <SmartType>
+    <Characters>
+      <Character>Sammy’s father</Character>
+      <Character>Madalyn</Character>
+      <Character>Male</Character>
+      <Character>LEOPORD</Character>
+      <Character>LEOPORDO</Character>
+      <Character>M</Character>
+      <Character>Susie</Character>
+      <Character>SU</Character>
+      <Character>Katherine</Character>
+      <Character>***</Character>
+      <Character>Emily</Character>
+      <Character>Instractor</Character>
+      <Character>Benjamin</Character>
+      <Character>Sebastine</Character>
+    </Characters>
+    <Extensions>
+      <Extension>(V.O.)</Extension>
+      <Extension>(O.S.)</Extension>
+      <Extension>(O.C.)</Extension>
+      <Extension>(CONT'D)</Extension>
+      <Extension>(SUBTITLE)</Extension>
+    </Extensions>
+    <SceneIntros Separator=". ">
+      <SceneIntro>INT</SceneIntro>
+      <SceneIntro>EXT</SceneIntro>
+      <SceneIntro>I/E</SceneIntro>
+      <SceneIntro>IN THE WEEKEND, MADALYN GOES TO HER FRIEND SAMMY'S HOME</SceneIntro>
+      <SceneIntro>THIS IS THE FIRST IMPRESSION MADALYN GOT WHEN SHE MOVED TO U TOWN</SceneIntro>
+    </SceneIntros>
+    <Locations>
+      <Location>DRIVER HEY, BABY.</Location>
+      <Location>DRIVER                               HEY, BABY.</Location>
+      <Location>DRIVER                                         HEY, BABY.</Location>
+      <Location>LIKE SUMO IN JAPAN, LIKE A DUCK.]</Location>
+      <Location>IT IS AN ALL GIRLS HOME, NO BOYS. SAMMY'S MOTHER IS A VERY LOVELY LADY. SAMMY'S FATHER IS A FORMER KARATE ATHELETE. MADALYN SAW MANY OF HIS YOUTHFUL PHOTOS WHICH ARE ATTACHED ON THE WALL. SAMMY AND MADALYN ARE IN THE DINING TABLE, EATING. MADALYN HOLDS REMOTE CONTROL, SWITCHING CHANNELS, STOPS AT AMERTICAN FOOTBALL LEAGUE.</Location>
+      <Location>DINING ROOM. EVENING.</Location>
+      <Location>SAMMY'S FATHER GOES TO KITCHEN AND COMES BACK.</Location>
+      <Location>SAMMY'S ROOM. DAY.</Location>
+      <Location>SAMMY'S BEDROOM. DAY.</Location>
+      <Location>RESTAURANT. EVENINMG.</Location>
+      <Location>SUSIE'S HOUSE. LATE AFTERNOON.</Location>
+      <Location>MADALYN'S APARTMENT.</Location>
+      <Location>COFFEE SHOP. DAY.</Location>
+      <Location>MADALYN AND KATHERINE'S APARTMENT.</Location>
+      <Location>SHE GOES TO ATTEND CLASS IN ART INSTITUTE, LIFTED TO 7TH FLOOR WITH ELEVATOR.</Location>
+      <Location>INT : CLASSROOM.</Location>
+      <Location>EMILY COMES INTO AND SIT NEXT TO MADALYN, WITH JEANS, HIGH HEEL BOOTS, COFFEE BROWN SWEATER, SASSY LONG BLACK HAIR.</Location>
+      <Location>[EMILY PICKS UP A BOOK FROM BAG AND OPENS IT.]</Location>
+      <Location>CLASS BECOMES A LITTLE NOISY, GUYS IN THE OTHER TABLE ARE RESTLESS.</Location>
+      <Location>EVERYONE LAUGHS.</Location>
+      <Location>AFTER THE CLASS FINISHES,</Location>
+    </Locations>
+    <TimesOfDay Separator=" - ">
+      <TimeOfDay>DAY</TimeOfDay>
+      <TimeOfDay>NIGHT</TimeOfDay>
+      <TimeOfDay>AFTERNOON</TimeOfDay>
+      <TimeOfDay>MORNING</TimeOfDay>
+      <TimeOfDay>EVENING</TimeOfDay>
+      <TimeOfDay>LATER</TimeOfDay>
+      <TimeOfDay>MOMENTS LATER</TimeOfDay>
+      <TimeOfDay>CONTINUOUS</TimeOfDay>
+      <TimeOfDay>THE NEXT DAY</TimeOfDay>
+    </TimesOfDay>
+    <Transitions>
+      <Transition>CUT TO:</Transition>
+      <Transition>FADE IN:</Transition>
+      <Transition>FADE OUT.</Transition>
+      <Transition>FADE TO:</Transition>
+      <Transition>DISSOLVE TO:</Transition>
+      <Transition>BACK TO:</Transition>
+      <Transition>MATCH CUT TO:</Transition>
+      <Transition>JUMP CUT TO:</Transition>
+      <Transition>FADE TO BLACK.</Transition>
+    </Transitions>
+  </SmartType>
+
+  <MoresAndContinueds>
+    <FontSpec AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style=""/>
+    <DialogueBreaks AutomaticCharacterContinueds="Yes" BottomOfPage="Yes" DialogueBottom="(MORE)" DialogueTop="(CONT'D)" TopOfNext="Yes"/>
+    <SceneBreaks ContinuedNumber="No" SceneBottom="(CONTINUED)" SceneBottomOfPage="No" SceneTop="CONTINUED:" SceneTopOfNext="No"/>
+  </MoresAndContinueds>
+
+  <LockedPages/>
+
+  <Revisions ActiveSet="1" Location="7.75" RevisionMode="No" RevisionsShown="Active" ShowAllMarks="No" ShowAllSets="No">
+    <Revision Color="#00000000FFFF" FullRevision="No" ID="1" Mark="*" Name="Blue (mm/dd/yyyy)" Style=""/>
+    <Revision Color="#00000000FFFF" FullRevision="No" ID="2" Mark="*" Name="Pink (mm/dd/yyyy)" Style=""/>
+    <Revision Color="#00000000FFFF" FullRevision="No" ID="3" Mark="*" Name="Yellow (mm/dd/yyyy)" Style=""/>
+    <Revision Color="#00000000FFFF" FullRevision="No" ID="4" Mark="*" Name="Green (mm/dd/yyyy)" Style=""/>
+    <Revision Color="#00000000FFFF" FullRevision="No" ID="5" Mark="*" Name="Goldenrod (mm/dd/yyyy)" Style=""/>
+    <Revision Color="#00000000FFFF" FullRevision="No" ID="6" Mark="*" Name="Buff (mm/dd/yyyy)" Style=""/>
+    <Revision Color="#00000000FFFF" FullRevision="No" ID="7" Mark="*" Name="Salmon (mm/dd/yyyy)" Style=""/>
+    <Revision Color="#00000000FFFF" FullRevision="No" ID="8" Mark="*" Name="Cherry (mm/dd/yyyy)" Style=""/>
+    <Revision Color="#00000000FFFF" FullRevision="No" ID="9" Mark="*" Name="Tan (mm/dd/yyyy)" Style=""/>
+    <Revision Color="#00000000FFFF" FullRevision="No" ID="10" Mark="*" Name="2nd White (mm/dd/yyyy)" Style=""/>
+    <Revision Color="#00000000FFFF" FullRevision="No" ID="11" Mark="*" Name="2nd Blue (mm/dd/yyyy)" Style=""/>
+    <Revision Color="#00000000FFFF" FullRevision="No" ID="12" Mark="*" Name="2nd Pink (mm/dd/yyyy)" Style=""/>
+    <Revision Color="#00000000FFFF" FullRevision="No" ID="13" Mark="*" Name="2nd Yellow (mm/dd/yyyy)" Style=""/>
+    <Revision Color="#00000000FFFF" FullRevision="No" ID="14" Mark="*" Name="2nd Green (mm/dd/yyyy)" Style=""/>
+    <Revision Color="#00000000FFFF" FullRevision="No" ID="15" Mark="*" Name="2nd Goldenrod (mm/dd/yyyy)" Style=""/>
+    <Revision Color="#00000000FFFF" FullRevision="No" ID="16" Mark="*" Name="2nd Buff (mm/dd/yyyy)" Style=""/>
+    <Revision Color="#00000000FFFF" FullRevision="No" ID="17" Mark="*" Name="2nd Salmon (mm/dd/yyyy)" Style=""/>
+    <Revision Color="#00000000FFFF" FullRevision="No" ID="18" Mark="*" Name="2nd Cherry (mm/dd/yyyy)" Style=""/>
+    <Revision Color="#00000000FFFF" FullRevision="No" ID="19" Mark="*" Name="2nd Tan (mm/dd/yyyy)" Style=""/>
+  </Revisions>
+
+  <SplitState ActivePanel="1" SplitMode="None" SplitterPosition="0">
+    <ScriptPanel DisplayMode="Page">
+      <FontSpec AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Verdana" RevisionID="0" Size="9" Style=""/>
+    </ScriptPanel>
+  </SplitState>
+
+  <Macros>
+    <Macro Element="Scene Heading" Name="INT" Shortcut="Ctrl+Alt+1" Text="INT. " Transition="None">
+      <Alias Confirm="No" MatchCase="No" SmartReplace="Yes" Text="" WordOnly="No">
+        <ActivateIn Element="General"/>
+        <ActivateIn Element="Scene Heading"/>
+        <ActivateIn Element="Action"/>
+        <ActivateIn Element="Character"/>
+        <ActivateIn Element="Parenthetical"/>
+        <ActivateIn Element="Dialogue"/>
+        <ActivateIn Element="Transition"/>
+        <ActivateIn Element="Shot"/>
+      </Alias>
+    </Macro>
+    <Macro Element="Scene Heading" Name="EXT" Shortcut="Ctrl+Alt+2" Text="EXT. " Transition="None">
+      <Alias Confirm="No" MatchCase="No" SmartReplace="Yes" Text="" WordOnly="No">
+        <ActivateIn Element="General"/>
+        <ActivateIn Element="Scene Heading"/>
+        <ActivateIn Element="Action"/>
+        <ActivateIn Element="Character"/>
+        <ActivateIn Element="Parenthetical"/>
+        <ActivateIn Element="Dialogue"/>
+        <ActivateIn Element="Transition"/>
+        <ActivateIn Element="Shot"/>
+      </Alias>
+    </Macro>
+    <Macro Element="Scene Heading" Name="I/E" Shortcut="Ctrl+Alt+3" Text="I/E " Transition="None">
+      <Alias Confirm="No" MatchCase="No" SmartReplace="Yes" Text="" WordOnly="No">
+        <ActivateIn Element="General"/>
+        <ActivateIn Element="Scene Heading"/>
+        <ActivateIn Element="Action"/>
+        <ActivateIn Element="Character"/>
+        <ActivateIn Element="Parenthetical"/>
+        <ActivateIn Element="Dialogue"/>
+        <ActivateIn Element="Transition"/>
+        <ActivateIn Element="Shot"/>
+      </Alias>
+    </Macro>
+    <Macro Element="Scene Heading" Name="DAY" Shortcut="Ctrl+Alt+4" Text=" - DAY" Transition="Action">
+      <Alias Confirm="No" MatchCase="No" SmartReplace="Yes" Text="" WordOnly="No">
+        <ActivateIn Element="General"/>
+        <ActivateIn Element="Scene Heading"/>
+        <ActivateIn Element="Action"/>
+        <ActivateIn Element="Character"/>
+        <ActivateIn Element="Parenthetical"/>
+        <ActivateIn Element="Dialogue"/>
+        <ActivateIn Element="Transition"/>
+        <ActivateIn Element="Shot"/>
+      </Alias>
+    </Macro>
+    <Macro Element="Scene Heading" Name="NIGHT" Shortcut="Ctrl+Alt+5" Text=" - NIGHT" Transition="Action">
+      <Alias Confirm="No" MatchCase="No" SmartReplace="Yes" Text="" WordOnly="No">
+        <ActivateIn Element="General"/>
+        <ActivateIn Element="Scene Heading"/>
+        <ActivateIn Element="Action"/>
+        <ActivateIn Element="Character"/>
+        <ActivateIn Element="Parenthetical"/>
+        <ActivateIn Element="Dialogue"/>
+        <ActivateIn Element="Transition"/>
+        <ActivateIn Element="Shot"/>
+      </Alias>
+    </Macro>
+    <Macro Element="Scene Heading" Name="SUNRISE" Shortcut="Ctrl+Alt+6" Text=" - SUNRISE" Transition="Action">
+      <Alias Confirm="No" MatchCase="No" SmartReplace="Yes" Text="" WordOnly="No">
+        <ActivateIn Element="General"/>
+        <ActivateIn Element="Scene Heading"/>
+        <ActivateIn Element="Action"/>
+        <ActivateIn Element="Character"/>
+        <ActivateIn Element="Parenthetical"/>
+        <ActivateIn Element="Dialogue"/>
+        <ActivateIn Element="Transition"/>
+        <ActivateIn Element="Shot"/>
+      </Alias>
+    </Macro>
+    <Macro Element="Scene Heading" Name="MAGIC" Shortcut="Ctrl+Alt+7" Text=" - MAGIC" Transition="Action">
+      <Alias Confirm="No" MatchCase="No" SmartReplace="Yes" Text="" WordOnly="No">
+        <ActivateIn Element="General"/>
+        <ActivateIn Element="Scene Heading"/>
+        <ActivateIn Element="Action"/>
+        <ActivateIn Element="Character"/>
+        <ActivateIn Element="Parenthetical"/>
+        <ActivateIn Element="Dialogue"/>
+        <ActivateIn Element="Transition"/>
+        <ActivateIn Element="Shot"/>
+      </Alias>
+    </Macro>
+    <Macro Element="Parenthetical" Name="CONT" Shortcut="Ctrl+Alt+8" Text="continuing" Transition="Dialogue">
+      <Alias Confirm="No" MatchCase="No" SmartReplace="Yes" Text="" WordOnly="No">
+        <ActivateIn Element="General"/>
+        <ActivateIn Element="Scene Heading"/>
+        <ActivateIn Element="Action"/>
+        <ActivateIn Element="Character"/>
+        <ActivateIn Element="Parenthetical"/>
+        <ActivateIn Element="Dialogue"/>
+        <ActivateIn Element="Transition"/>
+        <ActivateIn Element="Shot"/>
+      </Alias>
+    </Macro>
+    <Macro Element="Parenthetical" Name="INTER" Shortcut="Ctrl+Alt+9" Text="interrupting" Transition="Dialogue">
+      <Alias Confirm="No" MatchCase="No" SmartReplace="Yes" Text="" WordOnly="No">
+        <ActivateIn Element="General"/>
+        <ActivateIn Element="Scene Heading"/>
+        <ActivateIn Element="Action"/>
+        <ActivateIn Element="Character"/>
+        <ActivateIn Element="Parenthetical"/>
+        <ActivateIn Element="Dialogue"/>
+        <ActivateIn Element="Transition"/>
+        <ActivateIn Element="Shot"/>
+      </Alias>
+    </Macro>
+    <Macro Element="None" Name="" Shortcut="Ctrl+Alt+0" Text="" Transition="None">
+      <Alias Confirm="No" MatchCase="No" SmartReplace="Yes" Text="" WordOnly="No">
+        <ActivateIn Element="General"/>
+        <ActivateIn Element="Scene Heading"/>
+        <ActivateIn Element="Action"/>
+        <ActivateIn Element="Character"/>
+        <ActivateIn Element="Parenthetical"/>
+        <ActivateIn Element="Dialogue"/>
+        <ActivateIn Element="Transition"/>
+        <ActivateIn Element="Shot"/>
+      </Alias>
+    </Macro>
+    <Macro Element="Transition" Name="CUTTO" Shortcut="Ctrl+Shift+Alt+1" Text="CUT TO:" Transition="Scene Heading">
+      <Alias Confirm="No" MatchCase="No" SmartReplace="Yes" Text="" WordOnly="No">
+        <ActivateIn Element="General"/>
+        <ActivateIn Element="Scene Heading"/>
+        <ActivateIn Element="Action"/>
+        <ActivateIn Element="Character"/>
+        <ActivateIn Element="Parenthetical"/>
+        <ActivateIn Element="Dialogue"/>
+        <ActivateIn Element="Transition"/>
+        <ActivateIn Element="Shot"/>
+      </Alias>
+    </Macro>
+    <Macro Element="Action" Name="FADEIN" Shortcut="Ctrl+Shift+Alt+2" Text="FADE IN:" Transition="Scene Heading">
+      <Alias Confirm="No" MatchCase="No" SmartReplace="Yes" Text="" WordOnly="No">
+        <ActivateIn Element="General"/>
+        <ActivateIn Element="Scene Heading"/>
+        <ActivateIn Element="Action"/>
+        <ActivateIn Element="Character"/>
+        <ActivateIn Element="Parenthetical"/>
+        <ActivateIn Element="Dialogue"/>
+        <ActivateIn Element="Transition"/>
+        <ActivateIn Element="Shot"/>
+      </Alias>
+    </Macro>
+    <Macro Element="Transition" Name="FADEOUT" Shortcut="Ctrl+Shift+Alt+3" Text="FADE OUT." Transition="Scene Heading">
+      <Alias Confirm="No" MatchCase="No" SmartReplace="Yes" Text="" WordOnly="No">
+        <ActivateIn Element="General"/>
+        <ActivateIn Element="Scene Heading"/>
+        <ActivateIn Element="Action"/>
+        <ActivateIn Element="Character"/>
+        <ActivateIn Element="Parenthetical"/>
+        <ActivateIn Element="Dialogue"/>
+        <ActivateIn Element="Transition"/>
+        <ActivateIn Element="Shot"/>
+      </Alias>
+    </Macro>
+    <Macro Element="Transition" Name="FADETO" Shortcut="Ctrl+Shift+Alt+4" Text="FADE TO:" Transition="Scene Heading">
+      <Alias Confirm="No" MatchCase="No" SmartReplace="Yes" Text="" WordOnly="No">
+        <ActivateIn Element="General"/>
+        <ActivateIn Element="Scene Heading"/>
+        <ActivateIn Element="Action"/>
+        <ActivateIn Element="Character"/>
+        <ActivateIn Element="Parenthetical"/>
+        <ActivateIn Element="Dialogue"/>
+        <ActivateIn Element="Transition"/>
+        <ActivateIn Element="Shot"/>
+      </Alias>
+    </Macro>
+    <Macro Element="Transition" Name="DISSLV" Shortcut="Ctrl+Shift+Alt+5" Text="DISSOLVE TO:" Transition="Scene Heading">
+      <Alias Confirm="No" MatchCase="No" SmartReplace="Yes" Text="" WordOnly="No">
+        <ActivateIn Element="General"/>
+        <ActivateIn Element="Scene Heading"/>
+        <ActivateIn Element="Action"/>
+        <ActivateIn Element="Character"/>
+        <ActivateIn Element="Parenthetical"/>
+        <ActivateIn Element="Dialogue"/>
+        <ActivateIn Element="Transition"/>
+        <ActivateIn Element="Shot"/>
+      </Alias>
+    </Macro>
+    <Macro Element="Transition" Name="BACKTO" Shortcut="Ctrl+Shift+Alt+6" Text="BACK TO:" Transition="Scene Heading">
+      <Alias Confirm="No" MatchCase="No" SmartReplace="Yes" Text="" WordOnly="No">
+        <ActivateIn Element="General"/>
+        <ActivateIn Element="Scene Heading"/>
+        <ActivateIn Element="Action"/>
+        <ActivateIn Element="Character"/>
+        <ActivateIn Element="Parenthetical"/>
+        <ActivateIn Element="Dialogue"/>
+        <ActivateIn Element="Transition"/>
+        <ActivateIn Element="Shot"/>
+      </Alias>
+    </Macro>
+    <Macro Element="Transition" Name="MATCHCUT" Shortcut="Ctrl+Shift+Alt+7" Text="MATCH CUT TO:" Transition="Scene Heading">
+      <Alias Confirm="No" MatchCase="No" SmartReplace="Yes" Text="" WordOnly="No">
+        <ActivateIn Element="General"/>
+        <ActivateIn Element="Scene Heading"/>
+        <ActivateIn Element="Action"/>
+        <ActivateIn Element="Character"/>
+        <ActivateIn Element="Parenthetical"/>
+        <ActivateIn Element="Dialogue"/>
+        <ActivateIn Element="Transition"/>
+        <ActivateIn Element="Shot"/>
+      </Alias>
+    </Macro>
+    <Macro Element="Transition" Name="JUMPCUT" Shortcut="Ctrl+Shift+Alt+8" Text="JUMP CUT TO:" Transition="Scene Heading">
+      <Alias Confirm="No" MatchCase="No" SmartReplace="Yes" Text="" WordOnly="No">
+        <ActivateIn Element="General"/>
+        <ActivateIn Element="Scene Heading"/>
+        <ActivateIn Element="Action"/>
+        <ActivateIn Element="Character"/>
+        <ActivateIn Element="Parenthetical"/>
+        <ActivateIn Element="Dialogue"/>
+        <ActivateIn Element="Transition"/>
+        <ActivateIn Element="Shot"/>
+      </Alias>
+    </Macro>
+    <Macro Element="Transition" Name="FBLACK" Shortcut="Ctrl+Shift+Alt+9" Text="FADE TO BLACK." Transition="None">
+      <Alias Confirm="No" MatchCase="No" SmartReplace="Yes" Text="" WordOnly="No">
+        <ActivateIn Element="General"/>
+        <ActivateIn Element="Scene Heading"/>
+        <ActivateIn Element="Action"/>
+        <ActivateIn Element="Character"/>
+        <ActivateIn Element="Parenthetical"/>
+        <ActivateIn Element="Dialogue"/>
+        <ActivateIn Element="Transition"/>
+        <ActivateIn Element="Shot"/>
+      </Alias>
+    </Macro>
+    <Macro Element="None" Name="" Shortcut="E" Text="" Transition="None">
+      <Alias Confirm="No" MatchCase="No" SmartReplace="Yes" Text="" WordOnly="No">
+        <ActivateIn Element="General"/>
+        <ActivateIn Element="Scene Heading"/>
+        <ActivateIn Element="Action"/>
+        <ActivateIn Element="Character"/>
+        <ActivateIn Element="Parenthetical"/>
+        <ActivateIn Element="Dialogue"/>
+        <ActivateIn Element="Transition"/>
+        <ActivateIn Element="Shot"/>
+      </Alias>
+    </Macro>
+  </Macros>
+
+  <Actors>
+    <Actor MacVoice="" Name="Man 1" Pitch="Normal" Speed="Medium" WinVoice=""/>
+    <Actor MacVoice="" Name="Man 2" Pitch="Normal" Speed="Medium" WinVoice=""/>
+    <Actor MacVoice="" Name="Woman 1" Pitch="Normal" Speed="Medium" WinVoice=""/>
+    <Actor MacVoice="" Name="Woman 2" Pitch="Normal" Speed="Medium" WinVoice=""/>
+    <Actor MacVoice="" Name="Boy 1" Pitch="Normal" Speed="Medium" WinVoice=""/>
+    <Actor MacVoice="" Name="Boy 2" Pitch="Normal" Speed="Medium" WinVoice=""/>
+    <Actor MacVoice="" Name="Girl 1" Pitch="Normal" Speed="Medium" WinVoice=""/>
+    <Actor MacVoice="" Name="Girl 2" Pitch="Normal" Speed="Medium" WinVoice=""/>
+    <Actor MacVoice="" Name="Old Man" Pitch="Normal" Speed="Medium" WinVoice=""/>
+    <Actor MacVoice="" Name="Old Woman" Pitch="Normal" Speed="Medium" WinVoice=""/>
+  </Actors>
+
+  <Cast>
+    <Narrator Actor="Man 1">
+      <Element Type="Character"/>
+      <Element Type="Dialogue"/>
+    </Narrator>
+    <Member Actor="Man 1" Character="Sammy’s father"/>
+    <Member Actor="Man 1" Character="Madalyn"/>
+    <Member Actor="Man 1" Character="Male"/>
+    <Member Actor="Man 1" Character="LEOPORD"/>
+    <Member Actor="Man 1" Character="LEOPORDO"/>
+    <Member Actor="Man 1" Character="M"/>
+    <Member Actor="Man 1" Character="Susie"/>
+    <Member Actor="Man 1" Character="SU"/>
+    <Member Actor="Man 1" Character="Katherine"/>
+    <Member Actor="Man 1" Character="***"/>
+    <Member Actor="Man 1" Character="Emily"/>
+    <Member Actor="Man 1" Character="Instractor"/>
+    <Member Actor="Man 1" Character="Benjamin"/>
+    <Member Actor="Man 1" Character="Sebastine"/>
+  </Cast>
+
+  <SceneNumberOptions LeftLocation="0.75" RightLocation="7.38" ShowNumbersOnLeft="Yes" ShowNumbersOnRight="Yes">
+    <FontSpec AdornmentStyle="0" Background="#FFFFFFFFFFFF" Color="#000000000000" Font="Courier Final Draft" RevisionID="0" Size="12" Style=""/>
+  </SceneNumberOptions>
+
+</FinalDraft>

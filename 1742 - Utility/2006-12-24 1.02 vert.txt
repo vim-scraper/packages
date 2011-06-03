@@ -1,0 +1,56 @@
+" Author: Vijayandra Singh <vijayandra@netzero.com>
+" Modified: 2006 Dec 24
+" License: Public Domain
+" Version: 1.02
+
+func Stuff(str,justif,fillchar,len)
+  let out = a:str
+  let intendedlen  = a:len
+  let left_or_right = a:justif
+  let fillch=a:fillchar
+
+  while intendedlen > strlen(out)
+    if left_or_right > 0 
+        let out = out . fillch
+    else
+        let out = fillch . out
+    endif
+  endwhile
+  return out
+endfunc
+
+
+function! ColCopy()
+  "let start=line(".") " From current line
+  let start=line(".")
+  let end=line("$")
+  let longtestlen=0
+
+  while (start <= end)
+        let len = strlen(getline(start))
+
+        if(len > longtestlen)
+            let longtestlen=len
+        endif
+
+	let start = start + 1
+  endwhile
+
+  let beautymargin=longtestlen+1
+  let start=line(".")
+
+  while (start <= end)
+	let str = getline(start)
+        let src_op1=getline(start)
+        let src_op2=getline(start)
+        "let len=strlen(x)
+
+        let src_op1=Stuff(src_op1,1," ",beautymargin)
+        let result_string=(src_op1 . ' ' . src_op2)
+
+        call setline(start,result_string)
+	let start = start + 1
+  endwhile
+
+
+endfunction

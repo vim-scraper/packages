@@ -1,0 +1,125 @@
+--- ../vim63b.orig/src/gui_gtk.c	2004-05-12 18:01:45.000000000 +0200
++++ src/gui_gtk.c	2004-05-19 19:26:19.000000000 +0200
+@@ -39,6 +39,16 @@
+ 
+ #include "vim.h"
+ 
++/* Check to see if we are able to use GtkFileChooser */
++#undef HAVE_FILECHOOSER
++
++#if defined(HAVE_GTK2)
++# if GTK_MINOR_VERSION >= 4
++#  define HAVE_FILECHOOSER
++# endif
++#endif
++
++
+ #ifdef FEAT_GUI_GNOME
+ /* Gnome redefines _() and N_().  Grrr... */
+ # ifdef _
+@@ -1202,6 +1212,7 @@
+  * Implementation of the file selector related stuff
+  */
+ 
++#if !defined(HAVE_FILECHOOSER)
+ /*ARGSUSED*/
+     static void
+ browse_ok_cb(GtkWidget *widget, gpointer cbdata)
+@@ -1233,6 +1244,7 @@
+     if (gtk_main_level() > 0)
+ 	gtk_main_quit();
+ }
++#endif
+ 
+ /*ARGSUSED*/
+     static gboolean
+@@ -1270,7 +1282,11 @@
+ 	       char_u *initdir,
+ 	       char_u *filter)
+ {
++#if !defined(HAVE_FILECHOOSER)
+     GtkFileSelection *fs;	/* shortcut */
++#else
++    GtkFileChooserDialog *fs;
++#endif
+     char_u dirbuf[MAXPATHL];
+     char_u *p;
+ 
+@@ -1280,6 +1296,7 @@
+ 
+     if (!gui.filedlg)
+     {
++#if !defined(HAVE_FILECHOOSER)
+ 	gui.filedlg = gtk_file_selection_new((const gchar *)title);
+ 	gtk_window_set_modal(GTK_WINDOW(gui.filedlg), TRUE);
+ 	gtk_window_set_transient_for(GTK_WINDOW(gui.filedlg),
+@@ -1296,6 +1313,26 @@
+ 	gtk_signal_connect_object(GTK_OBJECT(gui.filedlg),
+ 		"destroy", GTK_SIGNAL_FUNC(browse_destroy_cb),
+ 		GTK_OBJECT(gui.filedlg));
++#else
++        if(saving == 0)
++            gui.filedlg = gtk_file_chooser_dialog_new ((const gchar *)title,
++                    GTK_WINDOW(gui.mainwin),
++                    GTK_FILE_CHOOSER_ACTION_OPEN,
++                    GTK_STOCK_CANCEL, GTK_RESPONSE_CANCEL,
++                    GTK_STOCK_OPEN, GTK_RESPONSE_ACCEPT,
++                    NULL);
++        else
++            gui.filedlg = gtk_file_chooser_dialog_new ((const gchar *)title,
++                    GTK_WINDOW(gui.mainwin),
++                    GTK_FILE_CHOOSER_ACTION_SAVE,
++                    GTK_STOCK_CANCEL, GTK_RESPONSE_CANCEL,
++                    GTK_STOCK_SAVE, GTK_RESPONSE_ACCEPT,
++                    NULL);
++            
++        gtk_window_set_modal(GTK_WINDOW(gui.filedlg), TRUE);
++        fs = GTK_FILE_CHOOSER_DIALOG(gui.filedlg);
++        gtk_container_border_width(GTK_CONTAINER(fs), 4);
++#endif
+     }
+     else
+ 	gtk_window_set_title(GTK_WINDOW(gui.filedlg), (const gchar *)title);
+@@ -1319,18 +1356,41 @@
+     if (dflt != NULL && *dflt != NUL
+ 			      && STRLEN(dirbuf) + 2 + STRLEN(dflt) < MAXPATHL)
+ 	STRCAT(dirbuf, dflt);
+-
++#if !defined(HAVE_FILECHOOSER)
+     gtk_file_selection_set_filename(GTK_FILE_SELECTION(gui.filedlg),
+ 						      (const gchar *)dirbuf);
++#else
++    
++    if((dirbuf[STRLEN(dirbuf) - 1]) == '/')
++        gtk_file_chooser_set_current_folder(GTK_FILE_CHOOSER(fs),
++                (const gchar *)dirbuf);
++    else
++        gtk_file_chooser_set_filename(GTK_FILE_CHOOSER(fs),
++                (const gchar *)dirbuf);
++#endif
++    
+ # ifndef HAVE_GTK2
+     gui_gtk_position_in_parent(GTK_WIDGET(gui.mainwin),
+ 				       GTK_WIDGET(gui.filedlg), VW_POS_MOUSE);
+ # endif
+ 
++#if !defined(HAVE_FILECHOOSER)
+     gtk_widget_show(gui.filedlg);
+     while (gui.filedlg && GTK_WIDGET_DRAWABLE(gui.filedlg))
+ 	gtk_main_iteration_do(TRUE);
++#else
++    if (gui.browse_fname != NULL) {
++        g_free(gui.browse_fname);
++        gui.browse_fname = NULL;
++    }
++    
++    if (gtk_dialog_run(GTK_DIALOG(fs)) == GTK_RESPONSE_ACCEPT)
++        gui.browse_fname = gtk_file_chooser_get_filename(
++                GTK_FILE_CHOOSER(fs));
+ 
++    gtk_widget_destroy(GTK_WIDGET(fs));
++    gui.filedlg = NULL;
++#endif
+     if (gui.browse_fname == NULL)
+ 	return NULL;
+ 

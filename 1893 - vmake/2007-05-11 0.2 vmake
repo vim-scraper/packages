@@ -1,0 +1,7 @@
+#!/bin/bash
+# Name: vmake
+# Author: Jochen Baier
+# License: GPL
+
+make 2>&1 | tee /tmp/vmake
+gvim --remote-send "<esc>:cfile /tmp/vmake<cr>"

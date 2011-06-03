@@ -1,0 +1,6 @@
+Please go to the Kent Vim Extensions website
+ 
+http://www.informatico.de/kent-vim-ext/
+ 
+and follow the instructions.
+

@@ -1,0 +1,74 @@
+"===========================================================================
+"
+" File: 	Mail_Sig.set
+" Author:	Luc Hermitte <EMAIL:hermitte@free.fr>
+" 		<URL:http://hermitte.free.fr>
+" Last Update:	11th may 2001
+"
+" Purpose:	Defines a function useful in order to delete signatures at
+" 		the end of e-mail replies.
+"
+" Thanks:	Cédric Duval for his improvments
+"
+"===========================================================================
+
+
+
+"---------------------------------------------------------------------------
+" Function:	Erase_Sig()
+" Purpose:	Delete signatures at the end of e-mail replies.
+" Features:	* Does not beep when no signature is found
+" 		* Also deletes the empty lines (even those beginning by '>')
+" 		  preceding the signature.
+"---------------------------------------------------------------------------
+function! Erase_Sig()
+  " Search for the signature pattern : "^> -- $"
+  let i = line ('$')
+  while i >= 1
+    if getline(i) =~ '^> *-- \=$'
+      break
+    endif
+    let i = i - 1
+  endwhile
+  " If found, then
+  if i != 0
+    " First, search for the last non empty (non sig) line
+    while i >= 1
+        let i = i - 1
+      " rem : i can't value 1
+      if getline(i) !~ '^\(>\s*\)*$'
+        break
+      endif
+    endwhile
+    " Second, delete these lines plus the signature
+    let i = i + 1
+    exe 'normal '.i.'GdG'
+  endif
+endfunction
+
+
+" Old version of the function...
+"
+" function! Erase_Sig0()
+"   let olderr = v:errmsg
+"   let v:errmsg = ""
+"   " Search for the signature pattern : "^> -- $"
+"   normal G
+"   ?^> *-- $?;
+"   " If found, then
+"   if v:errmsg == ""
+"     " First, search for the last non empty (non sig) line
+"     let i = line ('.') + 1
+"     let j = i - 1
+"     while (i == j+1)
+"       let i = j
+"       ?^\(>\s*\)*$
+"       let j = line( '.' )
+"     endwhile
+"     " Second, delete these lines plus the signature
+"     exe 'normal '.i.'GdG'
+"   endif
+"   if v:errmsg == ""
+"     let v:errmsg = olderr
+"   endif
+" endfunction

@@ -1,0 +1,158 @@
+#!/bin/ksh
+#-----------------------------------------------------------------------
+# Script: vimksh 1.0 for MSWin SFU 3.5
+#
+#   This script enables Vim to use Windows Services for Unix (SFU) 3.5
+#   commands and utilities for its shell (":shell" and ":<range>!...")
+#   and filtering ("!<motion>...") commands. To use this script, make
+#   it executable with SFU's "chmod" and add the following "set shell"
+#   line to your "_vimrc" file. Replace the "/.../" in the "set shell"
+#   by the SFU path to the script. Embedded spaces in the path will
+#   likely have to be escaped (see ":help 'shell'", not ":help shell").
+#
+#       set shell=posix.exe\ /u\ /c\ /.../vimksh
+#
+#   Commands routed through this script are logged into "vimksh.log",
+#   so the directory containing this script must be writable. If not,
+#   or if logging is not desired, comment out the three "echo" commands
+#   below.
+#
+# Copyright and Liability
+#   This software is open source, freely distributable, and provided
+#   "as is" with the hope that it will be useful. The author is not
+#   liable in any way for damages caused by its use. Improvements are
+#   welcome.
+#
+# Author
+#   Mark A. Mathieu (2006-11-02)
+#
+# Implementation Notes
+#   To initialize the PATH and other environment variables so SFU
+#   commands and utilities are accessible and work correctly, this
+#   script emulates a login shell. However, it can't run /etc/profile
+#   verbatim because that script changes the working directory to
+#   $HOME and emits undesirable text lines like the MOTD. So, and
+#   this is a little grotesque, this script runs /etc/profile through
+#   "sed" to render undesirable code inoperative and then runs the
+#   result through "eval". (Ok, quit gagging.)
+#
+#   Because of the similar processing, this script doesn't start up
+#   any faster than a login shell, so performance isn't great. Plus,
+#   future changes to /etc/profile may force changes to this script.
+#   An alternate approach would be to copy code from /etc/profile
+#   into this script, but future changes to /etc/profile would still
+#   have to be reconciled, there would be copyright issues, and it
+#   wouldn't run noticeably faster that way anyway.
+#
+#   For filtering commands, this script expects redirection paths
+#   to start with a drive letter, to end with ".tmp", and to be in
+#   stdin-stdout order (e.g., "< C:*.tmp > C:*.tmp"). Vim 7.0 builds
+#   paths this way, but if filtering commands aren't working, check
+#   the log for any deviation from this pattern.
+#
+#-----------------------------------------------------------------------
+
+# Log the requested action. Additional logging may occur below.
+
+echo "$0 $*" >> $0.log
+
+# Run /etc/profile with undesirable lines either deleted or turned
+# into no-ops.  Comments and empty lines are deleted. Undesirable
+# commands are turned into no-ops to avoid syntax errors during the
+# "eval" (e.g., due to empty "if" blocks). Right now, only the "cd"
+# to $HOME and the "." invocation of /etc/profile.lcl are turned
+# into no-ops. The PATH isn't set up until after the "eval", so the
+# complete "/bin/sed" is necessary here.
+
+x='
+/^[[:blank:]]*$/d
+/^[[:blank:]]*#/d
+/^[[:blank:]]*cd.*\$HOME/s/^/ : # /
+/^[[:blank:]]*\.[[:blank:]]*\/etc\/profile\.lcl/s/^/ : # /
+'
+
+x=$(/bin/sed -e "$x" /etc/profile)
+
+eval "$x"
+
+unset x
+
+# With the environment now ready, the incoming parameters drive the
+# processing. The no-parameter (":shell") case goes first. (FYI: All
+# of the parameters arrive in $1.)
+
+if [ X"$*" = X"" ]; then
+    exec /bin/ksh
+    exit
+fi
+
+# Ok, there are parameters and the first one should be "-c". If so,
+# it gets stripped. Seeing the "sh" in the name "vimksh", Vim knows
+# to use "-c" instead of "/C", so a "set shellcmdflag" is unnecessary.
+# Trailing spaces and tabs will mess up the filter test, so they are
+# removed too. (Vim doesn't add any, so this is just in case it ever
+# does.)
+
+x=$*
+x=${x#"-c "}
+
+xsp=" "
+xht="	" # <- It's a tab character.
+
+while [ X"${x%$xsp}" != X"$x" -o X"${x%$xht}" != X"$x" ]; do
+    x=${x%$xsp}
+    x=${x%$xht}
+done
+
+unset xsp
+unset xht
+
+# Now it's time to check for a command. The assumption is that a
+# filter will contain both the redirection of stdin from a "*.tmp"
+# file and the redirection of stdout to a "*.tmp" file. Anything
+# that doesn't fit this pattern is run as a command.
+
+if [ X"${x% <*[A-Za-z]:*.tmp *>*[A-Za-z]:*.tmp}" = X"$x" ]; then
+    set -- "$x"
+
+    unset x
+
+    echo "$*" >> $0.log
+    eval "$*"
+    exit
+fi
+
+# It's a filter, so the redirection paths have to be converted to
+# SFU format. Vim appears to send the paths with forward slashes
+# regardless of the setting of "shellslash", but "winpath2unix"
+# handles either forward or backward slashes.
+
+function xw2u {
+    typeset a=${1%[A-Za-z]:*.tmp}  # a: redir (e.g., " > ", " < ")
+    typeset b=${1#"$a"}            # b: win path
+    typeset c=$(winpath2unix "$b") # c: sfu path
+    xw2u_rv="$a'$c'"
+}
+
+xc=${x% <*[A-Za-z]:*.tmp *>*[A-Za-z]:*.tmp} # xc: command and args
+xp=${x#"$xc"}                               # xp: both redir paths
+
+xo=${xp# <*[A-Za-z]:*.tmp} # xo: stdout (first!)
+xi=${xp%"$xo"}             # xi: stdin
+
+xw2u "$xi"; xi=$xw2u_rv    # xi: stdin
+xw2u "$xo"; xo=$xw2u_rv    # xo: stdout
+
+set -- "$xc$xi$xo"
+
+unset x
+unset xc
+unset xp
+unset xi
+unset xo
+unset xw2u_rv
+unset -f xw2u
+
+echo "$*" >> $0.log
+eval "$*"
+exit

@@ -1,0 +1,667 @@
+A
+ abs
+ acos
+ addcslashes
+ addslashes
+ array
+ array_count_values
+ array_diff
+ array_filter
+ array_flip
+ array_intersect
+ array_keys
+ array_map
+ array_merge
+ array_merge_recursive
+ array_multisort
+ array_pad
+ array_pop
+ array_push
+ array_rand
+ array_reduce
+ array_reverse
+ array_search
+ array_shift
+ array_slice
+ array_splice
+ array_sum
+ array_unique
+ array_unshift
+ array_values
+ array_walk
+ arsort
+ asin
+ asort
+ atan
+ atan2
+
+  
+
+B
+ base64_decode
+ base64_encode
+ basename
+ base_convert
+ bcadd
+ bccomp
+ bcdiv
+ bcmod
+ bcmul
+ bcpow
+ bcscale
+ bcsqrt
+ bcsub
+ bin2hex
+ bindec
+ break
+
+  
+
+C
+ call_user_func
+ call_user_func_array
+ call_user_method
+ call_user_method_array
+ ceil
+ chdir
+ checkdate
+ chgrp
+ chmod
+ chop
+ chown
+ chr
+ chunk_split
+ class_exists
+ clearstatcache
+ closedir
+ compact
+ connection_aborted
+ connection_status
+ connection_timeout
+ continue
+ convert_cyr_string
+ copy
+ cos
+ count
+ count_chars
+ crc32
+ create_function
+ crypt
+ current
+
+  
+
+D
+ date
+ decbin
+ dechex
+ decoct
+ define
+ defined
+ deg2rad
+ die
+ dir
+ dirname
+ disk_total_space
+ diskfreespace
+ do...while
+ doubleval
+ Dynamische Variablen
+
+  
+
+E
+ each
+ echo
+ empty
+ end
+ ereg
+ ereg_replace
+ eregi
+ eregi_replace
+ eval
+ exit
+ exp
+ explode
+ extension_loaded
+ extract
+
+	EXTR_PREFIX_ALL 
+	EXTR_OVERWRITE
+	EXTR_SKIP
+	EXTR_PREFIX_SAME
+	EXTR_PREFIX_ALL
+	EXTR_PREFIX_INVALID
+
+  
+
+F
+ fclose
+ feof
+ fflush
+ fgetc
+ fgetcsv
+ fgets
+ fgetss
+ file
+ file_exists
+ fileatime
+ filectime
+ filegroup
+ fileinode
+ filemtime
+ fileowner
+ fileperms
+ filesize
+ filetype
+ flock
+ floor
+ fopen
+ for
+ foreach
+ fpassthru
+ fputs
+ fread
+ fscanf
+ fseek
+ fstat
+ ftell
+ ftruncate
+ func_get_arg
+ func_get_args
+ func_num_args
+ function_exists
+ fwrite
+
+  
+
+G
+ get_browser
+ get_cfg_var
+ get_class
+ get_class_methods
+ get_class_vars
+ get_current_user
+ get_declared_classes
+ get_defined_functions
+ get_extension_funcs
+ get_html_translation_table
+ get_included_files
+ get_loaded_extensions
+ get_magic_quotes_gpc
+ get_magic_quotes_runtime
+ get_meta_tags
+ get_object_vars
+ get_parent_class
+ get_required_files
+ getcwd
+ getdate
+ getenv
+ getimagesize
+ getlastmod
+ getmyinode
+ getmypid
+ getmyuid
+ getrandmax
+ getrusage
+ gettimeofday
+ gettype
+ gmdate
+ gmmktime
+ gmstrftime
+
+  
+
+H
+ hexdec
+ highlight_file
+ highlight_string
+ htmlentities
+ htmlspecialchars
+
+  
+
+I
+ if
+ if...else
+ if...else...elseif
+ ignore_user_abort
+ imagearc
+ imagechar
+ imagecharup
+ imagecolorallocate
+ imagecolorat
+ imagecolorclosest
+ imagecolordeallocate
+ imagecolorexact
+ imagecolorresolve
+ imagecolorset
+ imagecolorsforindex
+ imagecolorstotal
+ imagecolortransparent
+ imagecopy
+ imagecopyresized
+ imagecreate
+ imagecreatefromgif
+ imagecreatefromjpeg
+ imagecreatefrompng
+ imagecreatefromwbmp
+ imagedashedline
+ imagedestroy
+ imagefill
+ imagefilledpolygon
+ imagefilledrectangle
+ imagefilltoborder
+ imagefontheight
+ imagefontwidth
+ imagegammacorrect
+ imagegif
+ imageinterlace
+ imagejpeg
+ imageline
+ imagepng
+ imagepolygon
+ imagerectangle
+ imagesetpixel
+ imagestring
+ imagestringup
+ imagesx
+ imagesy
+ imagettfbbox
+ imagettftext
+ imagetypes
+ imagewbmp
+ implode
+ in_array
+ include
+ include_once
+ ini_alter
+ ini_get
+ ini_restore
+ ini_set
+ intval
+ is_array
+ is_bool
+ is_dir
+ is_double
+ is_executable
+ is_file
+ is_float
+ is_int
+ is_integer
+ is_link
+ is_long
+ is_object
+ is_readable
+ is_real
+ is_string
+ is_subclass_of
+ is_uploaded_file
+ is_writeable
+ isset
+
+  
+
+J
+ join
+
+  
+
+K
+ key
+ Kommentare
+ krsort
+ ksort
+
+  
+
+L
+ leak
+ levenshtein
+ link
+ linkinfo
+ list
+ localtime
+ log
+ log10
+ lstat
+ ltrim
+
+  
+
+M
+ mail
+ max
+ md5
+ metaphone
+ method_exists
+ microtime
+ min
+ mkdir
+ mktime
+ move_uploaded_file
+ mt_getrandmax
+ mt_rand
+ mt_srand
+ mysql_affected_rows
+ mysql_change_user
+ mysql_close
+ mysql_connect
+ mysql_create_db
+ mysql_data_seek
+ mysql_db_query
+ mysql_drop_db
+ mysql_errno
+ mysql_error
+ mysql_fetch_array
+ mysql_fetch_field
+ mysql_fetch_lengths
+ mysql_fetch_object
+ mysql_fetch_row
+ mysql_field_flags
+ mysql_field_len
+ mysql_field_name
+ mysql_field_seek
+ mysql_field_table
+ mysql_field_type
+ mysql_free_result
+ mysql_insert_id
+ mysql_list_dbs
+ mysql_list_fields
+ mysql_list_tables
+ mysql_num_fields
+ mysql_num_rows
+ mysql_pconnect
+ mysql_query
+ mysql_result
+ mysql_select_db
+ mysql_tablename
+
+  
+
+N
+ natcasesort
+ natsort
+ next
+ nl2br
+ number_format
+
+  
+
+O
+ octdec
+ opendir
+ ord
+
+  
+
+P
+ parse_str
+ parse_url
+ pathinfo
+ pclose
+ pdf_add_annotation
+ pdf_add_bookmark
+ pdf_add_launchlink
+ pdf_add_locallink
+ pdf_add_note
+ pdf_add_outline
+ pdf_add_pdflink
+ pdf_add_weblink
+ pdf_arc
+ pdf_begin_page
+ pdf_circle
+ pdf_close
+ pdf_close_image
+ pdf_closepath
+ pdf_closepath_fill_stroke
+ pdf_closepath_stroke
+ pdf_continue_text
+ pdf_curveto
+ pdf_end_page
+ pdf_endpath
+ pdf_fill
+ pdf_fill_stroke
+ pdf_get_image_height
+ pdf_get_image_width
+ pdf_get_parameter
+ pdf_get_value
+ pdf_lineto
+ pdf_moveto
+ pdf_open
+ pdf_open_gif
+ pdf_open_image_file
+ pdf_open_jpeg
+ pdf_open_png
+ pdf_open_tiff
+ pdf_place_image
+ pdf_rect
+ pdf_restore
+ pdf_rotate
+ pdf_save
+ pdf_scale
+ pdf_set_border_color
+ pdf_set_border_dash
+ pdf_set_border_style
+ pdf_set_char_spacing
+ pdf_set_duration
+ pdf_set_font
+ pdf_set_horiz_scaling
+ pdf_set_info
+ pdf_set_leading
+ pdf_set_parameter
+ pdf_set_text_pos
+ pdf_set_text_rendering
+ pdf_set_text_rise
+ pdf_set_transition
+ pdf_set_value
+ pdf_set_word_spacing
+ pdf_setdash
+ pdf_setflat
+ pdf_setgray
+ pdf_setgray_fill
+ pdf_setgray_stroke
+ pdf_setlinecap
+ pdf_setlinejoin
+ pdf_setlinewidth
+ pdf_setmiterlimit
+ pdf_setrgbcolor
+ pdf_setrgbcolor_fill
+ pdf_setrgbcolor_stroke
+ pdf_show
+ pdf_show_boxed
+ pdf_show_xy
+ pdf_skew
+ pdf_stringwidth
+ pdf_stroke
+ pdf_translate
+ php_logo_guid
+ php_sapi_name
+ php_uname
+ phpcredits
+ phpinfo
+ phpversion
+ pi
+ popen
+ pos
+ pow
+ prev
+ print
+ printf
+ putenv
+
+  
+
+Q
+ quoted_printable_decode
+ quotemeta
+
+  
+
+R
+ rad2deg
+ rand
+ range
+ rawurldecode
+ rawurlencode
+ readdir
+ readfile
+ readlink
+ realpath
+ register_shutdown_function
+ rename
+ require
+ require_once
+ reset
+ rewind
+ rewinddir
+ rmdir
+ round
+ rsort
+ rtrim
+
+  
+
+S
+ session_cache_limiter
+ session_decode
+ session_destroy
+ session_encode
+ session_get_cookie_params
+ session_id
+ session_is_registered
+ session_module_name
+ session_name
+ session_register
+ session_save_path
+ session_set_cookie_params
+ session_start
+ session_unregister
+ session_unset
+ set_file_buffer
+ set_magic_quotes_runtime
+ set_time_limit
+ setlocale
+ settype
+ show_source
+ shuffle
+ similar_text
+ sin
+ sizeof
+ sleep
+ sort
+
+	SORT_REGULAR
+	SORT_NUMERIC
+	SORT_STRING 
+ 
+ soundex
+ split
+ spliti
+ sprintf
+ sql_regcase
+ sqrt
+ srand
+ sscanf
+ stat
+ str_pad
+ str_repeat
+ str_replace
+ strcasecmp
+ strchr
+ strcmp
+ strcspn
+ strftime
+ stripcslashes
+ stripslashes
+ strip_tags
+ stristr
+ strlen
+ strnatcasecmp
+ strnatcmp
+ strncmp
+ strpos
+ strrchr
+ strrev
+ strrpos
+ strspn
+ strstr
+ strtok
+ strtolower
+ strtotime
+ strtoupper
+ strtr
+ strval
+ substr
+ substr_count
+ substr_replace
+ switch
+ symlink
+ Syntax
+
+  
+
+T
+ tan
+ tempnam
+ time
+ tmpfile
+ touch
+ trim
+
+Types check
+ is_string
+ is_double
+ is_long 
+ is_array
+
+U
+ uasort
+ ucfirst
+ ucwords
+ uksort
+ umask
+ uniqid
+ unlink
+ unset
+ urldecode
+ urlencode
+ usleep
+ usort
+
+V
+	Variable (Server)
+
+	GATEWAY_INTERFACE
+	SERVER_NAME
+	SERVER_SOFTWARE
+	SERVER_PROTOCOL
+	REQUEST_METHOD
+	QUERY_STRING
+	DOCUMENT_ROOT
+	HTTP_ACCEPT
+	HTTP_ACCEPT_CHARSET
+	HTTP_ENCODING
+	HTTP_ACCEPT_LANGUAGE
+	HTTP_CONNECTION
+	HTTP_HOST
+	HTTP_REFERER
+	HTTP_USER_AGENT
+	REMOTE_ADDR
+	REMOTE_PORT
+	SCRIPT_FILENAME
+	SERVER_ADMIN
+	SERVER_PORT
+	SERVER_SIGNATURE
+	PATH_TRANSLATED
+	SCRIPT_NAME
+	REQUEST_URI
+
+
+W
+ while
+ wordwrap
+
+Z
+ zend_logo_guid
+ zend_version

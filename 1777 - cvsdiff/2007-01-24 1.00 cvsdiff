@@ -1,0 +1,86 @@
+#!/bin/ksh
+# Author     : Mockey Chen
+# Date       : Jan 24, 2007
+# Version    : 1.00
+# Description: use vimdiff to show difference in CVS.
+# Copyright  : Free license to use, modify and redistribute, etc.
+#
+#            NO WARRANTY. USE AT YOUR RISK.
+#
+###################################################################
+# Tips: Some useful commands for vimdiff(a short description)
+#  [c       jump to previous difference
+#  ]c       jump to next difference
+#  do       diff obtain
+#  dp       diff put
+#  :diffu   diff update
+###################################################################
+
+usage()
+{
+  echo "Usage: cvsdiff [-rrevision1] [-rrevision2] file";
+  echo "Examples:"
+  echo "  cvsdiff test.c                show difference between cvs (in your branch) and local copy.";
+  echo "  cvsdiff -r1.3 test.c          show difference between revision 1.3 and local copy.";
+  echo "  cvsdiff -rHEAD test.c         show difference between HEAD and local copy.";
+  echo "  cvsdiff -r1.3 -r1.4 test.c    show difference between revision 1.3 and revision 1.4.";
+  echo "  cvsdiff -rHEAD -r1.4 test.c   show difference between HEAD and revision 1.4.";
+}
+
+if [ $# -lt 1 -o $# -gt 3 ]; then
+  # only one to three parameters are allowed.
+  usage;
+  exit 1;
+fi
+
+revision[1]="";
+revision[2]="";
+
+cnt=1;
+while [ $# -gt 1 ]; 
+do
+  revision[${cnt}]=$1;
+  awk -v r=${revision[$cnt]} 'BEGIN{ if (r ~ "^-r"){exit 0;} else{ printf "Invalid option: %s\n", r; exit 1;} }' /dev/null;
+  if [ $? -ne 0 ]; then
+    usage;
+    exit 2;
+  fi
+
+  cnt=`expr $cnt + 1`;
+  shift;
+done
+
+#echo "revision 1: ${revision[1]}";
+#echo "revision 2: ${revision[2]}";
+
+file=$1
+file1=".${file}.${revision[1]}.$$"
+file2=$file;
+
+
+if [ ! -f ${file} -a "${revision[2]}" = "" ]; then
+  echo "Error: File ${file} not exist.";
+  usage;
+  exit 2;
+fi
+
+# we use -p check out file to standard output
+# (avoid stickiness)
+cvs up ${revision[1]} -p ${file} > ${file1};
+
+if [ "${revision[2]}" != "" ]; then
+  file2=".${file}.${revision[2]}.$$";
+  cvs up ${revision[2]} -p ${file} > ${file2};
+else
+  file2=$file;
+fi
+
+vimdiff ${file1} ${file2} ;
+
+rm -f ${file1};
+if [ "${revision[2]}" != "" ]; then
+  # delete $file2 if needed
+  rm -f ${file2};
+fi
+
+exit 0;

@@ -1,0 +1,38 @@
+"===============================================================
+" Vim script file
+" 
+" File          : Mail_mutt_alias.set
+" Author        : Luc Hermitte <hermitte@free.fr>
+"                 <URL:http://hermitte.free.fr/vim/>
+" Last update   : 09th march 2001
+"
+" Purpose       : extract an alias from the aliases file : ~/.mutt/aliases_file
+" Use           : In normal mode  -> ,Ca the_alias
+"                 In command mode -> :Ca the_alias
+"
+"===============================================================
+
+func! GrepAlias(the_alias)
+    " execute le grep et le stocke dans une variable... un peu lourd, devrait
+    " y avoir une manière plus légére de réaliser cela...
+    exe "r!grep \"alias[\t ]*" . a:the_alias . "\" ~/.mutt/aliases_file"
+    let line = getline(line("."))
+    norm dd
+    let msk = "alias\\s*" . a:the_alias 
+    let msk = msk . "\\s*\\(\\(\\s*[^< \\t]\\+\\)\\+\\)\\s*<\\(.*\\)>"
+
+    let addr = substitute( line, msk, ' \1 <\3>', '')
+    return addr
+endf
+
+func! AppendAlias(the_alias)
+    let lnum = line(".")
+    let addr = GrepAlias(a:the_alias)
+    let line = getline(lnum)
+    call setline( lnum, line . addr )
+endf
+
+
+command! -nargs=1 Ca :call AppendAlias(<q-args>)
+noremap ,Ca :Ca 
+

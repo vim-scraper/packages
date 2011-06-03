@@ -1,0 +1,91 @@
+This is the Changelog for Vim Intellisense
+Version 1.3
+-----------
+1. New Plugin CPP
+2. New Plugin SQL
+3. InstallShield got ridden for good; now setup runs through NSIS installer.
+4. Java plugin shows the help while showing tooltip. Its helpful, see it for
+yourself
+5. Intellisense plugin suppots new callbacks events. Read intellisense.txt for
+more information.
+6. Fixed several bugs.
+7. Source is organized well; you can make yourself by running mkinsen.bat.
+8. Several environment variables are got ridden (Good Riddance). If you are
+running through setup, JAVADOCS environment variable is set. But this is
+optional, you can get rid of this variable, by setting it in the
+intellisense.vim file. Read intellisense.txt in the java plugin section to see
+how to set this.
+
+
+Version 1.2
+------------
+1. New plugin for c#
+2. While showing tooltips, now param helps also is displayed along with
+tooltip. (Only in c#, Java next version)
+3. Fixed the setup error, where it changed the REG_SZ from REG_EXPAND_SZ in
+PATH and CLASSPATH environment varible.
+4. Some more options are added in the VimHelperParam.txt to enable better
+scripting.
+5. VimIntellisense script (intellisense.vim) is throughly modified to handle
+errors. (Thanks David Fishburn).
+6. Now the plugins are copied in the $VIM\vimfiles (version independent).
+Previously it was copied in the $VIM\vim61(version dependent). Thanks to Erik
+Remmelzwaal and David Fishburn.
+7. Help file is copied now to $VIM\vimfiles\doc. And thanks to Erik
+Remmelzwaal for finding a problem in the tag. :-)
+
+
+Version 1.1
+------------
+1. New plugin for JSP is added.
+2. Fixed a bug in intellisense core. When intellisense pops up, the 'modified'
+option was switched off. This is fixed.
+
+Version 1.0
+------------
+1. Setup is added
+2. Option to change the size of helpwindow is added
+3. Caching is added for developing intellisense.
+4. New interface is added in the ftdll (GetTooltip). See intellisense.txt.
+5. More cosmetic changes
+6. Several bugs are solved
+7. New plugin for Baan is available.
+8. Changes to xml plugin:
+	a. Lists attributes and its values.
+9. Changes to Java plugin:
+	a. Scope of the variable is taken care.
+	b. Inheritance is taken care.
+	c. Local file is parsed for type deduction.
+	d. Local file is parsed for documentation.
+	e. Local folder is parsed for type dedection.
+	f. General parsing algorithm is more elegant.
+	h. Several bugs are fixed.
+	
+
+
+Version 0.92
+-------------
+1. xmlft.dll reading for C:\temp! Fixed!
+
+
+Version 0.91
+-------------
+1. Version info added.
+2. Anti-reinclusion in intellisense.vim is added (Luc Hermitte)
+3. XML,HTML support is added
+4. The list window does not close if user types [A-Za-z0-9] by default. But he
+can add to the list by speficifying more keys in l:ignoreKeys in
+intellisense.vim.(Ignore keys can vary for filetypes)
+5. Simple help file is added.(TODO: integrate with vim help)
+6. Intellisense can be placed in any directory(has to specify VIM_INTELLISENSE
+variable).( TODO: may be it can be a global variable in vim?)(Luc Hermitte)
+7. Transparent icon in list window.
+8. Intellisense.vim is a plugin.(can avoid sourcing from $VIM\_vimrc. Luc
+Hermitte, David Fishburn)
+9. A sanity check is added(David Fishburn)
+10. Uses the temporary directory specified in TEMP env variable. No need of
+c:\temp directory)
+11. Colors for window can use names. Requires rgb.txt
+12. Case independent languages are supported.
+
+

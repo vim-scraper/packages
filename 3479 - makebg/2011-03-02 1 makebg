@@ -1,0 +1,24 @@
+#!/bin/sh
+# Use: makebg VIMSERVERNAME MAKEPRG MAKEEF
+# Inside Vim, use the mappings:
+# map <F12> :exec "!makebg" v:servername "'" . &makeprg . "'" &makeef<CR><CR>
+#
+# Execute make in the background and ask Vim to display errors when done.
+# Default values of make error file, make program and vim servername are used 
+# if not supplied. Errors from the current run of make are prepended to the 
+# previous errors.
+
+makeef="${3:-errors.err}"
+makeef="${makeef#$PWD/}"    # remove path, if present
+makeprg="${2:-make}"
+server="${1:-GVIM}"
+
+{
+  touch "$makeef";
+  # sed removes some words to prevent vim from misparsing a filename
+  $makeprg 2>&1 | sed -e's/In file included from //' | cat - "$makeef" > \
+    ".$makeef";
+  mv ".$makeef" "$makeef";
+  vim --servername "$server" --remote-send \
+    "<Esc>:cgetfile $PWD/$makeef |copen<CR><CR>" ;
+} &

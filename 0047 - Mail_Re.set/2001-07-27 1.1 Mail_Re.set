@@ -1,0 +1,82 @@
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" If you want the french comments translated, just ask "
+"  Remplacement de Re: Re: ... n fois par Re[n]:       "
+"  dans la ligne courante,                             "
+"  en langage de script VIM                            "
+"                                                      "
+"  il y a probablement plus simple                     "
+"  mais apparemment ca marche                          "
+"  Par Dominique Baldo...                              "
+" Adapté par Luc Hermitte <hermitte@free.fr> pour :    "
+" - gérer les Réf. de certains outils trop francisés   "
+" - répondre par Re: tout simplement les 3/4 du temps  "
+"                                                      "
+" 28 Mars 2001                                         "
+"                                                      "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Fonction substituant "Re:Re:Re:Re" par "Re:" et "Re:Re[2]" par "Re[3]"
+func! MergeRe(chaine)
+   "on recupere le "vrai" sujet (on enleve tous les Re:)
+   " d'abord, on remplace tous les Réf: et Re: par des Re: accolés
+   let sujet = substitute( a:chaine, '[Rr][éeÉE][fF]\s*\.\s*:\s*', 'Re:', 'g' )
+   let sujet = substitute( sujet, '[Rr][eE]\s*\(\[\d\+\]\)\=\s*:\s*', 'Re\1:', 'g' )
+   " on cherche le premier "Re:"
+   let rang=matchend(sujet,'Subject:\s*Re:\s*')
+   " s'il n'y en a pas, c'est qu'on a fini
+   if rang==-1
+      return sujet
+   endif
+   " n: compteur de "Re:"   
+   let n=0
+   " Tant qu'il reste des "Re:" a enlever
+   while rang!=-1
+     " on les enleve un par un (histoire de les compter)
+     let sujet=strpart(sujet,rang,strlen(sujet))
+     " et on cherche le suivant *démarrant la ligne*
+     let rang=matchend(sujet,'^Re:\s*')
+     let n=n+1       
+   endw
+   
+   " quand on arrive au bout, encore faut il verifier
+   " qu'il ne reste pas un Re[x]:
+   let num=matchstr(sujet,'^[Rr][Ee]\s*\[\s*[0-9]\+\s*\]\s*:\s*')
+   let rang=matchend(sujet,'^[Rr][Ee]\s*\[\s*[0-9]\+\s*\]\s*:\s*')
+   " s'il y avait un Re[x]:  % [TODO] optioner tout cela avec une variable
+   if num!=""
+      "on recupere le 'x' de Re[x]:
+      let num=matchstr(num,'[0-9]\+')
+      " et on l'ajoute a notre compteur n
+      let n = n + num
+      " en n'oubliant pas de virer Re[x]: du sujet
+      let sujet=strpart(sujet,rang,strlen(sujet)+1)
+      let sujet = 'Subject: Re[' . n . ']: ' . sujet 
+   else
+      let sujet = 'Subject: Re: ' .sujet
+   endif
+
+   " on renvoie le tout sous la forme Re[n]: sujet
+   return sujet
+endf
+
+" TODO: autre idee - virer tous les espaces eventuels
+" entre les differents "Re:", recuperer tous les trucs
+" [Done]
+" de la forme "\(Re:\)*", prendre la taille de la chaine
+" et diviser par la taille de "Re:" (c'est a dire 3)
+" pour avoir le nombre de "Re:"
+
+""""""""""""""""""""""""""""""""""
+"   P R O G   P R I N C I P A L  "
+""""""""""""""""""""""""""""""""""
+
+function! Mail_Re()
+  " on cherche le sujet  
+  normal 1G
+  /^Subject: 
+  " on se met la ligne courante sur l'oreille
+  let c=getline(line("."))
+  " on fusionne tous les Re: Re: Re: Re: en Re[4]: (par exemple)        
+  call setline(line("."),MergeRe(c))
+endf
+

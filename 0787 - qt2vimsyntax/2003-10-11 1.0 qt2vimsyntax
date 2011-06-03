@@ -1,0 +1,36 @@
+#!/usr/bin/perl
+#
+# qt2vimsyntax v1.0, 2003-10-11
+# (w)by Pawel Stolowski
+#
+# Creates vim syntax for Trolltech' Qt library (http://www.trolltech.com)
+# by scanning all qt includes and gaining class names. Assumes $QTDIR
+# environment is set; if not, /usr/lib/qt is scanned.
+#
+# common usage (overwrites personal c.vim!):
+# ./qt2vimsyntax > ~/.vim/after/c.vim
+#
+
+$qtdir=$ENV{QTDIR};
+
+%class;
+
+$qtinc = ($qtdir eq '') ? '/usr/lib/qt/include' : $qtdir.'/include';
+print STDERR "scanning $qtinc for QT includes....\n";
+@files = glob("$qtinc/*.h");
+foreach $file (@files)
+{
+	open(IFILE, '<', $file) || die "error opening $file\n";
+	while (<IFILE>)
+	{
+		if ( /^class (Q_[A-Z]+)* (Q[A-Za-z]+)\s*:/ )
+		{
+			$class{$2}='' if not defined $class{$2};
+		}
+	}
+	close(IFILE);
+}
+
+print "syn keyword cType ";
+print join(' ', sort keys %class);
+

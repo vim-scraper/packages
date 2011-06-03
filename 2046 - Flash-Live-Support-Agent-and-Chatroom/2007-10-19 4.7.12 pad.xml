@@ -1,0 +1,115 @@
+<?xml version="1.0" ?> 
+<XML_DIZ_INFO>
+<MASTER_PAD_VERSION_INFO>
+ <MASTER_PAD_VERSION>2.01</MASTER_PAD_VERSION>
+<MASTER_PAD_EDITOR>PAD Creator version: 2.0.1 available for FREE at http://www.padcreator.com </MASTER_PAD_EDITOR>
+ <MASTER_PAD_INFO>Portable Application Description, or PAD for short, is a data set that is used by shareware authors to disseminate information to anyone interested in their software products. To find out more go to http://www.asp-shareware.org/pad</MASTER_PAD_INFO>
+</MASTER_PAD_VERSION_INFO>
+
+<Company_Info>
+ <Company_Name>TUFaT.com</Company_Name>
+ <Address_1>2334 Knoxville Ave</Address_1>
+ <City_Town>Long Beach</City_Town>
+ <State_Province>CA</State_Province>
+ <Zip_Postal_Code>90815</Zip_Postal_Code>
+ <Country>United States</Country>
+ <Company_WebSite_URL>http://www.tufat.com</Company_WebSite_URL>
+  <Contact_Info>
+  <Author_First_Name>Darren</Author_First_Name>
+  <Author_Last_Name>Gates</Author_Last_Name>
+  <Author_Email>scriptarchive1@gmail.com</Author_Email>
+  <Contact_First_Name>Darren</Contact_First_Name>
+  <Contact_Last_Name>Gates</Contact_Last_Name>
+  <Contact_Email>scriptarchive1@gmail.com</Contact_Email>
+ </Contact_Info>
+ <Support_Info>
+  <Sales_Email>scriptarchive1@gmail.com</Sales_Email>
+  <Support_Email>scriptarchive1@gmail.com</Support_Email>
+  <General_Email>scriptarchive1@gmail.com</General_Email>
+ </Support_Info>
+</Company_Info>
+
+<Program_Info>
+ <Program_Name></Program_Name>
+ <Program_Version>4.7.12</Program_Version>
+ <Program_Release_Month>1</Program_Release_Month>
+ <Program_Release_Day>1</Program_Release_Day>
+ <Program_Release_Year>2007</Program_Release_Year>
+ <Program_Cost_Dollars>5</Program_Cost_Dollars>
+ <Program_Type>Commercial</Program_Type>
+ <Program_Release_Status>Major Update</Program_Release_Status>
+ <Program_Install_Support>Community Forum Support Only</Program_Install_Support>
+ <Program_OS_Support>Not Applicable</Program_OS_Support>
+ <Program_Language>English</Program_Language>
+ <Program_Change_Info />
+ <Program_Category_Class>Web Development::PHP</Program_Category_Class>
+ <Program_Categories>Web Design Utilities</Program_Categories>
+ <Program_System_Requirements>PHP-enabled Web server, ability to read Flash content</Program_System_Requirements>
+ <Includes_JAVA_VM>N</Includes_JAVA_VM>
+ <Includes_VB_Runtime>N</Includes_VB_Runtime>
+ <Includes_DirectX>N</Includes_DirectX>
+ <File_Info>
+  <Filename_Versioned>4.7.12</Filename_Versioned>
+  <Filename_Previous></Filename_Previous>
+  <Filename_Generic></Filename_Generic>
+  <Filename_Long></Filename_Long>
+  <File_Size_Bytes>3420114</File_Size_Bytes>
+  <File_Size_K>3420</File_Size_K>
+  <File_Size_MB>3.4</File_Size_MB>
+ </File_Info>
+ <Expire_Info>
+  <Has_Expire_Info>N</Has_Expire_Info>
+ </Expire_Info>
+</Program_Info>
+
+<Program_Descriptions>
+ <English>
+  <Keywords>flash chat, chat room, chatroom, live support</Keywords>
+  <Char_Desc_45></Char_Desc_45>
+  <Char_Desc_80></Char_Desc_80>
+  <Char_Desc_250>Customizable Flash Chat Room and Live Support system for your PHP/MySQL-enabled website. Try it now!</Char_Desc_250>
+  <Char_Desc_450>Put a highly customizable chatroom right on your website. Works with most PHP/MySQL forums and portals, or as a stand-alone chatroom. Can be used in a live-support configuration, as a registered users only chat, or as a free-for-all chat.
+
+NEW! We are now offering the SmileText Component as a separate component for Flash developers who need a smile textarea for their Flash projects. The SmileText Component includes 100% of source code, an...</Char_Desc_450>
+  <Char_Desc_2000>FlashChat includes a set of advanced administrative options so that you can easily manage rooms, users, bans, messages, and much more. 
+
+The room list and message input area can be re-positioned to different parts of the screen by simply dragging and droppinig. These layout positions can also be set by default in the external layout file. 
+
+A PHP-based "bad words filter" allows you, the chat administrator, to prevent foul language from being viewed within the chat. 
+
+FlashChat's text options can also be externally configured in the config.php file. You can add additional font sizes, specify the default font sizes for the interface text, set the default language, and much more! 
+
+Nearly every color in FlashChat can be modified within the PHP configuration files (using the HEX color code). You can also set custom JPG or SWF background images easily by editing the appropriate theme file, located in the /inc/themes/ folder). 
+
+FlashChat has the ability to use small, graphic avatars for any user. You may also set special avatars for administrators, or to distinguish male vs. female users. The background image can be customized for any user as well. 
+
+AIML, the Artificial Intelligence Markup Language, has been integrated with FlashChat. This feature allows your chatters to interact with a true artificial intelligence entity, making your chat seem "alive" even during periods of down-time. 
+
+With over 50 configuration options available in the FlashChat config.php file, you can make the chat behave in any of dozens of ways. Set IP limits, log limits, flood intervals, inactivity limits, and much more! You will find that FlashChat is one of the most highly configurable chat systems on the Net. 
+
+Nearly every piece of text in the FlashChat interface can be customized using external language files. Each language supported by FlashChat comes with a separate UTF-8 language file, which can be easily edited using any standard text editor. 
+
+An advanced installation wizard makes...</Char_Desc_2000>
+ </English>
+</Program_Descriptions>
+
+<Web_Info>
+ <Application_URLs>
+  <Application_Info_URL>http://www.tufat.com/script.htm</Application_Info_URL>
+  <Application_Order_URL>http://www.tufat.com/script.htm</Application_Order_URL>
+  <Application_Screenshot_URL>http://www.tufat.com/images/screenshots/flashchat.gif</Application_Screenshot_URL>
+  <Application_Icon_URL>http://www.tufat.com/</Application_Icon_URL>
+  <Application_XML_File_URL>http://www.tufat.com/pagecache/pad/.xml</Application_XML_File_URL>
+ </Application_URLs>
+ <Download_URLs>
+  <Primary_Download_URL>http://www.tufat.com/download.zip</Primary_Download_URL>
+ </Download_URLs>
+</Web_Info>
+
+<Permissions>
+ <Distribution_Permissions>See TUFaT.com for distribution information</Distribution_Permissions>
+ <EULA>See TUFaT.com for EULA information</EULA>
+</Permissions>
+
+</XML_DIZ_INFO>
+

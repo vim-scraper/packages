@@ -1,0 +1,47 @@
+#!/bin/bash
+#
+# vimlatex: Script wrapper for TeX/LaTeX/etc. that sanitizes output to
+#           be compatible with Vim-LaTeX's errorformat. Prevents Vim
+#           from opening the wrong file after some errors.
+#
+#           This script is inspired by
+#
+# http://hermitte.free.fr/vim/ressources/vimfiles/compiler/vim-tex_sh.html
+#
+# and
+#
+# http://www.unix.com/shell-programming-scripting/20218-pipelining.html
+#
+# Version: 1.00
+#
+# Author: Ted Pavlic
+#         ted@tedpavlic.com
+#         http://www.tedpavlic.com/
+#
+# Usage: vimlatex %command [%arguments]
+#
+#        where the command line:
+#
+#        %command %arguments
+#
+#        would texify as normal. In other words, the "vimlatex" command
+#        can simply be added before a given working command line.
+#
+# For more information (and history), see:
+#
+# http://phaseportrait.blogspot.com/2008/03/fixing-vim-latex-compiler-error.html
+#
+# Version history:
+#
+# 1.0  : 03/05/2008 - Initial release (Ted Pavlic)
+#
+
+texprg="${1}"
+
+shift
+
+exec 3>&1
+retcode=$( exec 4>&1; { ${texprg} "$@"; echo $? >&4; } | sed -e "s/(/\n(/g" | sed -e "s/)/)\n/g" | sed -e "/[0-9]\+$/{N;s/\n\([0-9]\+\)/\1/;}" >&3)
+exec 3>&-
+
+exit ${retcode}

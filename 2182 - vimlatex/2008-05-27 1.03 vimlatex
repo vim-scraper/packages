@@ -1,0 +1,59 @@
+#!/bin/bash
+#
+# vimlatex: Script wrapper for TeX/LaTeX/etc. that sanitizes output to
+#           be compatible with Vim-LaTeX's errorformat. Prevents Vim
+#           from opening the wrong file after some errors.
+#
+#           This script is inspired by
+#
+# http://hermitte.free.fr/vim/ressources/vimfiles/compiler/vim-tex_sh.html
+#
+# and
+#
+# http://www.unix.com/shell-programming-scripting/20218-pipelining.html
+#
+# Version: 1.03
+#
+# Author: Ted Pavlic
+#         ted@tedpavlic.com
+#         http://www.tedpavlic.com/
+#
+# Usage: vimlatex %command [%arguments]
+#
+#        where the command line:
+#
+#        %command %arguments
+#
+#        would texify as normal. In other words, the "vimlatex" command
+#        can simply be added before a given working command line.
+#
+# For more information (and history), see:
+#
+# http://phaseportrait.blogspot.com/2008/03/fixing-vim-latex-compiler-error.html
+#
+# Version history:
+#
+# 1.0  : 03/05/2008 - Initial release (Ted Pavlic)
+# 1.01 : 03/07/2008 - Removed extra sed pipes at Christian Ebert's suggestion (Ted Pavlic)
+# 1.02 : 03/07/2008 - Improved portability to old sed's (Christian Ebert suggestion; solution partly at http://www.culmination.org/2008/02/10/sed-on-mac-os-x-105-leopard/)
+# 1.03 : 05/27/2008 - First attempt at preventing breaking out (..) from lines
+#
+
+texprg="${1}"
+
+shift
+
+exec 3>&1
+retcode=$( exec 4>&1; { ${texprg} "$@"; echo $? >&4; } | exec sed \
+                -e '/[0-9][0-9]*$/{N;s/\n\([0-9][0-9]*\)/\1/;}' \
+                -e '/[0-9][0-9]*$/{N;s/\n\([0-9][0-9]*\)/\1/;}' \
+                -e 's/(\([^)]*\))/%x%o%x%o_\1_%z%x%z%x/g' \
+                -e 's/\((\)\(%x%o%x%o_\)/\1\'$'\n''\2/g' \
+                -e 's/\(_%z%x%z%x\)\()\)/\1\'$'\n''\2/g' \
+                -e 's/(/\'$'\n''(/g' \
+                -e 's/)/)\'$'\n''/g' \
+                -e 's/%x%o%x%o_/(/g' \
+                -e 's/_%z%x%z%x/)/g' >&3)
+exec 3>&-
+
+exit ${retcode}

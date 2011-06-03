@@ -1,0 +1,336 @@
+#Created by Anthony Yuan 
+#Mail : yyq123@gmail.com
+#Blog : 
+#TITLE=Essbase Calc Script
+#SORT=N
+#CHARSET=ANSI
+snippet /*
+	/* ${1} */
+snippet #MISS
+	#MISSING
+snippet @ABS
+	@ABS(${1:expression})
+snippet @ACCUM 
+	@ACCUM (${1:mbrName} ${2:[, rangeList]})
+snippet @ALIAS 
+	@ALIAS (${1:function_name})
+snippet @ALLANCESTORS
+	@ALLANCESTORS(${1:mbrName})
+snippet	@ALLOCATE 
+	@ALLOCATE (${1:amount} ${2:, allocationRange} ${3:, basisMbr} ${4:, [roundMbr]} ${5:, method})
+snippet @ANCEST
+	@ANCEST(${1:dimName}, ${2:genLevNum} ${3:[, mbrName]})
+snippet @ANCESTORS 
+	@ANCESTORS (${1:mbrName} ${2:[, genLevNum | genLevName]})
+snippet	@ANCESTVAL 
+	@ANCESTVAL (${1:dimName}, ${2:genLevNum} ${3:[, mbrName]})
+snippet	@ATTRIBUTE 
+	@ATTRIBUTE (${1:attMbrName})
+snippet	@ATTRIBUTEBVAL
+	@ATTRIBUTEBVAL(${1:attDimName})
+snippet	@ATTRIBUTESVAL
+	@ATTRIBUTESVAL(${1:attDimName})
+snippet	@ATTRIBUTEVAL
+	@ATTRIBUTEVAL(${1:attDimName})
+snippet	@AVG 
+	@AVG (${1:SKIPNONE | SKIPMISSING | SKIPZERO | SKIPBOTH}, ${2:expList})
+snippet	@AVGRANGE
+	@AVGRANGE(${1:SKIPNONE | SKIPMISSING | SKIPZERO | SKIPBOTH}, ${2:mbrName} ${3:[, rangeList]})
+snippet	@CALCMODE 
+	@CALCMODE (${1:CELL|BLOCK|TOPDOWN|BOTTOMUP})
+snippet	@CHILDREN
+	@CHILDREN(${1:mbrName})
+snippet	@COMPOUND
+	@COMPOUND(${1:balanceMbr}, ${2:rateMbrConst} ${3:[, rangeList]})
+snippet	@COMPOUNDGROWTH
+	@COMPOUNDGROWTH(${1:principalMbr}, ${2:rateMbrConst} ${3:[, rangeList]}) 
+snippet	@CONCATENATE 
+	@CONCATENATE (${1:String1}, ${2:String2})
+snippet	@CORRELATION 
+	@CORRELATION (${1:SKIPNONE | SKIPMISSING | SKIPZERO | SKIPBOTH}, ${2:expList1}, ${3:expList2})
+snippet	@COUNT 
+	@COUNT (${1:SKIPNONE | SKIPMISSING | SKIPZERO | SKIPBOTH}, ${2:expList})
+snippet	@CURGEN
+	@CURGEN(${1:dimName})
+snippet	@CURLEV
+	@CURLEV(${1:dimName})
+snippet	@CURRMBR
+	@CURRMBR(${1:dimName})
+snippet	@CURRMBRRANGE
+	@CURRMBRRANGE(${1:dimName}, ${2:GEN|LEV}, ${3:genLevNum}, ${4:[startOffset]}, ${5:[endOffset]})
+snippet	@DECLINE 
+	@DECLINE (${1:costMbr}, ${2:salvageMbrConst}, ${3:lifeMbrConst}, ${4:[, rangeList]})
+snippet	@DESCENDANTS
+	@DESCENDANTS(${1:mbrName} ${2:[, genLevNum | genLevName]})
+snippet	@DISCOUNT 
+	@DISCOUNT (${1:cashMbr}, ${2:rateMbrConst} ${3:[, rangeList]})
+snippet	@EXP 
+	@EXP (${1:expression})
+snippet	@FACTORIAL
+	@FACTORIAL(${1:expression})
+snippet	@GEN
+	@GEN(${1:mbrName})
+snippet	@GENMBRS
+	@GENMBRS(${1:dimName}, ${2:genName|genNum})
+snippet	@GROWTH
+	@GROWTH(${1:principalMbr}, ${2:rateMbrConst} ${3:[, rangeList]})
+snippet	@IALLANCESTORS
+	@IALLANCESTORS(${1:mbrName})
+snippet	@IANCESTORS 
+	@IANCESTORS (${1:mbrName} ${2:[, genLevNum | genLevName]})
+snippet	@ICHILDREN
+	@ICHILDREN(${1:mbrName})
+snippet	@IDESCENDANTS
+	@IDESCENDANTS(${1:mbrName} ${2:[, genLevNum | genLevName]})
+snippet	@ILSIBLINGS
+	@ILSIBLINGS(${1:mbrName})
+snippet	@INT 
+	@INT (${1:expression})
+snippet	@INTEREST
+	@INTEREST(${1:balanceMbr}, ${2:creditrateMbrConst}, ${3:borrowrateMbrConst} ${4:[, rangeList]})
+snippet	@IRDESCENDANTS
+	@IRDESCENDANTS(${1:mbrName} ${2:[, genLevNum | genLevName]})
+snippet	@IRR
+	@IRR(${1:cashflowMbr}, ${2:discountFlag} ${3:[, rangeList]})
+snippet	@IRSIBLINGS
+	@IRSIBLINGS(${1:mbrName})
+snippet	@ISACCTYPE
+	@ISACCTYPE("${1:tag}")
+snippet	@ISANCEST
+	@ISANCEST(${1:mbrName})
+snippet	@ISCHILD
+	@ISCHILD(${1:mbrName})
+snippet	@ISDESC
+	@ISDESC(${1:mbrName})
+snippet	@ISGEN
+	@ISGEN(${1:dimName}, ${2:genName | genNum})
+snippet	@ISIANCEST
+	@ISIANCEST(${1:mbrName})
+snippet	@ISIBLINGS
+	@ISIBLINGS(${1:mbrName})
+snippet	@ISICHILD
+	@ISICHILD(${1:mbrName})
+snippet	@ISIDESC
+	@ISIDESC(${1:mbrName})
+snippet	@ISIPARENT
+	@ISIPARENT(${1:mbrName}) 
+snippet	@ISISIBLING
+	@ISISIBLING(${1:mbrName}) 
+snippet	@ISLEV
+	@ISLEV(${1:dimName}, ${2:levName | levNum}) 
+snippet	@ISMBR
+	@ISMBR(${1:mbrName | rangeList | mbrList})
+snippet	@ISPARENT
+	@ISPARENT(${1:mbrName})
+snippet	@ISSAMEGEN
+	@ISSAMEGEN(${1:mbrName})
+snippet	@ISSAMELEV
+	@ISSAMELEV(${1:mbrName}) 
+snippet	@ISSIBLING
+	@ISSIBLING(${1:mbrName}) 
+snippet	@ISUDA
+	@ISUDA(${1:dimName}, "${2:UDAStr}")
+snippet	@LEV
+	@LEV(${1:mbrName})
+snippet	@LEVMBRS
+	@LEVMBRS(${1:dimName}, ${2:levName|levNum})
+snippet	@LIST
+	@LIST(${1:argument1}, ${2:argument2}, ${3:argumentN})
+snippet	@LN 
+	@LN (${1:expression})
+snippet	@LOG 
+	@LOG (${1:expression} ${2:[, base]})
+snippet	@LOG10 
+	@LOG10 (${1:expression})
+snippet	@LSIBLINGS
+	@LSIBLINGS(${1:mbrName})
+snippet	@MATCH 
+	@MATCH (${1:mbrName|genName|levName}, "${2:pattern}")
+snippet	@MAX
+	@MAX(${1:expList})
+snippet	@MAXRANGE 
+	@MAXRANGE (${1:mbrName} ${2:[, rangeList]})
+snippet	@MAXS 
+	@MAXS (${1:SKIPNONE | SKIPMISSING | SKIPZERO | SKIPBOTH}, ${2:expList})
+snippet	@MAXSRANGE 
+	@MAXSRANGE (${1:SKIPNONE | SKIPMISSING | SKIPZERO | SKIPBOTH}, ${2:mbrName} ${3:[ ,rangeList]})
+snippet	@MDALLOCATE 
+	@MDALLOCATE (${1:amount}, ${2:Ndim}, ${3:allocationRange1 ... allocationRangeN}, ${4:basisMbr}, ${5:[roundMbr]}, ${6:method} ${7:[, methodParams] [, round [, numDigits][, roundErr]]})
+snippet	@MDANCESTVAL
+	@MDANCESTVAL(${1:dimCount}, ${2:dimName1}, ${3:genLevNum1. . . dimNameX}, ${4:genLevNumX} ${5:[,mbrName]})
+snippet	@MDPARENTVAL
+	@MDPARENTVAL(${1:numDim}, ${2:dimName1}, ${3:. . . dimNameX [,mbrName]})
+snippet	@MDSHIFT
+	@MDSHIFT (${1:mbrName}, ${2:shiftCnt1}, ${3:dimName1}, ${4:[range1|(range1)], . . . shiftCntX, dimNameX, [rangeX|(rangeX)]})
+snippet	@MEDIAN 
+	@MEDIAN (${1:SKIPNONE | SKIPMISSING | SKIPZERO | SKIPBOTH}, ${2:expList})
+snippet	@MEMBER 
+	@MEMBER (${1:String})
+snippet	@MERGE
+	@MERGE(${1:list1}, ${2:list2})
+snippet	@MIN 
+	@MIN (${1:expList})
+snippet	@MINRANGE 
+	@MINRANGE (${1:mbrName} ${2:[, rangeList]})
+snippet	@MINS
+	@MINS (${1:SKIPNONE | SKIPMISSING | SKIPZERO | SKIPBOTH}, ${2:expList})
+snippet	@MINSRANGE 
+	@MINSRANGE (${1:SKIPNONE | SKIPMISSING | SKIPZERO | SKIPBOTH}, ${2:mbrName} ${3:[,rangeList]})
+snippet	@MOD 
+	@MOD (${1:mbrName1}, ${2:mbrName2})
+snippet	@MODE 
+	@MODE (${1:SKIPNONE|SKIPMISSING|SKIPZERO|SKIPBOTH}, ${2:expList})
+snippet	@MOVAVG 
+	@MOVAVG (${1:mbrName} ${2:[, n [, rangeList]]})
+snippet	@MOVMAX 
+	@MOVMAX (${1:mbrName} ${2:[, n [, rangeList]]})
+snippet	@MOVMED 
+	@MOVMED (${1:mbrName} ${2:[, n [, rangeList]]})
+snippet	@MOVMIN 
+	@MOVMIN (${1:mbrName} ${2:[, n [, rangeList]]})
+snippet	@NAME 
+	@NAME (${1:mbrName})
+snippet	@NEXT 
+	@NEXT (${1:mbrName} ${2:[, n, rangeList]})
+snippet	@NEXTS
+	@NEXTS(${1:SKIPNONE | SKIPMISSING | SKIPZERO | SKIPBOTH}, ${2:mbrName} ${3:[,n,rangeList]})
+snippet	@NPV
+	@NPV (${1:cashflowMbr}, ${2:rateMbrConst}, ${3:discountFlag} ${4:[, rangeList]})
+snippet	@PARENT
+	@PARENT(${1:dimName} ${2:[, mbrName]})
+snippet	@PARENTVAL
+	@PARENTVAL (${1:dimName} ${2:[, mbrName]})
+snippet	@POWER 
+	@POWER (${1:expression}, ${2:power})
+snippet	@PRIOR
+	@PRIOR (${1:mbrName} ${2:[, n, rangeList]})
+snippet	@PRIORS
+	@PRIORS(${1:SKIPNONE | SKIPMISSING | SKIPZERO | SKIPBOTH}, ${2:mbrName} ${3:[,n, rangeList]})
+snippet	@PTD 
+	@PTD (${1:timePeriodList})
+snippet	@RANGE
+	@RANGE(${1:mbrName} ${2:[, rangeList]})
+snippet	@RANK 
+	@RANK (${1:SKIPNONE | SKIPMISSING | SKIPZERO | SKIPBOTH}, ${2:value}, ${3:expList})
+snippet	@RDESCENDANTS 
+	@RDESCENDANTS (${1:mbrName} ${2:[, genLevNum|genLevName]})
+snippet	@RELATIVE
+	@RELATIVE (${1:mbrName}, ${2:genLevNum | genLevName})
+snippet	@REMAINDER
+	@REMAINDER (${1:expression})
+snippet	@REMOVE 
+	@REMOVE (${1:list1}, ${2:list2})
+snippet	@ROUND 
+	@ROUND (${1:expression},${2:numDigits})
+snippet	@RSIBLINGS
+	@RSIBLINGS(${1:mbrName})
+snippet	@SANCESTVAL
+	@SANCESTVAL (${1:rootMbr}, ${2:genLevNum} ${3:[, mbrName]})
+snippet	@SHIFT
+	@SHIFT (${1:mbrName} ${2:[,n, rangeList]})
+snippet	@SHIFTMINUS
+	@SHIFTMINUS (${1:mbrName} ${2:[,n, rangeList]})
+snippet	@SHIFTPLUS 
+	@SHIFTPLUS (${1:mbrName} ${2:[,n, rangeList]})
+snippet	@SIBLINGS 
+	@SIBLINGS (${1:mbrName})
+snippet	@SLN
+	@SLN(${1:costMbr}, ${2:salvageMbrConst}, ${3:lifeMbrConst} ${4:[, rangeList]})
+snippet	@SPARENTVAL
+	@SPARENTVAL(${1:RootMbr} ${2:[, mbrName]})
+snippet	@SPLINE 
+	@SPLINE (${1:YmbrName} ${2:[, s [, XmbrName [, rangeList]]]})
+snippet	@STDEV 
+	@STDEV (${1:SKIPNONE | SKIPMISSING | SKIPZERO | SKIPBOTH}, ${2:expList})
+snippet	@STDEVP 
+	@STDEVP (${1:SKIPNONE | SKIPMISSING | SKIPZERO | SKIPBOTH}, ${2:expList})
+snippet	@STDEVRANGE 
+	@STDEVRANGE (${1:SKIPNONE | SKIPMISSING | SKIPZERO | SKIPBOTH}, ${2:mbrName} ${3:[, XrangeList]})
+snippet	@SUBSTRING 
+	@SUBSTRING (${1:String}, ${2:StartPosition} ${3:[, EndPosition]})
+snippet	@SUM 
+	@SUM (${1:expList})
+snippet	@SUMRANGE
+	@SUMRANGE(${1:mbrName} ${2:[, rangeList]})
+snippet	@SYD 
+	@SYD (${1:costMbr}, ${2:salvageMbrConst}, ${3:lifeMbrConst} ${4:[, rangeList]})
+snippet	@TODATE 
+	@TODATE (${1:formatString}, ${2:dateString})
+snippet	@TREND 
+	@TREND (${1:Ylist}, ${2:[Xlist], [weightList], [errorList], [XforecastList], YforecastList, method[, method parameters] [, Xfilter1 [, parameters]] [, XfilterN [, parameters]]  [, Yfilter1 [, parameters]] [, YfilterN [, parameters]]})
+snippet	@TRUNCATE 
+	@TRUNCATE (${1:expression})
+snippet	@UDA 
+	@UDA (${1:dimName}, ${2:uda})
+snippet	@VAR 
+	@VAR (${1:mbrName1}, ${2:mbrName2})
+snippet	@VARPER 
+	@VARPER (${1:mbrName1}, ${2:mbrName2})
+snippet	@VARIANCE 
+	@VARIANCE (${1:SKIPNONE | SKIPMISSING | SKIPZERO | SKIPBOTH}, ${2:expList})
+snippet	@VARIANCEP 
+	@VARIANCEP (${1:SKIPNONE | SKIPMISSING | SKIPZERO | SKIPBOTH}, ${2:expList})
+snippet	@WITHATTR 
+	@WITHATTR (${1:dimName}, "${2:operator}", ${3:value})
+snippet	@XREF 
+	@XREF (${1:locationAlias} ${2:[, mbrList]})
+snippet	AGG
+	AGG (${1:dimList});
+snippet	ARRAY
+	ARRAY ${1:arrayVariableName} [${2:dimName}] = {${3:constList}};
+snippet	CALL CALC ALL EXCEPT DIM (dimList); #1
+	CALC ALL EXCEPT DIM (${1:dimList});
+snippet	CALL CALC ALL MBR (mbrList); #2
+	CALC ALL MBR (${1:mbrList});
+snippet	CAVERAGE
+	CALC AVERAGE;
+snippet	CDIM
+	CALC DIM (${1:dimList});
+snippet	CFIRST
+	CALC FIRST;
+snippet	CLAST
+	CALC LAST;
+snippet	CTWOPASS
+	CALC TWOPASS;
+snippet	CCONV
+	CCONV ${1:currExchMbr | TOLOCALRATE curType};
+snippet	CLEARBLOCK
+	CLEARBLOCK ${1:ALL | UPPER | NONINPUT | DYNAMIC};
+snippet	CLEARDATA
+	CLEARDATA ${1:mbrName};
+snippet	DATACOPY
+	DATACOPY ${1:mbrName1} TO ${2:mbrName2};
+snippet	LOOP
+	LOOP (${1:integer}${2:, [break]})
+		${3:commands};
+	ENDLOOP
+snippet	SAGGMISSG
+	SET AGGMISSG ${1:ON | OFF};
+snippet SCACHE
+	SET CACHE ${1:HIGH | DEFAULT | LOW | OFF | ALL};
+snippet	SCALCHASHTBL
+	SET CALCHASHTBL ${1:ON|OFF};
+snippet	SCALCPARALLEL
+	SET CALCPARALLEL ${1:n};
+snippet	SCALCTASKDIMS
+	SET CALCTASKDIMS ${1:n};
+snippet	SCLEARUPDATESTATUS
+	SET CLEARUPDATESTATUS ${1:AFTER | ONLY | OFF};
+snippet	SCREATEBLOCKONEQ
+	SET CREATEBLOCKONEQ ${1:ON|OFF};
+snippet	SCREATENONMISSINGBLK
+	SET CREATENONMISSINGBLK ${1:ON|OFF};
+snippet	SFRMLBOTTOMUP
+	SET FRMLBOTTOMUP ${1:ON|OFF};
+snippet	SLOCKBLOCK
+	SET LOCKBLOCK ${1:HIGH | DEFAULT | LOW};
+snippet	SMSG
+	SET MSG ${1:SUMMARY | DETAIL | ERROR | WARNS | INFO | NONE | ONLY};
+snippet	SNOTICE
+	SET NOTICE ${1:HIGH | DEFAULT | LOW};
+snippet	SUPDATECALC
+	SET UPDATECALC ${1:ON | OFF};
+snippet	SUPTOLOCAL
+	SET UPTOLOCAL ${1:ON | OFF};
+snippet	VAR
+	VAR ${1:varName} ${2:[= value]};

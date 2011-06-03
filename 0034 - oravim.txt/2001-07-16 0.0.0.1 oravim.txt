@@ -1,0 +1,56 @@
+
+** ADD TO ~/.vimrc.tcl: **
+
+set datasource yourdatasource
+set username yourusername
+set password yourpassword
+
+proc executequery { } {
+  global datasource username password
+
+
+  set buf   $::vim::current(buffer)
+
+  set sql [join [$buf get $::vim::range(start) $::vim::range(end)] "\n"]
+
+  if { [regexp {"} $sql] } {
+    regsub {^[^"]*"} $sql {} sql
+    regsub {"} $sql {} sql
+  }
+  set sql [string trim $sql]
+  if { ! [string match {*\;} $sql] } { set sql ${sql}\; }
+  
+  set execsql "set autotrace on\n"
+  append execsql "set pagesize 10000\n"
+  append execsql "set timing on\n"
+  append execsql "set markup HTML on SPOOL OFF ENTMAP ON PREFORMAT off\n"
+  append execsql $sql
+
+  set result [exec echo "$execsql" | sqlplus -S ${username}/${password}@${datasource} > /tmp/sqlplusoutput.html]
+  exec links -dump /tmp/sqlplusoutput.html > /tmp/sqlplusoutput.sql
+
+  $buf command -quiet "bdelete /tmp/sqlplusoutput.sql"
+  $buf command "set splitbelow"
+  $buf command "sview /tmp/sqlplusoutput.sql"
+  $buf command "set nosplitbelow"
+
+  return
+
+}
+
+
+
+
+
+** ADD TO ~/.vimrc: **
+
+if has("tcl")
+  tcl source if/.vimrc.tcl
+endif
+
+
+vmap <C-k> :tcl executequery<cr>
+map <C-k> vip:tcl executequery<cr>
+imap <C-k> <ESC>vip:tcl executequery<cr>
+
+

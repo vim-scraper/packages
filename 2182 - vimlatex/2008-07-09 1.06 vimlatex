@@ -1,0 +1,91 @@
+#!/bin/bash
+#
+# vimlatex: Script wrapper for TeX/LaTeX/etc. that sanitizes output to
+#           be compatible with Vim-LaTeX's errorformat. Prevents Vim
+#           from opening the wrong file after some errors.
+#
+#           This script is inspired by
+#
+# http://hermitte.free.fr/vim/ressources/vimfiles/compiler/vim-tex_sh.html
+#
+# and
+#
+# http://www.unix.com/shell-programming-scripting/20218-pipelining.html
+#
+# Version: 1.06 (copyright text given below)
+#
+# Original author: Ted Pavlic
+#                  ted@tedpavlic.com
+#                  http://www.tedpavlic.com/
+#
+# Mercurial source code repository for original author's version:
+#                  http://hg.tedpavlic.com/vimlatex/
+#
+# Usage: vimlatex %command [%arguments]
+#
+#        where the command line:
+#
+#        %command %arguments
+#
+#        would texify as normal. In other words, the "vimlatex" command
+#        can simply be added before a given working command line.
+#
+# For more information (and history), see:
+#
+# http://phaseportrait.blogspot.com/2008/03/fixing-vim-latex-compiler-error.html
+#
+# Version history:
+#
+# 1.0  : 03/05/2008 - Initial release (Ted Pavlic)
+# 1.01 : 03/07/2008 - Removed extra sed pipes at Christian Ebert's suggestion (Ted Pavlic)
+# 1.02 : 03/07/2008 - Improved portability to old sed's (Christian Ebert suggestion; solution partly at http://www.culmination.org/2008/02/10/sed-on-mac-os-x-105-leopard/, implemented by Ted Pavlic)
+# 1.03 : 05/27/2008 - First attempt at preventing breaking out (..) from lines (Ted Pavlic)
+# 1.04 : 05/27/2008 - Made copyright explicit (Ted Pavlic)
+# 1.05 : 06/17/2008 - Added link to Mercurial repository (Ted Pavlic)
+# 1.06 : 07/09/2008 - Attempt to fix overrun problem (introduced by 1.03) for (..)..) lines (Ted Pavlic)
+#
+# To-do list:
+#
+#       * Improve fix added in version 1.03
+#       * Verify that script works with /bin/sh from OS/X 10.5+
+#  
+# Copyright (c) 2008 Theodore P. Pavlic
+# 
+# Permission is hereby granted, free of charge, to any person obtaining
+# a copy of this software and associated documentation files (the
+# "Software"), to deal in the Software without restriction, including
+# without limitation the rights to use, copy, modify, merge, publish,
+# distribute, sublicense, and/or sell copies of the Software, and to
+# permit persons to whom the Software is furnished to do so, subject to
+# the following conditions: 
+# 
+# The above copyright notice and this permission notice shall be
+# included in all copies or substantial portions of the Software. 
+# 
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+# EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+# MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+# IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+# CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+# TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+# SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. 
+#
+
+texprg="${1}"
+
+shift
+
+exec 3>&1
+retcode=$( exec 4>&1; { ${texprg} "$@"; echo $? >&4; } | exec sed \
+                -e '/[0-9][0-9]*$/{N;s/\n\([0-9][0-9]*\)/\1/;}' \
+                -e '/[0-9][0-9]*$/{N;s/\n\([0-9][0-9]*\)/\1/;}' \
+                -e 's/(\([^)]*\))/%x%o%x%o_\1_%z%x%z%x/g' \
+                -e 's/\((\)\(%x%o%x%o_\)/\1\'$'\n''\2/g' \
+                -e 's/\(_%z%x%z%x\)\()\)/\1\'$'\n''\2/g' \
+                -e 's/(/\'$'\n''(/g' \
+                -e 's/)/\'$'\n'')\'$'\n''/g' \
+                -e 's/%x%o%x%o_/(/g' \
+                -e 's/_%z%x%z%x/)/g' >&3)
+exec 3>&-
+
+exit ${retcode}

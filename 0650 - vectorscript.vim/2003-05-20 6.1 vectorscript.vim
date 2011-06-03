@@ -1,0 +1,401 @@
+" Vim syntax file
+" Language:	VectorScript
+" Maintainer:	David Fortin	
+" Last Change:	Tue Sep 14 14:24:23 BST 1999
+
+" For version 5.x: Clear all syntax items
+" For version 6.x: Quit when a syntax file was already loaded
+if version < 600
+  syntax clear
+elseif exists("b:current_syntax")
+  finish
+endif
+
+:syntax case ignore
+:setlocal iskeyword+=$
+" A bunch of useful VectorScript keywords
+syn keyword VectorScriptStatement	if then else begin end
+syn keyword VectorScriptStatement	while do type var procedure	
+syn keyword VectorScriptStatement	function for
+
+syn keyword VectorScriptTypeSpecifier	of integer longint real handle 
+syn keyword VectorScriptTypeSpecifier	boolean array string char dynarray
+
+
+syn keyword VectorScriptFunction	Abs Absolute ActiveClass Allocate
+syn keyword VectorScriptFunction	ActLayer ActSSheet ActSymDef
+syn keyword VectorScriptFunction	Add3DPt AddButton AddCavity
+syn keyword VectorScriptFunction	AddChoiceItem AddField AddGroupBox
+syn keyword VectorScriptFunction	AddHelpItem AddListBoxTabStop AddPoint
+syn keyword VectorScriptFunction	AddSolid AddSurface AddSymToWall
+syn keyword VectorScriptFunction	AddSymToWallEdge AddVectorFillLayer AddVertex3D
+syn keyword VectorScriptFunction	AddWallBottomPeak AddWallPeak AlignItemEdge
+syn keyword VectorScriptFunction	AlrtDialog Ang2Vec AngBVec
+syn keyword VectorScriptFunction	AngDialog AngDialog3D Angle
+syn keyword VectorScriptFunction	AngleVar AngularDim Append
+syn keyword VectorScriptFunction	AppendRoofEdge Arc ArcByCenter
+syn keyword VectorScriptFunction	ArcCos ArcSin ArcTan
+syn keyword VectorScriptFunction	ArcTo Area AttachDefaultTextureSpace
+syn keyword VectorScriptFunction	AutoKey Backward BeginColumn
+syn keyword VectorScriptFunction	BeginDialog BeginFloor BeginFolder
+syn keyword VectorScriptFunction	BeginGroup BeginMesh BeginMXtrd
+syn keyword VectorScriptFunction	BeginPoly BeginPoly3D BeginRoof
+syn keyword VectorScriptFunction	BeginSweep BeginSym BeginText
+syn keyword VectorScriptFunction	BeginVectorFillN BeginXtrd BotBound
+syn keyword VectorScriptFunction	BreakWall CalcSurfaceArea CalcVolume
+syn keyword VectorScriptFunction	CallTool CapsLock CellHasNum
+syn keyword VectorScriptFunction	CellHasStr CellString CellValue
+syn keyword VectorScriptFunction	Chr CircularDim ClassList
+syn keyword VectorScriptFunction	ClassNum ClearCavities ClearGradientSliderSegments
+syn keyword VectorScriptFunction	ClearWallPeaks ClearWSCell ClipSurface
+syn keyword VectorScriptFunction	Close ClosePoly CloseSS
+syn keyword VectorScriptFunction	ClrDialog ClrMessage ColorIndexToRGB
+syn keyword VectorScriptFunction	Command Comp Concat
+syn keyword VectorScriptFunction	ContainsLight ConvertTo3DPolys ConvertToNURBS
+syn keyword VectorScriptFunction	Copy CopyMode CopySymbol
+syn keyword VectorScriptFunction	Cos Count CreateBatDormer
+syn keyword VectorScriptFunction	CreateCheckBox CreateCone CreateControl
+syn keyword VectorScriptFunction	CreateCustomObject CreateCustomObjectPath CreateEditInteger
+syn keyword VectorScriptFunction	CreateEditReal CreateEditText CreateEditTextBox
+syn keyword VectorScriptFunction	CreateExtrudeAlongPath CreateGableDormer CreateGradient
+syn keyword VectorScriptFunction	CreateGroupBox CreateHemisphere CreateHipDormer
+syn keyword VectorScriptFunction	CreateImageFromPaint CreateLayout CreateLight
+syn keyword VectorScriptFunction	CreateListBox CreateLoftSurfaces CreateNurbsCurve
+syn keyword VectorScriptFunction	CreateNurbsSurface CreateOffsetNurbsObjectHandle CreatePaintFromImage
+syn keyword VectorScriptFunction	CreatePullDownMenu CreatePushButton CreateRadioButton
+syn keyword VectorScriptFunction	CreateRoof CreateShedDormer CreateSkylight
+syn keyword VectorScriptFunction	CreateSphere CreateStaticText CreateSurfacefromCurvesNetwork
+syn keyword VectorScriptFunction	CreateTaperedExtrude CreateText CreateTexture
+syn keyword VectorScriptFunction	CreateTextureBitmap CreateTrapeziumDormer CreateWS
+syn keyword VectorScriptFunction	CreateWSImage CrossProduct CurveThrough
+syn keyword VectorScriptFunction	CurveTo Date Deg2Rad
+syn keyword VectorScriptFunction	DelChoice DelClass Delete
+syn keyword VectorScriptFunction	DeleteAllItems DeleteConstraint DeleteObjs
+syn keyword VectorScriptFunction	DeleteTextureSpace DeleteWallSym DeleteWSColumns
+syn keyword VectorScriptFunction	DeleteWSRows DelName DelObject
+syn keyword VectorScriptFunction	DelRecord DelVectorFill DelVertex
+syn keyword VectorScriptFunction	DialogEvent DidCancel DimArcText
+syn keyword VectorScriptFunction	DimText DisableModules Distance
+syn keyword VectorScriptFunction	DistDialog DoMenuText DoMenuTextByName
+syn keyword VectorScriptFunction	DotProduct DoubleFixedTolerance DoubleTolerance
+syn keyword VectorScriptFunction	DoubLines DrawDialog DrawNurbsObject
+syn keyword VectorScriptFunction	DrwSize DSelectAll DSelectObj
+syn keyword VectorScriptFunction	Duplicate EditTexture EditTextureBitmap
+syn keyword VectorScriptFunction	EditTextureSpace EllipseEllipseIntersect EnableParameter
+syn keyword VectorScriptFunction	EndDialog EndFolder EndGroup
+syn keyword VectorScriptFunction	EndMesh EndMXtrd EndPoly
+syn keyword VectorScriptFunction	EndPoly3D EndSweep EndSym
+syn keyword VectorScriptFunction	EndText EndVectorFill EndXtrd
+syn keyword VectorScriptFunction	EOF EOLN EqualPt
+syn keyword VectorScriptFunction	EqualRect Eval EvalStr
+syn keyword VectorScriptFunction	Exp FActLayer FFillBack
+syn keyword VectorScriptFunction	FFillColorByClass FFillFore FFillPat
+syn keyword VectorScriptFunction	FFPatByClass Field FillBack
+syn keyword VectorScriptFunction	FillColorByClass FillFore FillPat
+syn keyword VectorScriptFunction	FIn3D FInFolder FInGroup
+syn keyword VectorScriptFunction	FInLayer FInSymDef FLayer
+syn keyword VectorScriptFunction	FlipHor FlipVer FLSByClass
+syn keyword VectorScriptFunction	FLWByClass FMarker FMarkerByClass
+syn keyword VectorScriptFunction	FndError FObject ForEachObject
+syn keyword VectorScriptFunction	ForEachObjectInLayer ForEachObjectInList FormatTextDialog
+syn keyword VectorScriptFunction	Forward FPatByClass FPenBack
+syn keyword VectorScriptFunction	FPenColorByClass FPenFore FPenPat
+syn keyword VectorScriptFunction	FPenSize FSActLayer FSObject
+syn keyword VectorScriptFunction	FSymDef Get2DPt Get3DCntr
+syn keyword VectorScriptFunction	Get3DInfo Get3DOrientation GetActiveSerialNumber
+syn keyword VectorScriptFunction	GetArc GetArrayDimensions GetBatAttributes
+syn keyword VectorScriptFunction	GetBBox GetBeamAngle GetBinaryConstraint
+syn keyword VectorScriptFunction	GetCAlign GetCellNum GetCellStr
+syn keyword VectorScriptFunction	GetChoiceStr GetClass GetClassArrow
+syn keyword VectorScriptFunction	GetClassOptions GetClFillBack GetClFillFore
+syn keyword VectorScriptFunction	GetClFPat GetClLS GetClLW
+syn keyword VectorScriptFunction	GetClosestPt GetClosestSide GetClPenBack
+syn keyword VectorScriptFunction	GetClPenFore GetClTextureC GetClTextureD
+syn keyword VectorScriptFunction	GetClTextureG GetClTextureL GetClTextureR
+syn keyword VectorScriptFunction	GetClTextureT GetClUseGraphic GetClUseTexture
+syn keyword VectorScriptFunction	GetClVectorFill GetColorButton GetControlData
+syn keyword VectorScriptFunction	GetCurrentMode GetCustomObjectChoice GetCustomObjectInfo
+syn keyword VectorScriptFunction	GetCustomObjectPath GetCustomObjectProfileGroup GetCVis
+syn keyword VectorScriptFunction	GetCWidth GetDashStyle GetDefaultTextSize
+syn keyword VectorScriptFunction	GetDialog GetDimText GetDormerAttributes
+syn keyword VectorScriptFunction	GetDormerThick GetDrawingSizeRect GetEditInteger
+syn keyword VectorScriptFunction	GetEditReal GetEnabledModules GetField
+syn keyword VectorScriptFunction	GetFile GetFillBack GetFillFore
+syn keyword VectorScriptFunction	GetFillIAxisEndPoint GetFillJAxisEndPoint GetFillOriginPoint
+syn keyword VectorScriptFunction	GetFillPoints GetFldName GetFldType
+syn keyword VectorScriptFunction	GetFName GetFolderPath GetFontID
+syn keyword VectorScriptFunction	GetFontName GetFPat GetGableAttributes
+syn keyword VectorScriptFunction	GetGradientData GetGradientMidpointPosition GetGradientSliderData
+syn keyword VectorScriptFunction	GetGradientSliderSelectedMarker GetGradientSpotColor GetGradientSpotPosition
+syn keyword VectorScriptFunction	GetHipAttributes GetHole GetImagePopupObject
+syn keyword VectorScriptFunction	GetImagePopupObjectItemIndex GetImagePopupSelectedItem GetKeyDown
+syn keyword VectorScriptFunction	GetLastFileErr GetLayer GetLayerAmbientColor
+syn keyword VectorScriptFunction	GetLayerAmbientInfo GetLayerByName GetLayerElevation
+syn keyword VectorScriptFunction	GetLayerOptions GetLayerRenderMode GetLightColorRGB
+syn keyword VectorScriptFunction	GetLightDirection GetLightFalloff GetLightInfo
+syn keyword VectorScriptFunction	GetLightLocation GetLine GetLName
+syn keyword VectorScriptFunction	GetLocalizedPluginChoice GetLocalizedPluginName GetLocalizedPluginParameter
+syn keyword VectorScriptFunction	GetLocPt GetLocus3D GetLS
+syn keyword VectorScriptFunction	GetLScale GetLVis GetLW
+syn keyword VectorScriptFunction	GetMarker GetMouse GetName
+syn keyword VectorScriptFunction	GetNumGradientSegments GetNumGradientSliderSegments GetNumHoles
+syn keyword VectorScriptFunction	GetNumImagePopupItems GetNumRoofElements GetNumWallPeaks
+syn keyword VectorScriptFunction	GetNurbsObjectDistanceFromPoint GetObjArrow GetObject
+syn keyword VectorScriptFunction	GetObjectVariableBoolean GetObjectVariableInt GetObjectVariableLongInt
+syn keyword VectorScriptFunction	GetObjectVariableReal GetObjectVariableString GetObjExpandTexture
+syn keyword VectorScriptFunction	GetOrigin GetOSVersion GetPaletteVisibility
+syn keyword VectorScriptFunction	GetParameterOnNurbsCurve GetParent GetPenBack
+syn keyword VectorScriptFunction	GetPenFore GetPickObjectInfo GetPluginChoiceIndex
+syn keyword VectorScriptFunction	GetPluginInfo GetPluginString GetPolylineVertex
+syn keyword VectorScriptFunction	GetPolyPt GetPolyPt3D GetPref
+syn keyword VectorScriptFunction	GetPrefInt GetPrefLongInt GetPrefReal
+syn keyword VectorScriptFunction	GetPrefString GetPrimaryUnitInfo GetProduct
+syn keyword VectorScriptFunction	GetPt GetPtL GetRecord
+syn keyword VectorScriptFunction	GetRect GetResourceString GetRField
+syn keyword VectorScriptFunction	GetRoofAttributes GetRoofEdge GetRoofElementType
+syn keyword VectorScriptFunction	GetRoofFaceAttrib GetRoofFaceCoords GetRoofVertices
+syn keyword VectorScriptFunction	GetRoundingBase GetRRDiam GetScreen
+syn keyword VectorScriptFunction	GetSDName GetSecondaryUnitInfo GetSegPt1
+syn keyword VectorScriptFunction	GetSegPt2 GetSelChoice GetShedAttributes
+syn keyword VectorScriptFunction	GetSingularConstraint GetSkylight GetSprdSortSum
+syn keyword VectorScriptFunction	GetSprdSortSumColumns GetSpreadAngle GetSymbolOptionsN
+syn keyword VectorScriptFunction	GetSymbolType GetSymBrightMult GetSymLoc
+syn keyword VectorScriptFunction	GetSymLoc3D GetSymName GetSymRot
+syn keyword VectorScriptFunction	GetTexBFeatureEnd GetTexBFeatureStart GetTexBitFeatureSize
+syn keyword VectorScriptFunction	GetTexBitmapOrigin GetTexBitPaintNode GetTexBitRepHoriz
+syn keyword VectorScriptFunction	GetTexBitRepVert GetTexSpace2DOffset GetTexSpace2DRadius
+syn keyword VectorScriptFunction	GetTexSpace2DRot GetTexSpace2DScale GetTexSpaceEndCap
+syn keyword VectorScriptFunction	GetTexSpaceKind GetTexSpaceOrientU GetTexSpaceOrientV
+syn keyword VectorScriptFunction	GetTexSpaceOrientW GetTexSpaceOrigin GetTexSpacePartID
+syn keyword VectorScriptFunction	GetTexSpaceStartCap GetText GetTextFont
+syn keyword VectorScriptFunction	GetTextJust GetTextLeading GetTextLength
+syn keyword VectorScriptFunction	GetTextOrientation GetTextSize GetTextSpace
+syn keyword VectorScriptFunction	GetTextStyle GetTextureBitmap GetTextureRef
+syn keyword VectorScriptFunction	GetTextureShader GetTextureShininess GetTextureSpace
+syn keyword VectorScriptFunction	GetTextureTransp GetTextVerticalAlign GetTextWidth
+syn keyword VectorScriptFunction	GetTextWrap GetTickCount GetTopVisibleWS
+syn keyword VectorScriptFunction	GetTrapeziumAttributes GetType GetUnits
+syn keyword VectorScriptFunction	GetVCenter GetVectorFill GetVectorFillDefault
+syn keyword VectorScriptFunction	GetVersion GetVertexVisibility GetVertNum
+syn keyword VectorScriptFunction	GetView GetWallControlOffset GetWallPeak
+syn keyword VectorScriptFunction	GetWallWidth GetWorkingPlane GetWSCellAlignment
+syn keyword VectorScriptFunction	GetWSCellBorder GetWSCellFormula GetWSCellNumberFormat
+syn keyword VectorScriptFunction	GetWSCellString GetWSCellTextFormat GetWSCellValue
+syn keyword VectorScriptFunction	GetWSColumnOperators GetWSColumnWidth GetWSFromImage
+syn keyword VectorScriptFunction	GetWSImage GetWSPlacement GetWSRowColumnCount
+syn keyword VectorScriptFunction	GetWSRowHeight GetWSSelection GetWSSubrowCellString
+syn keyword VectorScriptFunction	GetWSSubrowCellValue GetWSSubrowCount GetZoom
+syn keyword VectorScriptFunction	GetZVals GrayClass GrayLayer
+syn keyword VectorScriptFunction	GridLines Group GroupToMesh
+syn keyword VectorScriptFunction	HAngle HArea HasConstraint
+syn keyword VectorScriptFunction	HasDim HasPlugin HCenter
+syn keyword VectorScriptFunction	HDuplicate Height HExtrude
+syn keyword VectorScriptFunction	HHeight Hide HideClass
+syn keyword VectorScriptFunction	HideLayer HLength HMove
+syn keyword VectorScriptFunction	HMoveBackward HMoveForward HPerim
+syn keyword VectorScriptFunction	HRotate HUngroup HWallHeight
+syn keyword VectorScriptFunction	HWallWidth HWidth Index2Name
+syn keyword VectorScriptFunction	Insert InsertChoice InsertGradientSegment
+syn keyword VectorScriptFunction	InsertGradientSliderSegment InsertImagePopupObjectItem InsertSymbol
+syn keyword VectorScriptFunction	InsertSymbolInFolder InsertVertex InsertWSColumns
+syn keyword VectorScriptFunction	InsertWSRows IntDialog IntersectSolid
+syn keyword VectorScriptFunction	IntersectSurface IsFillColorByClass IsFlipped
+syn keyword VectorScriptFunction	IsFPatByClass IsLayerReferenced IsLSByClass
+syn keyword VectorScriptFunction	IsLWByClass IsMarkerByClass IsNewCustomObject
+syn keyword VectorScriptFunction	IsObjectFlipped IsPenColorByClass IsRW
+syn keyword VectorScriptFunction	IsTextureableObject IsValidWSCell IsValidWSRange
+syn keyword VectorScriptFunction	IsValidWSSubrowCell IsWSCellNumber IsWSCellString
+syn keyword VectorScriptFunction	IsWSDatabaseRow IsWSSubrowCellNumber IsWSSubrowCellString
+syn keyword VectorScriptFunction	IsWSVisible ItemSel JoinWalls
+syn keyword VectorScriptFunction	KeyDown LActLayer Layer
+syn keyword VectorScriptFunction	LayerRef LckObjs LeftBound
+syn keyword VectorScriptFunction	Len Length LFillBack
+syn keyword VectorScriptFunction	LFillFore LimitTolerance Line
+syn keyword VectorScriptFunction	LinearDim LineEllipseIntersect LineLineIntersection
+syn keyword VectorScriptFunction	LineTo LinkText LLayer
+syn keyword VectorScriptFunction	Ln LNewObj LoadCell
+syn keyword VectorScriptFunction	LObject Locus Locus3D
+syn keyword VectorScriptFunction	LPenBack LPenFore LSActLayer
+syn keyword VectorScriptFunction	LSByClass LWByClass Marker
+syn keyword VectorScriptFunction	MarkerByClass MeshToGroup Message
+syn keyword VectorScriptFunction	MirrorXY3D MouseDown Move
+syn keyword VectorScriptFunction	Move3D Move3DObj MoveBack
+syn keyword VectorScriptFunction	MoveFront MoveObjs MoveTo
+syn keyword VectorScriptFunction	MoveWallByOffset Name2Index NameClass
+syn keyword VectorScriptFunction	NameList NameNum NameObject
+syn keyword VectorScriptFunction	NameUndoEvent NewField NewSprdSheet
+syn keyword VectorScriptFunction	NextDObj NextLayer NextObj
+syn keyword VectorScriptFunction	NextSObj NextSymDef NoAngleVar
+syn keyword VectorScriptFunction	NonUndoableActionOK Norm Num2Str
+syn keyword VectorScriptFunction	Num2StrF NumChoices NumCustomObjectChoices
+syn keyword VectorScriptFunction	NumDashStyles NumFields NumLayers
+syn keyword VectorScriptFunction	NumObj NumRecords NumSObj
+syn keyword VectorScriptFunction	NumVectorFills NurbsCurveEvalPt NurbsCurveGetNumPieces
+syn keyword VectorScriptFunction	NurbsCurveType NurbsDegree NurbsDelVertex
+syn keyword VectorScriptFunction	NurbsGetNumPts NurbsGetPt3D NurbsGetWeight
+syn keyword VectorScriptFunction	NurbsKnot NurbsNumKnots NurbsSetKnot
+syn keyword VectorScriptFunction	NurbsSetPt3D NurbsSetWeight NurbsSurfaceEvalPt
+syn keyword VectorScriptFunction	ObjectType OffsetPoly Open
+syn keyword VectorScriptFunction	OpenPoly OpenURL Option
+syn keyword VectorScriptFunction	Ord Oval PenBack
+syn keyword VectorScriptFunction	PenColorByClass PenFore PenGrid
+syn keyword VectorScriptFunction	PenLoc PenPat PenSize
+syn keyword VectorScriptFunction	Perim Perp PickObject
+syn keyword VectorScriptFunction	Poly Poly3D PopAttrs
+syn keyword VectorScriptFunction	Pos PrevDObj PrevLayer
+syn keyword VectorScriptFunction	PrevObj PrevSObj PrevSymDef
+syn keyword VectorScriptFunction	PrimaryUnits Projection PtDialog
+syn keyword VectorScriptFunction	PtDialog3D PtInPoly PtInRect
+syn keyword VectorScriptFunction	PushAttrs PutFile QTCloseMovieFile
+syn keyword VectorScriptFunction	QTGetMovieOptions QTInitialize QTOpenMovieFile
+syn keyword VectorScriptFunction	QTSetMovieOptions QTTerminate QTWriteFrame
+syn keyword VectorScriptFunction	Rad2Deg Random Read
+syn keyword VectorScriptFunction	ReadLn RealDialog RecalculateWS
+syn keyword VectorScriptFunction	Record Rect ReDraw
+syn keyword VectorScriptFunction	ReDrawAll Relative RemoveAllImagePopupItems
+syn keyword VectorScriptFunction	RemoveGradientSegment RemoveGradientSliderSegment RemoveImagePopupItem
+syn keyword VectorScriptFunction	RemoveListBoxTabStop RemoveRoofEdge RemoveRoofElement
+syn keyword VectorScriptFunction	RenameClass ResetBBox ResetObject
+syn keyword VectorScriptFunction	ResetOrientation3D ResolveByClassTextureRef ReverseWallSides
+syn keyword VectorScriptFunction	Rewrite RGBToColorIndex RightBound
+syn keyword VectorScriptFunction	Rotate Rotate3D RotatePoint
+syn keyword VectorScriptFunction	Round RoundWall RRect
+syn keyword VectorScriptFunction	Run RunLayoutDialog SaveSheet
+syn keyword VectorScriptFunction	Scale SecondaryUnits SelChoice
+syn keyword VectorScriptFunction	SelectAll Selected SelectObj
+syn keyword VectorScriptFunction	SelectSS SelField Set3DInfo
+syn keyword VectorScriptFunction	Set3DRot SetActSymbol SetArc
+syn keyword VectorScriptFunction	SetBatAttributes SetBBox SetBeamAngle
+syn keyword VectorScriptFunction	SetBelowItem SetBinaryConstraint SetClass
+syn keyword VectorScriptFunction	SetClassArrow SetClassOptions SetClFillBack
+syn keyword VectorScriptFunction	SetClFillFore SetClFPat SetClLS
+syn keyword VectorScriptFunction	SetClLW SetClPenBack SetClPenFore
+syn keyword VectorScriptFunction	SetClTextureC SetClTextureD SetClTextureG
+syn keyword VectorScriptFunction	SetClTextureL SetClTextureR SetClTextureT
+syn keyword VectorScriptFunction	SetClUseGraphic SetClUseTexture SetClVectorFill
+syn keyword VectorScriptFunction	SetColorButton SetConstrain SetConstraintValue
+syn keyword VectorScriptFunction	SetControlData SetControlText SetCurrentObject
+syn keyword VectorScriptFunction	SetCursor SetCustomObjectPath SetCustomObjectProfileGroup
+syn keyword VectorScriptFunction	SetDashStyle SetDefaultTextureSpace SetDimStd
+syn keyword VectorScriptFunction	SetDimText SetDormerAttributes SetDormerThick
+syn keyword VectorScriptFunction	SetDrawingRect SetDSelect SetEditInteger
+syn keyword VectorScriptFunction	SetEditReal SetField SetFillBack
+syn keyword VectorScriptFunction	SetFillColorByClass SetFillFore SetFillIAxisEndPoint
+syn keyword VectorScriptFunction	SetFillJAxisEndPoint SetFillOriginPoint SetFirstGroupItem
+syn keyword VectorScriptFunction	SetFirstLayoutItem SetFPat SetFPatByClass
+syn keyword VectorScriptFunction	SetGableAttributes SetGradientData SetGradientMidpointPosition
+syn keyword VectorScriptFunction	SetGradientSliderData SetGradientSliderSelectedMarker SetGradientSpotColor
+syn keyword VectorScriptFunction	SetGradientSpotPosition SetHDef SetHelpString
+syn keyword VectorScriptFunction	SetHipAttributes SetImagePopupSelectedItem SetItem
+syn keyword VectorScriptFunction	SetItemEnable SetLayerAmbientColor SetLayerAmbientInfo
+syn keyword VectorScriptFunction	SetLayerElevation SetLayerOptions SetLayerRenderMode
+syn keyword VectorScriptFunction	SetLightColorRGB SetLightDirection SetLightFalloff
+syn keyword VectorScriptFunction	SetLightInfo SetLightLocation SetLS
+syn keyword VectorScriptFunction	SetLSByClass SetLScale SetLW
+syn keyword VectorScriptFunction	SetLWByClass SetMarker SetMarkerByClass
+syn keyword VectorScriptFunction	SetMaximumUndoEvents SetName SetObjArrow
+syn keyword VectorScriptFunction	SetObjectVariableBoolean SetObjectVariableInt SetObjectVariableLongInt
+syn keyword VectorScriptFunction	SetObjectVariableReal SetObjectVariableString SetObjExpandTexture
+syn keyword VectorScriptFunction	SetOrigin SetOriginAbsolute SetPaletteVisibility
+syn keyword VectorScriptFunction	SetParameterVisibility SetParent SetPenBack
+syn keyword VectorScriptFunction	SetPenColorByClass SetPenFore SetPolylineVertex
+syn keyword VectorScriptFunction	SetPolyPt SetPolyPt3D SetPref
+syn keyword VectorScriptFunction	SetPrefInt SetPrefLongInt SetPrefReal
+syn keyword VectorScriptFunction	SetPrefString SetPrimaryDim SetRecord
+syn keyword VectorScriptFunction	SetRField SetRightItem SetRoofAttributes
+syn keyword VectorScriptFunction	SetRoofEdge SetRot3D SetScale
+syn keyword VectorScriptFunction	SetSecondaryDim SetSegPt1 SetSegPt2
+syn keyword VectorScriptFunction	SetSelect SetShedAttributes SetSingularConstraint
+syn keyword VectorScriptFunction	SetSkylight SetSprdSortSum SetSprdSortSumColumns
+syn keyword VectorScriptFunction	SetSpreadAngle SetSymbolOptionsN SetSymBrightMult
+syn keyword VectorScriptFunction	SetTexBFeatureEnd SetTexBFeatureStart SetTexBitFeatureSize
+syn keyword VectorScriptFunction	SetTexBitmapOrigin SetTexBitPaintNode SetTexBitRepHoriz
+syn keyword VectorScriptFunction	SetTexBitRepVert SetTexSpace2DOffset SetTexSpace2DRadius
+syn keyword VectorScriptFunction	SetTexSpace2DRot SetTexSpace2DScale SetTexSpaceEndCap
+syn keyword VectorScriptFunction	SetTexSpaceKind SetTexSpaceOrientU SetTexSpaceOrientV
+syn keyword VectorScriptFunction	SetTexSpaceOrientW SetTexSpaceOrigin SetTexSpacePartID
+syn keyword VectorScriptFunction	SetTexSpaceStartCap SetText SetTextFont
+syn keyword VectorScriptFunction	SetTextJust SetTextLeading SetTextOrientation
+syn keyword VectorScriptFunction	SetTextSize SetTextSpace SetTextStyle
+syn keyword VectorScriptFunction	SetTextureBitmap SetTextureRef SetTextureShader
+syn keyword VectorScriptFunction	SetTextureShininess SetTextureTransp SetTextVerticalAlign
+syn keyword VectorScriptFunction	SetTextWidth SetTextWrap SetTitle
+syn keyword VectorScriptFunction	SetTool SetTopVisibleWS SetTrapeziumAttributes
+syn keyword VectorScriptFunction	SetUnits SetVCenter SetVectorFill
+syn keyword VectorScriptFunction	SetVectorFillDefault SetVertexVisibility SetView
+syn keyword VectorScriptFunction	SetViewVector SetVSResourceFile SetWallControlOffset
+syn keyword VectorScriptFunction	SetWallWidth SetWorkingPlane SetWSCellAlignment
+syn keyword VectorScriptFunction	SetWSCellBorder SetWSCellFormula SetWSCellNumberFormat
+syn keyword VectorScriptFunction	SetWSCellTextFormat SetWSColumnOperators SetWSColumnWidth
+syn keyword VectorScriptFunction	SetWSCurrentCell SetWSPlacement SetWSSelection
+syn keyword VectorScriptFunction	SetZoom SetZVals SheetList
+syn keyword VectorScriptFunction	SheetNum Shift Show
+syn keyword VectorScriptFunction	ShowClass ShowCreateImageDialog ShowGradientEditorDialog
+syn keyword VectorScriptFunction	ShowLayer ShowWS ShowWSDialog
+syn keyword VectorScriptFunction	Sin SingleTolerance Smooth
+syn keyword VectorScriptFunction	SortArray Space SprdAlign
+syn keyword VectorScriptFunction	SprdBorder SprdFormat SprdSize
+syn keyword VectorScriptFunction	SprdWidth Sqr Sqrt
+syn keyword VectorScriptFunction	SrndArea StdRead StdReadLn
+syn keyword VectorScriptFunction	Str2Num StrDialog SubtractSolid
+syn keyword VectorScriptFunction	SurfaceArea Symbol SymbolToGroup
+syn keyword VectorScriptFunction	SymDefNum SysBeep Tab
+syn keyword VectorScriptFunction	Tan TargetSprdSheet TextFace
+syn keyword VectorScriptFunction	TextFlip TextFont TextJust
+syn keyword VectorScriptFunction	TextLeading TextOrigin TextRotate
+syn keyword VectorScriptFunction	TextSize TextSpace TextVerticalAlign
+syn keyword VectorScriptFunction	TopBound Trunc UndoOff
+syn keyword VectorScriptFunction	Ungroup UnionRect Units
+syn keyword VectorScriptFunction	UnitVec UnLckObjs UprString
+syn keyword VectorScriptFunction	UseDefaultFileErrorHandling ValidAngStr ValidNumStr
+syn keyword VectorScriptFunction	VDelete Vec2Ang VectorFillList
+syn keyword VectorScriptFunction	VerifyLayout VerifyLibraryRoutine Volume
+syn keyword VectorScriptFunction	VRestore VSave Wait
+syn keyword VectorScriptFunction	Wall WallCap WallFootPrint
+syn keyword VectorScriptFunction	WallHeight WallPeak WallTo
+syn keyword VectorScriptFunction	WallWidth Width Write
+syn keyword VectorScriptFunction	WriteLn WriteLnMac WriteMac
+syn keyword VectorScriptFunction	XCenter YCenter YNDialog
+
+"integer number, or floating point number without a dot.
+syn match  VectorScriptNumber		"\<\d\+\>"
+
+syn region  VectorScriptComment	start="{" end="}" contains=VectorScriptComment,VectorScriptIncludeFile,VectorScriptMacro
+syn match   VectorScriptMacro	"[\$][a-zA-Z0-9]*"
+syn match   VectorScriptIncludeFile	"[a-zA-Z0-9_]*\.vs"
+syn region  VectorScriptLineNumber	start="^\d" end="\s"
+syn match   VectorScriptTypeSpecifier  "[a-zA-Z0-9][\$%&!#]"ms=s+1
+syn match   VectorScriptPunctuation  "[\(|\)|\:|\,|\.|\<|\>|\*|\+|\-|\=|\:|\;|\.|\,]"
+
+
+" Define the default highlighting.
+" For version 5.7 and earlier: only when not done already
+" For version 5.8 and later: only when an item doesn't have highlighting yet
+if version >= 508 || !exists("did_VectorScript_syntax_inits")
+  if version < 508
+    let did_VectorScript_syntax_inits = 1
+    command -nargs=+ HiLink hi link <args>
+  else
+    command -nargs=+ HiLink hi def link <args>
+  endif
+
+  HiLink VectorScriptIncludeFile	Label
+  HiLink VectorScriptPunctuation	Conditional
+  HiLink VectorScriptRepeat		Repeat
+  HiLink VectorScriptLineNumber		Comment
+  HiLink VectorScriptNumber		Number
+  HiLink VectorScriptError		Error
+  HiLink VectorScriptStatement		Statement
+  HiLink VectorScriptString		String
+  HiLink VectorScriptComment		Comment
+  HiLink VectorScriptTypeSpecifier	Type
+  HiLink VectorScriptFunction		Identifier
+  HiLink VectorScriptMacro		Macro
+
+  delcommand HiLink
+endif
+
+let b:current_syntax = "VectorScript"
+
+" vim: ts=8
+

@@ -1,0 +1,450 @@
+"
+" a nice custom menu by Paolo B., 2006-2007
+"
+
+	amenu HTML\ Personal.BR<Tab>			O<br /><Esc>
+	vmenu HTML\ Personal.BR<Tab>			<Esc>`<i<br /><Esc>
+	imenu HTML\ Personal.BR<Tab>			<br />
+	nmap <F8>hbr						O<br /><Esc>
+	imap <F8>hbr						<br />
+	vmap <F8>hbr						<Esc>`<i<br /><Esc>
+
+	amenu HTML\ Personal.HR\ 70%<Tab> 			O<HR width="70%" /><Esc>
+	vmenu HTML\ Personal.HR\ 70%<Tab> 			<Esc>`<i<HR width="70%" /><CR><Esc>
+	imenu HTML\ Personal.HR\ 70%<Tab> 			<HR width="70%" /><CR>
+
+	amenu HTML\ Personal.HREF<Tab>				<Esc>i<a href="URL" target="ontop">TAG</a><Esc>9bcw
+	vmenu HTML\ Personal.HREF<Tab>				<Esc>`>a</a><Esc>`<i<a href="URL"><Esc>2bcw
+	imenu HTML\ Personal.HREF<Tab>				<a href="URL" target="ontop">TAG</a><Esc>9bcw
+	nmap <F8>hah						O<a href="URL">TAG</a><Esc>5bcw
+	imap <F8>hah						<a href="<ESC>mZa">TAG</a><Esc>`Za
+	vmap <F8>hah						<Esc>`>a</a><Esc>`<i<a href="URL"><Esc>2bcw
+
+"--- NEW & BASE ---
+amenu HTML\ Personal.-SEP0-	<nop>
+
+	amenu HTML\ Personal.(new)\ blank\ HTML<Tab>	<Esc><Esc>i<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><CR><HTML><CR><HEAD><CR><TITLE>         titolo del documento html     </TITLE><CR>	<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"><CR>	<META NAME="Title" CONTENT="   titolo del documento  "><CR>	<META NAME="Description" CONTENT="la descrizione del documento"><CR>	<META NAME="Keywords" CONTENT="parole, chiave, ricerca"><CR>	<META NAME="Author" CONTENT="Paolo B."><CR>	<META NAME="Content-Language" CONTENT="Italian,English"><CR>	<META NAME="Revisit-After" CONTENT="3 weeks"><CR>	<META NAME="Language" CONTENT="Italian"><CR>	<META NAME="ROBOTS" CONTENT="All"><CR>	<META NAME="GENERATOR" CONTENT="GVim or Notepad2"><CR></HEAD><CR><BODY leftmargin="25" rightmargin="20"><BASEFONT FACE="Verdana" SIZE="2" /><CR><CR></BODY><CR></HTML><CR><Esc>
+	vmenu HTML\ Personal.(new)\ blank\ HTML<Tab>	<Esc><Esc>i<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><CR><HTML><CR><HEAD><CR><TITLE>         titolo del documento html     </TITLE><CR>	<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"><CR>	<META NAME="Title" CONTENT="   titolo del documento  "><CR>	<META NAME="Description" CONTENT="la descrizione del documento"><CR>	<META NAME="Keywords" CONTENT="parole, chiave, ricerca"><CR>	<META NAME="Author" CONTENT="Paolo B."><CR>	<META NAME="Content-Language" CONTENT="Italian,English"><CR>	<META NAME="Revisit-After" CONTENT="3 weeks"><CR>	<META NAME="Language" CONTENT="Italian"><CR>	<META NAME="ROBOTS" CONTENT="All"><CR>	<META NAME="GENERATOR" CONTENT="GVim or Notepad2"><CR></HEAD><CR><BODY leftmargin="25" rightmargin="20"><BASEFONT FACE="Verdana" SIZE="2" /><CR><CR></BODY><CR></HTML><CR><Esc>
+	imenu HTML\ Personal.(new)\ blank\ HTML<Tab>	<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><CR><HTML><CR><HEAD><CR><TITLE>         titolo del documento html     </TITLE><CR><META NAME="Title" CONTENT="   titolo del documento  "><CR>	<META NAME="Description" CONTENT="la descrizione del documento"><CR>	<META NAME="Keywords" CONTENT="parole, chiave, ricerca"><CR>	<META NAME="Author" CONTENT="Paolo B."><CR>	<META NAME="Content-Language" CONTENT="Italian,English"><CR>	<META NAME="Revisit-After" CONTENT="3 weeks"><CR>	<META NAME="Language" CONTENT="Italian"><CR>	<META NAME="ROBOTS" CONTENT="All"><CR>	<META NAME="GENERATOR" CONTENT="GVim or Notepad2"><CR>	<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"><CR></HEAD><CR><BODY leftmargin="25" rightmargin="20"><BASEFONT FACE="Verdana" SIZE="2" /><CR><CR></BODY><CR></HTML><CR>
+
+	amenu HTML\ Personal.base\ parameters.Body\ Margin\ \ \ \ \ \ !hbm	<Esc> leftmargin="25" rightmargin="20"
+	vmenu HTML\ Personal.base\ parameters.Body\ Margin\ \ \ \ \ \ !hbm	<Esc><Esc>i leftmargin="25" rightmargin="20"<Esc>v
+	nmenu HTML\ Personal.base\ parameters.Body\ Margin\ \ \ \ \ \ !hbm	<Esc><Esc>i leftmargin="25" rightmargin="20"<Esc>
+	nmap <F8>hbm						<Esc><Esc>i leftmargin="25" rightmargin="20"  <Esc>
+	imap <F8>hbm						<Esc> leftmargin="25" rightmargin="20" 
+	vmap <F8>hbm						<Esc><Esc>i leftmargin="25" rightmargin="20"  <Esc>v
+
+	amenu HTML\ Personal.base\ parameters.Basefont<Tab>	<Esc>i<BASEFONT FACE="Verdana" SIZE="2" /><CR><Esc>x
+	vmenu HTML\ Personal.base\ parameters.Basefont<Tab>	<Esc>i<BASEFONT FACE="Verdana" SIZE="2" /><CR><Esc>x<Esc>
+	imenu HTML\ Personal.base\ parameters.Basefont<Tab>	<BASEFONT FACE="Verdana" SIZE="2" /><CR>
+
+	amenu HTML\ Personal.base\ parameters.base\ Href<Tab>	<Esc>i<base href="" /><CR><Esc>k12l<Esc>i
+	vmenu HTML\ Personal.base\ parameters.base\ Href<Tab>	<Esc>i<base href="" /><CR><Esc>k12l<Esc>i
+	imenu HTML\ Personal.base\ parameters.base\ Href<Tab>	<base href="" /><CR><Esc>k12l<Esc>i
+
+	amenu HTML\ Personal.base\ parameters.insert\ "original\ webpage"<Tab>	<Esc><Esc>i<CR><a href="" target="ontop">original webpage</a><br /><CR><Esc>k9l<Esc>i
+	imenu HTML\ Personal.base\ parameters.insert\ "original\ webpage"<Tab>	<CR><a href="" target="ontop">original\ webpage</a><br /><CR><Esc>k9l<Esc>i
+
+	amenu HTML\ Personal.base\ parameters.META\ Iso\ latin<Tab>	<Esc><Esc>gg4<CR>O<Esc><Esc>i	<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1" /><CR><Esc>dd
+
+	amenu HTML\ Personal.base\ parameters.META\ Unicode<Tab>	<Esc><Esc>gg4<CR>O<Esc><Esc>i	<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8" /><CR><Esc>dd
+
+	amenu HTML\ Personal.base\ parameters.Page-break\ (css\ Header)<Tab>	<Esc><Esc>i<STYLE TYPE="text/css"><CR>hr {page-break-after:always}<CR></STYLE><CR><Esc>kk>>jj<Esc>
+	imenu HTML\ Personal.base\ parameters.Page-break\ (css\ Header)<Tab>	<STYLE TYPE="text/css"><CR>hr {page-break-after:always}<CR></STYLE><CR><Esc>kk>>jj<Esc>i
+
+	amenu HTML\ Personal.base\ parameters.Style\ Css<Tab>	<Esc><Esc>i<STYLE TYPE="text/css"><CR>h1 {text-align:center;background:silver;color:navy;font-size:18}<CR>h2 {text-align:center;background:white;color:navy;font-size:16}<CR>h3 {text-align:center;color:navy;font-size:14}<CR>h4 {color:navy;font-size:12}<CR>h5 {color:navy;font-size:10}<CR>h6 {text-align:right;background:black;color:lime;font-size:9}<CR>body {font-family:Verdana;font-size:13}<CR>pre {font-size:13}<CR>kbd {background:black;color:yellow;font-family:CourierNew;font-size:14}<CR>table {font-family:Verdana;font-size:12}<CR>xmp {font-size:14}<CR>a {}<CR></STYLE><CR><Esc>13k>12>13jgqq<Esc>
+	imenu HTML\ Personal.base\ parameters.Style\ Css<Tab>	<STYLE TYPE="text/css"><CR>h1 {text-align:center;background:silver;color:navy;font-size:18}<CR>h2 {text-align:center;background:white;color:navy;font-size:16}<CR>h3 {text-align:center;color:navy;font-size:14}<CR>h4 {color:navy;font-size:12}<CR>h5 {color:navy;font-size:10}<CR>h6 {text-align:right;background:black;color:lime;font-size:9}<CR>body {font-family:Verdana;font-size:13}<CR>pre {font-size:13}<CR>kbd {background:black;color:yellow;font-family:CourierNew;font-size:14}<CR>table {font-family:Verdana;font-size:12}<CR>xmp {font-size:14}<CR>a {}<CR></STYLE><CR><Esc>13k>12>13jgqq<Esc>i
+
+"=== HEADINGS ===
+amenu HTML\ Personal.-SEP1-	<nop>
+
+	amenu HTML\ Personal.format\ headings.H1\ \ !hh1			O<h1>HEADING</h1><Esc>3bcw
+	vmenu HTML\ Personal.format\ headings.H1\ \ !hh1			<Esc>`>a</h1><Esc>`<i<h1><Esc>l
+	nmap <F8>hh1						O<h1>HEADING</h1><Esc>3bcw
+	imap <F8>hh1						<h1><ESC>mZa</h1><Esc>`Za
+	vmap <F8>hh1						<Esc>`>a</h1><Esc>`<i<h1><Esc>l
+
+	amenu HTML\ Personal.format\ headings.H2\ \ !hh2			O<h2>HEADING</h2><Esc>3bcw
+	vmenu HTML\ Personal.format\ headings.H2\ \ !hh2			<Esc>`>a</h2><Esc>`<i<h2><Esc>l
+	nmap <F8>hh2						O<h2>HEADING</h2><Esc>3bcw
+	imap <F8>hh2						<h2><ESC>mZa</h2><Esc>`Za
+	vmap <F8>hh2						<Esc>`>a</h2><Esc>`<i<h2><Esc>l
+
+	amenu HTML\ Personal.format\ headings.H3\ \ !hh3			O<h3>HEADING</h3><Esc>3bcw
+	vmenu HTML\ Personal.format\ headings.H3\ \ !hh3			<Esc>`>a</h3><Esc>`<i<h3><Esc>l
+	nmap <F8>hh3						O<h3>HEADING</h3><Esc>3bcw
+	imap <F8>hh3						<h3><ESC>mZa</h3><Esc>`Za
+	vmap <F8>hh3						<Esc>`>a</h3><Esc>`<i<h3><Esc>l
+
+	amenu HTML\ Personal.format\ headings.H4\ \ !hh4			O<h4>HEADING</h4><Esc>3bcw
+	vmenu HTML\ Personal.format\ headings.H4\ \ !hh4			<Esc>`>a</h4><Esc>`<i<h4><Esc>l
+	nmap <F8>hh4						O<h4>HEADING</h4><Esc>3bcw
+	imap <F8>hh4						<h4><ESC>mZa</h4><Esc>`Za
+	vmap <F8>hh4						<Esc>`>a</h4><Esc>`<i<h4><Esc>l
+
+	amenu HTML\ Personal.format\ headings.H5\ \ !hh5			O<h5>HEADING</h5><Esc>3bcw
+	vmenu HTML\ Personal.format\ headings.H5\ \ !hh5			<Esc>`>a</h5><Esc>`<i<h5><Esc>l
+	nmap <F8>hh5						O<h5>HEADING</h5><Esc>3bcw
+	imap <F8>hh5						<h5><ESC>mZa</h5><Esc>`Za
+	vmap <F8>hh5						<Esc>`>a</h5><Esc>`<i<h5><Esc>l
+
+	amenu HTML\ Personal.format\ headings.H6\ \ !hh6			O<h6>HEADING</h6><Esc>3bcw
+	vmenu HTML\ Personal.format\ headings.H6\ \ !hh6			<Esc>`>a</h6><Esc>`<i<h6><Esc>l
+	nmap <F8>hh6						O<h6>HEADING</h6><Esc>3bcw
+	imap <F8>hh6						<h6><ESC>mZa</h6><Esc>`Za
+	vmap <F8>hh6						<Esc>`>a</h6><Esc>`<i<h6><Esc>l
+
+"--- BOLD/UNDERLINE/ITALICS ---
+
+	" Bold format
+	amenu HTML\ Personal.format\ text.Bold\ \ \ \ \ \ \ \ !hbo		O<b>TEXT</b><Esc>3bcw
+	vmenu HTML\ Personal.format\ text.Bold\ \ \ \ \ \ \ \ !hbo		<Esc>`>a</b><Esc>`<i<b><Esc>l
+	nmap <F8>hbo						O<b>TEXT</b><Esc>3bcw
+	imap <F8>hbo						<b><ESC>mZa</b><Esc>`Za
+	vmap <F8>hbo						<Esc>`>a</b><Esc>`<i<b><Esc>l
+
+	" Underline heading
+	amenu HTML\ Personal.format\ text.Underline\ \ \ \ \ !huu		O<u>TEXT</u><Esc>3bcw
+	vmenu HTML\ Personal.format\ text.Underline\ \ \ \ \ !huu		<Esc>`>a</u><Esc>`<i<u><Esc>l
+	nmap <F8>huu						O<u>TEXT</u><Esc>3bcw
+	imap <F8>huu						<u><ESC>mZa</u><Esc>`Za
+	vmap <F8>huu						<Esc>`>a</u><Esc>`<i<u><Esc>l
+
+	" Italics format
+	amenu HTML\ Personal.format\ text.Italics\ \ \ \ \ \ \ !hit		O<i>TEXT</i><Esc>3bcw
+	vmenu HTML\ Personal.format\ text.Italics\ \ \ \ \ \ \ !hit		<Esc>`>a</i><Esc>`<i<i><Esc>l
+	nmap <F8>hit						O<i>TEXT</i><Esc>3bcw
+	imap <F8>hit						<i><ESC>mZa</i><Esc>`Za
+	vmap <F8>hit						<Esc>`>a</i><Esc>`<i<i><Esc>l
+
+"--- KBD/STR/SUP/BIG/SMALL ---
+	amenu HTML\ Personal.format\ text.-SEP1-	<nop>
+
+	"		" Cite format	(== italic)
+	"		amenu HTML\ Personal.format\ text.Cite\ (names)\ \ \ \ \ \ \ \ \ \ \ \ \ !hci		O<cite>TEXT</cite><Esc>3bcw
+	"		vmenu HTML\ Personal.format\ text.Cite\ (names)\ \ \ \ \ \ \ \ \ \ \ \ \ !hci		<Esc>`>a</cite><Esc>`<i<cite><Esc>l
+	"		nmap <F8>hci						O<cite>TEXT</cite><Esc>3bcw
+	"		imap <F8>hci						<cite><ESC>mZa</cite><Esc>`Za
+	"		vmap <F8>hci						<Esc>`>a</cite><Esc>`<i<cite><Esc>l
+
+	" Keyboard format
+	amenu HTML\ Personal.format\ text.Keyboard\ (command)\ \ !hkb		O<kbd>TEXT</kbd><Esc>3bcw
+	vmenu HTML\ Personal.format\ text.Keyboard\ (command)\ \ !hkb		<Esc>`>a</kbd><Esc>`<i<kbd><Esc>l
+	nmap <F8>hkb						O<kbd>TEXT</kbd><Esc>3bcw
+	imap <F8>hkb						<kbd><ESC>mZa</kbd><Esc>`Za
+	vmap <F8>hkb						<Esc>`>a</kbd><Esc>`<i<kbd><Esc>l
+
+	" Strike format
+	amenu HTML\ Personal.format\ text.Strike\ \ \ \ \ \ !hsk		O<strike>TEXT</strike><Esc>3bcw
+	vmenu HTML\ Personal.format\ text.Strike\ \ \ \ \ \ !hsk		<Esc>`>a</strike><Esc>`<i<strike><Esc>l
+	nmap <F8>hsk						O<strike>TEXT</strike><Esc>3bcw
+	imap <F8>hsk						<strike><ESC>mZa</strike><Esc>`Za
+	vmap <F8>hsk						<Esc>`>a</strike><Esc>`<i<strike><Esc>l
+
+	" Superscript format
+	amenu HTML\ Personal.format\ text.SUPerscript\ !hsp			O<sup>TEXT</sup><Esc>3bcw
+	vmenu HTML\ Personal.format\ text.SUPerscript\ !hsp			<Esc>`>a</sup><Esc>`<i<sup><Esc>l
+	nmap <F8>hsp						O<sup>TEXT</sup><Esc>3bcw
+	imap <F8>hsp						<sup><ESC>mZa</sup><Esc>`Za
+	vmap <F8>hsp						<Esc>`>a</sup><Esc>`<i<sup><Esc>l
+
+	"	" Subscript format
+	"	amenu HTML\ Personal.format\ text.SUBscript\ \ \ !hsb		O<sub>TEXT</sub><Esc>3bcw
+	"	vmenu HTML\ Personal.format\ text.SUBscript\ \ \ !hsb		<Esc>`>a</sub><Esc>`<i<sub><Esc>l
+	"	nmap <F8>hsb						O<sub>TEXT</sub><Esc>3bcw
+	"	imap <F8>hsb						<sub><ESC>mZa</sub><Esc>`Za
+	"	vmap <F8>hsb						<Esc>`>a</sub><Esc>`<i<sub><Esc>l
+
+	" Big format
+	amenu HTML\ Personal.format\ text.BIGger\ \ \ \ \ \ !hbi		O<big>TEXT</big><Esc>3bcw
+	imenu HTML\ Personal.format\ text.BIGger\ \ \ \ \ \ !hbi		<Esc><Esc>i<big>TEXT</big><Esc>3bcw<Esc>i
+	vmenu HTML\ Personal.format\ text.BIGger\ \ \ \ \ \ !hbi		<Esc>`>a</big><Esc>`<i<big><Esc>l
+	nmap <F8>hbi						O<big>TEXT</big><Esc>3bcw
+	imap <F8>hbi						<big><ESC>mZa</big><Esc>`Za
+	vmap <F8>hbi						<Esc>`>a</big><Esc>`<i<big><Esc>l
+
+	" Small format
+	amenu HTML\ Personal.format\ text.SMALLer\ \ \ \ \ !hsm		O<small>TEXT</small><Esc>3bcw
+	imenu HTML\ Personal.format\ text.SMALLer\ \ \ \ \ !hsm		<Esc><Esc>i<small>TEXT</small><Esc>3bcw<Esc>i
+	vmenu HTML\ Personal.format\ text.SMALLer\ \ \ \ \ !hsm		<Esc>`>a</small><Esc>`<i<small><Esc>l
+	nmap <F8>hsm						O<small>TEXT</small><Esc>3bcw
+	imap <F8>hsm						<small><ESC>mZa</small><Esc>`Za
+	vmap <F8>hsm						<Esc>`>a</small><Esc>`<i<small><Esc>l
+
+"--- ADDR/BLCK/CE/PRE ---
+	amenu HTML\ Personal.format\ text.-SEP3-	<nop>
+
+	" Address format
+	amenu HTML\ Personal.format\ text.Address\ (names\ w/CR)\ !had		O<address>TEXT</address><Esc>3bcw
+	vmenu HTML\ Personal.format\ text.Address\ (names\ w/CR)\ !had		<Esc>`>a</address><Esc>`<i<address><Esc>l
+	nmap <F8>had						O<address>TEXT</address><Esc>3bcw
+	imap <F8>had						<address><ESC>mZa</address><Esc>`Za
+	vmap <F8>had						<Esc>`>a</address><Esc>`<i<address><Esc>l
+
+	" Blockquote format
+	amenu HTML\ Personal.format\ text.Blockquote\ (parts)\ \ \ \ \ !hbl			O<blockquote>TEXT</blockquote><Esc>3bcw
+	vmenu HTML\ Personal.format\ text.Blockquote\ (parts)\ \ \ \ \ !hbl			<Esc>`>a</blockquote><Esc>`<i<blockquote><Esc>l
+	nmap <F8>hbl						O<blockquote>TEXT</blockquote><Esc>3bcw
+	imap <F8>hbl						<blockquote><ESC>mZa</blockquote><Esc>`Za
+	vmap <F8>hbl						<Esc>`>a</blockquote><Esc>`<i<blockquote><Esc>l
+
+	" Center line
+	amenu HTML\ Personal.format\ text.Center<Tab>	<Esc>i<center><CR></center><Esc>
+	imenu HTML\ Personal.format\ text.Center<Tab>	<Esc><Esc>i<center><CR></center>
+	vmenu HTML\ Personal.format\ text.Center<Tab>	<Esc>i<center><CR></center><Esc>
+
+	" Pre format
+	amenu HTML\ Personal.format\ text.PRE\ format\ \ \ !hpr		O<pre><CR></pre><Esc>k
+	imenu HTML\ Personal.format\ text.PRE\ format\ \ \ !hpr		<Esc>o<pre><CR></pre><Esc>k
+	vmenu HTML\ Personal.format\ text.PRE\ format\ \ \ !hpr		<Esc>`>a</pre><Esc>`<i<pre><Esc>l
+	nmap <F8>hpr						O<pre></pre><Esc>3bcw
+	imap <F8>hpr						<pre><ESC>mZa</pre><Esc>`Za
+	vmap <F8>hpr						<Esc>`>a</pre><Esc>`<i<pre><Esc>l
+
+"=== ALIGNMENT ===
+
+	amenu HTML\ Personal.format\ alignment.center<Tab>	<Esc>i align="center"<Esc><Esc>
+	vmenu HTML\ Personal.format\ alignment.center<Tab>	<Esc>i align="center"<Esc>
+	imenu HTML\ Personal.format\ alignment.center<Tab>	<Esc>l<Esc>i align="center"
+
+	amenu HTML\ Personal.format\ alignment.justify<Tab>	<Esc>i align="justify"<Esc><Esc>
+	vmenu HTML\ Personal.format\ alignment.justify<Tab>	<Esc>i align="justify"<Esc>
+	imenu HTML\ Personal.format\ alignment.justify<Tab>	<Esc>l<Esc>i align="justify"
+
+	amenu HTML\ Personal.format\ alignment.justify\ (div)<Tab>	<Esc>i<DIV ALIGN="justify"><CR><CR></DIV><CR><Esc>
+	vmenu HTML\ Personal.format\ alignment.justify\ (div)<Tab>	<Esc>i<DIV ALIGN="justify"><CR><CR></DIV><CR><Esc>
+	imenu HTML\ Personal.format\ alignment.justify\ (div)<Tab>	<DIV ALIGN="justify"><CR><CR></DIV><CR>
+
+"=== FONT ===
+amenu HTML\ Personal.-SEP2-	<nop>
+
+	amenu HTML\ Personal.Font.Verdana<Tab>	<Esc>i<font face="Verdana"></font><Esc>b2h
+	imenu HTML\ Personal.Font.Verdana<Tab>	<font face="Verdana"></font><Esc>b2hi
+	vmenu HTML\ Personal.Font.Verdana<Tab>	<Esc>i<font face="Verdana"></font><Esc>b2h
+
+	amenu HTML\ Personal.Font.Courier\ New<Tab>	<Esc>i<font face="Courier New"></font><Esc>b2h
+	imenu HTML\ Personal.Font.Courier\ New<Tab>	<font face="Courier New"></font><Esc>b2hi
+	vmenu HTML\ Personal.Font.Courier\ New<Tab>	<Esc>i<font face="Courier New"></font><Esc>b2h
+
+	amenu HTML\ Personal.Font.Lucida\ Console<Tab>	<Esc>i<font face="Lucida Console"></font><Esc>b2h
+	imenu HTML\ Personal.Font.Lucida\ Console<Tab>	<font face="Lucida Console"></font><Esc>b2hi
+	vmenu HTML\ Personal.Font.Lucida\ Console<Tab>	<Esc>i<font face="Lucida Console"></font><Esc>b2h
+
+	amenu HTML\ Personal.Font.Times\ New\ Roman<Tab>	<Esc>i<font face="Times New Roman" size="+1"></font><Esc>b2h
+	imenu HTML\ Personal.Font.Times\ New\ Roman<Tab>	<font face="Times New Roman" size="+1"></font><Esc>b2hi
+	vmenu HTML\ Personal.Font.Times\ New\ Roman<Tab>	<Esc>i<font face="Times New Roman" size="+1"></font><Esc>b2h
+
+	amenu HTML\ Personal.Font.Arial<Tab>	<Esc>i<font face="Arial"></font><Esc>b2h
+	imenu HTML\ Personal.Font.Arial<Tab>	<font face="Arial"></font><Esc>b2hi
+	vmenu HTML\ Personal.Font.Arial<Tab>	<Esc>i<font face="Arial"></font><Esc>b2h
+
+	amenu HTML\ Personal.Font.size\ \+<Tab>	<Esc>i<font size=+></font><Esc>b3hi
+	imenu HTML\ Personal.Font.size\ \+<Tab>	<font size=+></font><Esc>b3hi
+
+"=== COLOR ===
+
+	amenu HTML\ Personal.Color.Font\ color\.\.\.<Tab>	<Esc>i<font color=""></font><Esc>b4h
+	imenu HTML\ Personal.Color.Font\ color\.\.\.<Tab>	<font color=""></font><Esc>b4hi
+	vmenu HTML\ Personal.Color.Font\ color\.\.\.<Tab>	<Esc>i<font color=""></font><Esc>b4h
+	amenu HTML\ Personal.Color.background\ color\.\.\.<Tab>	<Esc>i bgcolor=""<Esc><Esc>i
+	imenu HTML\ Personal.Color.background\ color\.\.\.<Tab>	\ bgcolor=""<Esc><Esc>i
+
+"	amenu HTML\ Personal.Color.NOMECOLORE<Tab>	<Esc>i#RGBCOLORE
+"	imenu HTML\ Personal.Color.NOMECOLORE<Tab>	#RGBCOLORE
+	amenu HTML\ Personal.Color.Navy<Tab>	<Esc>i#000080
+	imenu HTML\ Personal.Color.Navy<Tab>	#000080
+	amenu HTML\ Personal.Color.Teal<Tab>	<Esc>i#008080
+	imenu HTML\ Personal.Color.Teal<Tab>	#008080
+	amenu HTML\ Personal.Color.Black<Tab>	<Esc>i#000000
+	imenu HTML\ Personal.Color.Black<Tab>	#000000
+	amenu HTML\ Personal.Color.White<Tab>	<Esc>i#ffffff
+	imenu HTML\ Personal.Color.White<Tab>	#ffffff
+
+	amenu HTML\ Personal.Color.azzurro\ chiaro<Tab>	<Esc>i#F0F8FF
+	imenu HTML\ Personal.Color.azzurro\ chiaro<Tab>	#F0F8FF
+	amenu HTML\ Personal.Color.bianco\ sporco<Tab>	<Esc>i#F5F5F5
+	imenu HTML\ Personal.Color.bianco\ sporco<Tab>	#F5F5F5
+	amenu HTML\ Personal.Color.carta\ antica<Tab>	<Esc>i#FAEBD7
+	imenu HTML\ Personal.Color.carta\ antica<Tab>	#FAEBD7
+	amenu HTML\ Personal.Color.grigio\ leggero<Tab>	<Esc>i#D3D3D3
+	imenu HTML\ Personal.Color.grigio\ leggero<Tab>	#D3D3D3
+	amenu HTML\ Personal.Color.lavanda<Tab>	<Esc>i#E6E6FA
+	imenu HTML\ Personal.Color.lavanda<Tab>	#E6E6FA
+	amenu HTML\ Personal.Color.Maroon<Tab>	<Esc>i#800000
+	imenu HTML\ Personal.Color.Maroon<Tab>	#800000
+	amenu HTML\ Personal.Color.Orange<Tab>	<Esc>i#FFA500
+	imenu HTML\ Personal.Color.Orange<Tab>	#FFA500
+
+"=== CHAR ===
+amenu HTML\ Personal.-SEP4-	<nop>
+
+	amenu HTML\ Personal.insert\ Char.Space<Tab>	<Esc><Esc>i&nbsp;<Esc>
+	nmenu HTML\ Personal.insert\ Char.Space<Tab>	<Esc><Esc>i&nbsp;<Esc>
+	imenu HTML\ Personal.insert\ Char.Space<Tab>	\&nbsp;
+
+	amenu HTML\ Personal.insert\ Char.&&\ (&&amp;)<Tab>	i&amp;<ESC>
+	imenu HTML\ Personal.insert\ Char.&&\ (&&amp;)<Tab>	\&amp; 
+	vmenu HTML\ Personal.insert\ Char.&&\ (&&amp;)<Tab>	<ESC>i&amp;<ESC>
+	nmap <F8>h&						i&amp;<ESC>
+	imap <F8>h&						&amp;
+	vmap <F8>h&						<ESC>i&amp;<ESC>
+
+	amenu HTML\ Personal.insert\ Char."\ (&&quot;)\ \ !h"			i&quot;<ESC>
+	imenu HTML\ Personal.insert\ Char."\ (&&quot;)\ \ !h"			\&quot;
+	vmenu HTML\ Personal.insert\ Char."\ (&&quot;)\ \ !h"			<ESC>`>a&quot;<ESC>`<i&quot;<ESC>
+	nmap <F8>h"						i&quot;<ESC>
+	imap <F8>h"						&quot;
+	vmap <F8>h"						<ESC>`>a&quot;<ESC>`<i&quot;<ESC>
+
+	amenu HTML\ Personal.insert\ Char.<\ (&&lt;)\ \ !h<			i&lt;<ESC>
+	imenu HTML\ Personal.insert\ Char.<\ (&&lt;)\ \ !h<			\&lt;
+	vmenu HTML\ Personal.insert\ Char.<\ (&&lt;)\ \ !h<			<ESC>i&lt;<ESC>
+	nmap <F8>h<						i&lt;<ESC>
+	imap <F8>h<						&lt;
+	vmap <F8>h<						<ESC>i&lt;<ESC>
+
+	amenu HTML\ Personal.insert\ Char.>\ (&&gt;)\ \ !h>			i&gt;<ESC>
+	imenu HTML\ Personal.insert\ Char.>\ (&&gt;)\ \ !h>			\&gt;
+	vmenu HTML\ Personal.insert\ Char.>\ (&&gt;)\ \ !h>			<ESC>i&gt;<ESC>
+	nmap <F8>h>						i&gt;<ESC>
+	imap <F8>h>						&gt;
+	vmap <F8>h>						<ESC>i&gt;<ESC>
+
+	amenu HTML\ Personal.insert\ Char.(c)opy\ \ \ !hcp			i&copy;<ESC>
+	imenu HTML\ Personal.insert\ Char.(c)opy\ \ \ !hcp			\&copy;
+	vmenu HTML\ Personal.insert\ Char.(c)opy\ \ \ !hcp			<ESC>i&copy;<ESC>
+	nmap <F8>hcp						i&copy;<ESC>
+	imap <F8>hcp						&copy;
+	vmap <F8>hcp						<ESC>i&copy;<ESC>
+
+	amenu HTML\ Personal.insert\ Char.\<CR\><Tab>		i&lt;CR&gt;<ESC>
+	imenu HTML\ Personal.insert\ Char.\<CR\><Tab>		&lt;CR&gt;
+	vmenu HTML\ Personal.insert\ Char.\<CR\><Tab>		<ESC>i&lt;CR&gt;<ESC>
+
+"=== OBJECT ===
+
+	amenu HTML\ Personal.insert\ Object.A(nchor)\ !han				O<a name="NAME"></a><Esc>3bcw
+	vmenu HTML\ Personal.insert\ Object.A(nchor)\ !han				<Esc>`>a"><Esc>`<i<a name="<Esc>l
+	nmap <F8>han						O<a name="NAME"></a><Esc>3bcw
+	imap <F8>han						<a name="<ESC>mZa"></a><Esc>`Za
+	vmap <F8>han						<Esc>`>a"><Esc>`<i<a name="<Esc>l
+
+	amenu HTML\ Personal.insert\ Object.comment\ \ \ \ \ !hco			O<!--  --><Left><Left><Left><Left>
+	vmenu HTML\ Personal.insert\ Object.comment\ \ \ \ \ !hco			<esc>`>a --><esc>`<i<!-- <esc>`<
+	nmap	<F8>hco						O<!--  --><Left><Left><Left><Left>
+	imap	<F8>hco						<!--  --><Left><Left><Left><Left>
+	vmap	<F8>hco						<Esc>`>a --><Esc>`<i<!-- <Esc>`<
+
+	amenu HTML\ Personal.insert\ Object.IMG\ \ \ \ \ \ \ !him			O<img src="URL" alt="IMAGE"><Esc>6bcw
+	vmenu HTML\ Personal.insert\ Object.IMG\ \ \ \ \ \ \ !him			<Esc>`>a" alt="IMAGE"><Esc>`<i<img src="><Esc>l
+	imenu HTML\ Personal.insert\ Object.IMG\ \ \ \ \ \ \ !him			<img src="" alt="IMAGE">
+	nmap <F8>him						O<img src="URL" alt="IMAGE"><Esc>6bcw
+	imap <F8>him						<img src="URL" alt="<ESC>mZa"><Esc>`Za
+	vmap <F8>him						<Esc>`>a" alt="IMAGE"><Esc>`<i<img src="<Esc>l
+
+	amenu HTML\ Personal.insert\ Object.HR\ \ \ \ \ \ \ \ !hhr			O<hr /><Esc>
+	vmenu HTML\ Personal.insert\ Object.HR\ \ \ \ \ \ \ \ !hhr			<Esc>`<i<hr /><CR><Esc>
+	imenu HTML\ Personal.insert\ Object.HR\ \ \ \ \ \ \ \ !hhr			<hr />
+	nmap <F8>hhr						O<hr /><CR><Esc>
+	imap <F8>hhr						<hr /><CR>
+	vmap <F8>hhr						<Esc>`<i<hr /><cr><Esc>
+
+	amenu HTML\ Personal.insert\ Object.HREF\ !hah				<Esc>i<a href="URL" target="ontop">TAG</a><Esc>9bcw
+	vmenu HTML\ Personal.insert\ Object.HREF\ !hah				<Esc>`>a</a><Esc>`<i<a href="URL"><Esc>2bcw
+	imenu HTML\ Personal.insert\ Object.HREF\ !hah				<a href="URL" target="ontop">TAG</a><Esc>9bcw
+	nmap <F8>hah						O<a href="URL">TAG</a><Esc>5bcw
+	imap <F8>hah						<a href="<ESC>mZa">TAG</a><Esc>`Za
+	vmap <F8>hah						<Esc>`>a</a><Esc>`<i<a href="URL"><Esc>2bcw
+
+	amenu HTML\ Personal.insert\ Object.mailTo				<Esc>i<a href="mailto:">TAG</a><Esc>8hi
+	vmenu HTML\ Personal.insert\ Object.mailTo<Tab>				<Esc>`>a</a><Esc>`<i<a href="mailto:TAG"><Esc>2bcw
+	imenu HTML\ Personal.insert\ Object.mailTo				<a href="mailto:">TAG</a><Esc>8hi
+
+"=== TABLE ===
+
+	amenu HTML\ Personal.insert\ Table.Header	<Esc><Esc>i<TABLE width="90%" border="0" cellspacing="5" cellpadding="5" align="center" summary="TABELLA"><CR><TH></TH><CR></TABLE><CR><CR><Esc>kk
+	imenu HTML\ Personal.insert\ Table.Header	<TABLE width="90%" border="0" cellspacing="5" cellpadding="5" align="center" summary="TABELLA"><CR><TH></TH><CR></TABLE><CR><CR><Esc>kk<Esc>i
+	vmenu HTML\ Personal.insert\ Table.Header	<Esc><Esc>i<TABLE width="90%" border="0" cellspacing="5" cellpadding="5" align="center" summary="TABELLA"><CR><TH></TH><CR></TABLE><CR><CR><Esc>kk<Esc>
+
+	amenu HTML\ Personal.insert\ Table.Line	<Esc><Esc>i<TR><CR><TD></TD><CR><TD></TD><CR></TR><CR><Esc>kk>>k>>
+	imenu HTML\ Personal.insert\ Table.Line	<TR><CR><TD></TD><CR><TD></TD><CR></TR><CR><Esc>kk>>k>><Esc>i
+	vmenu HTML\ Personal.insert\ Table.Line	<Esc><Esc>i<TR><CR><TD></TD><CR><TD></TD><CR></TR><CR><Esc>kk>>k>><Esc>
+
+	amenu HTML\ Personal.insert\ Table.Cell	<Esc><Esc>i<TD></TD><CR><Esc>>>k
+	imenu HTML\ Personal.insert\ Table.Cell	<TD></TD><CR><Esc>>>k<Esc>i
+	vmenu HTML\ Personal.insert\ Table.Cell	<Esc><Esc>i<TD></TD><CR><Esc>>>k<Esc>
+
+	amenu HTML\ Personal.insert\ Table.(colspan)	<Esc><Esc>i colspan=""<Esc>i
+	imenu HTML\ Personal.insert\ Table.(colspan)	\ colspan=""<Esc>i
+
+	amenu HTML\ Personal.insert\ Table.(width)	<Esc><Esc>i width="%"<Esc>h<Esc>i
+	imenu HTML\ Personal.insert\ Table.(width)	\ width="%"<Esc>h<Esc>i
+
+"=== LIST ===
+
+	amenu HTML\ Personal.insert\ List.Unordered\ list<Tab>	<Esc><Esc>o<ul><lh></lh><CR><li></li><CR></ul><CR><Esc>2k>>$4h<Esc>i
+	amenu HTML\ Personal.insert\ List.Ordered\ list<Tab>	<Esc><Esc>o<ol><lh></lh><CR><li></li><CR></ol><CR><Esc>2k>>$4h<Esc>i
+	amenu HTML\ Personal.insert\ List.List\ Item<Tab>	<Esc><Esc>i<li></li><CR><Esc>k>>$4h<Esc>i
+	amenu HTML\ Personal.insert\ List.list\ header<Tab>	<Esc><Esc>O<lh></lh><Esc>>>$4h<Esc>i
+
+	amenu HTML\ Personal.insert\ List.UL\ list\ (type).DISC<Tab>	<Esc>i type=DISC<Esc>
+	imenu HTML\ Personal.insert\ List.UL\ list\ (type).DISC<Tab>	<Esc>l<Esc>i type=DISC
+	amenu HTML\ Personal.insert\ List.UL\ list\ (type).CIRCLE<Tab>	<Esc>i type=CIRCLE<Esc>
+	imenu HTML\ Personal.insert\ List.UL\ list\ (type).CIRCLE<Tab>	<Esc>l<Esc>i type=CIRCLE
+	amenu HTML\ Personal.insert\ List.UL\ list\ (type).SQUARE<Tab>	<Esc>i type=SQUARE<Esc>
+	imenu HTML\ Personal.insert\ List.UL\ list\ (type).SQUARE<Tab>	<Esc>l<Esc>i type=SQUARE
+
+	amenu HTML\ Personal.insert\ List.OL\ list\ (type).numbers<Tab>	<Esc>i type=1<Esc>
+	imenu HTML\ Personal.insert\ List.OL\ list\ (type).numbers<Tab>	<Esc>l<Esc>i type=1<Esc>
+	amenu HTML\ Personal.insert\ List.OL\ list\ (type).ALFABETIC<Tab>	<Esc>i type=A<Esc>
+	imenu HTML\ Personal.insert\ List.OL\ list\ (type).ALFABETIC<Tab>	<Esc>l<Esc>i type=A<Esc>
+	amenu HTML\ Personal.insert\ List.OL\ list\ (type).alfabetic<Tab>	<Esc>i type=a<Esc>
+	imenu HTML\ Personal.insert\ List.OL\ list\ (type).alfabetic<Tab>	<Esc>l<Esc>i type=a<Esc>
+	amenu HTML\ Personal.insert\ List.OL\ list\ (type).ROMAN\ NUMBERS<Tab>	<Esc>i type=I<Esc>
+	imenu HTML\ Personal.insert\ List.OL\ list\ (type).ROMAN\ NUMBERS<Tab>	<Esc>l<Esc>i type=I<Esc>
+	amenu HTML\ Personal.insert\ List.OL\ list\ (type).roman\ numbers<Tab>	<Esc>i type=i<Esc>
+	imenu HTML\ Personal.insert\ List.OL\ list\ (type).roman\ numbers<Tab>	<Esc>l<Esc>i type=i<Esc>
+	amenu HTML\ Personal.insert\ List.OL\ list\ (start)<Tab>	<Esc>i start=<Esc>i
+	imenu HTML\ Personal.insert\ List.OL\ list\ (start)<Tab>	<Esc>l<Esc>i start=<Esc>i
+
+	amenu HTML\ Personal.insert\ List.DL-\ List<Tab>	<Esc><Esc>i<DL>DL<CR><Tab><DT>Dt</DT><CR><Tab><Tab><DD>dd</DD><CR></DL><CR><CR><Esc>k4kl3l<Esc>i
+
+"=== SPECIAL FUNCTION ===
+amenu HTML\ Personal.-SEP5-	<nop>
+
+	amenu HTML\ Personal.indent\ Html\ source<Tab>	<Esc><Esc>:%s/<h/<H/ge<CR>:%s/<title/<TITLE/ge<CR>:%s/<meta/\	\<meta/ge<CR>:%s/<STYLE /<STYLE /ge<CR>:%s/<\\/style>/<\\/STYLE>/ge<CR>:%s/<script/<script/ge<CR>:%s/<\\/SCRIPT>/<\\/SCRIPT>/ge<CR>:%s/<\\/title>/<\\/TITLE>/ge<CR>:%s/<\\/head/<\\/HEAD/ge<CR>:%s/<body/<BODY/ge<CR>:%s/<DIV/<DIV/ge<CR>:%s/<\\/div>/<\\/DIV>/ge<CR>:%s/<table/<TABLE/ge<CR>:%s/<tbody/<TBODY/ge<CR>:%s/<th/<TH/ge<CR>:%s/<tr/<TR/ge<CR>:%s/<td/\	\<TD/ge<CR>:%s/<\\/td/\		\<\\/TD/ge<CR>:%s/<\\/TR/<\\/TR/ge<CR>:%s/<\\/tbody/<\\/TBODY/ge<CR>:%s/<\\/TABLE/<\\/TABLE/ge<CR>:%s/<center/<center/ge<CR>:%s/<\\/center/<\\/center/ge<CR>:%s/<ol/\	\<OL/ge<CR>:%s/<ul/\	\<UL/ge<CR>:%s/<\\/UL>/\	\<\\/UL>/ge<CR>:%s/<lh/\	\<LH/ge<CR>:%s/<li/\	\<LI/ge<CR>:%s/<LInk/<link/ge<CR>:%s/<map/<map/ge<CR>:%s/<area/<area/ge<CR>:%s/<\\/BODY/<\\/BODY/ge<CR>:%s/<\\/html>/<\\/HTML>/ge<CR>
+
+"	OK	:%s/<\\/html/<\\/HTML/ge<CR><Esc>
+
+"	OK	:%s/<\\/style>/<\\/STYLE>/ge<CR>
+		
+"	</title> >> </title>
+"	:%s/<\\/html/<\\/HTML/ge<CR>
+"	:%s/<\\/title>/<\\/TITLE>/ge<CR>
+
+	
+
+
+"	==============================================================
+
+
+	amenu HTML\ Personal.other\ function\.\.\..disable\ Iframe<Tab>	<Esc><Esc>:%s/<iframe /<!-- iframe /ge<CR>:%s/iframe>/iframe -->/ge<CR>
+	imenu HTML\ Personal.other\ function\.\.\..disable\ Iframe<Tab>	<Esc><Esc>:%s/<iframe /<!-- iframe /ge<CR>:%s/iframe>/iframe -->/ge<CR><Esc>i
+	vmenu HTML\ Personal.other\ function\.\.\..disable\ Iframe<Tab>	<Esc><Esc>:%s/<iframe /<!-- iframe /ge<CR>:%s/iframe>/iframe -->/ge<CR><Esc>v
+
+	amenu HTML\ Personal.other\ function\.\.\..disable\ JavaScript<Tab>	<Esc><Esc>:%s/<SCRIPT language=JavaScript/<!-- SCRIPT language=JavaScript/ge<CR>:%s/SCRIPT>/SCRIPT -->/ge<CR>
+	imenu HTML\ Personal.other\ function\.\.\..disable\ JavaScript<Tab>	<Esc><Esc>:%s/<SCRIPT language=JavaScript/<!-- SCRIPT language=JavaScript/ge<CR>:%s/SCRIPT>/SCRIPT -->/ge<CR><Esc>i
+	vmenu HTML\ Personal.other\ function\.\.\..disable\ JavaScript<Tab>	<Esc><Esc>:%s/<SCRIPT language=JavaScript/<!-- SCRIPT language=JavaScript/ge<CR>:%s/SCRIPT>/SCRIPT -->/ge<CR><Esc>v
+
+	amenu HTML\ Personal.other\ function\.\.\..spacing\ Html\ tags<Tab>	<Esc><Esc>:%s/></> </ge<CR>
+	imenu HTML\ Personal.other\ function\.\.\..spacing\ Html\ tags<Tab>	<Esc><Esc>:%s/></> </ge<CR><Esc>i
+
+	"	sostituzione cod Html (solo alcune lettere nordiche)
+
+	amenu HTML\ Personal.special\ Char.convert\ to\ Html<Tab>	<Esc><Esc>:%s/à/\\&agrave;/ge<CR>:%s/è/\\&egrave;/ge<CR>:%s/é/\\&eacute;/ge<CR>:%s/ì/\\&igrave;/ge<CR>:%s/ò/\\&ograve;/ge<CR>:%s/ù/\\&ugrave;/ge<CR>:%s/À/\\&Agrave;/ge<CR>:%s/È/\\&Egrave;/ge<CR>:%s/É/\\&Eacute;/ge<CR>:%s/Ì/\\&Igrave;/ge<CR>:%s/Ò/\\&Ograve;/ge<CR>:%s/Ù/\\&Ugrave;/ge<CR>:%s/Æ/\\&AElig;/ge<CR>:%s/æ/\\&aelig;/ge<CR>:%s/ë/\\&euml;/ge<CR>:%s/Ë/\\&Euml;/ge<CR>:%s/ï/\\&iuml;/ge<CR>:%s/Ï/\\&Iuml;/ge<CR>:%s/ö/\\&ouml;/ge<CR>:%s/Ö/\\&Ouml;/ge<CR>:%s/ü/\\&uuml;/ge<CR>:%s/Ü/\\&Uuml;/ge<CR>:%s/ø/\\&oslash;/ge<CR>:%s/Ø/\\&Oslash;/ge<CR><Esc>	
+
+"	<Esc><Esc>:%s/Æ/\\&AElig;/ge<CR>:%s/æ/\\&aelig;/ge<CR>:%s/ë/\\&euml;/ge<CR>:%s/Ë/\\&Euml;/ge<CR>:%s/ï/\\&iuml;/ge<CR>:%s/Ï/\\&Iuml;/ge<CR>:%s/ö/\\&ouml;/ge<CR>:%s/Ö/\\&Ouml;/ge<CR>:%s/ü/\\&uuml;/ge<CR>:%s/Ü/\\&Uuml;/ge<CR>:%s/ø/\\&oslash;/ge<CR>:%s/Ø/\\&Oslash;/ge<CR><Esc>
+
+
+
+

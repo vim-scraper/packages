@@ -1,0 +1,886 @@
+*rdhelp.txt* *rdhelp*  Writing R documentation files  Last change: 2009-10-16
+
+
+			Writing R Documentation files
+
+		       Based on "Writing R Extensions"
+			  version 2.6.2 (2008-02-08)
+			  http://www.r-project.org/
+	      http://cran.r-project.org/doc/manuals/R-exts.html
+
+
+			    Adaptation to vimhelp
+		   Micha³ Bojanowski <m.j.bojanowski@uu.nl>
+
+
+
+This is an excerpt from R manual "Writing R Extensions" which is limited
+to section 3. "Writing R Documentation Files". It is a specification
+of the Rd format, available commands etc.
+
+Sections:
+
+|rdhelp-format|			Rd format
+	|rdhelp-functions|	Documenting functions
+	|rdhelp-datasets|	Documenting data sets
+	|rdhelp-s4classes|	Documenting S4 classes and methods
+	|rdhelp-packages|	Documenting packages 
+|rdhelp-sectioning|		Sectioning
+|rdhelp-marking-text|		Marking text
+|rdhelp-lists-tables|		Lists and tables
+|rdhelp-crossreferences|	Cross-references
+|rdhelp-mathematics|		Mathematics
+|rdhelp-insertions|		Insertions
+|rdhelp-indices|		Indices
+|rdhelp-platform-specific|	Platform-specific sections
+|rdhelp-encoding|		Encoding
+|rdhelp-processing|		Processing Rd format 
+
+================================================================================
+
+RD FORMAT						       *rdhelp-format*
+
+
+R objects are documented in files written in “R documentation” (Rd) format, a
+simple markup language closely resembling (La)TeX, which can be processed into
+a variety of formats, including LaTeX, HTML and plain text. The translation is
+carried out by the Perl script Rdconv in R_HOME/bin and by the installation
+scripts for packages.
+
+The R distribution contains more than 1200 such files which can be found in
+the src/library/pkg/man directories of the R source tree, where pkg stands for
+the standard packages which are included in the R distribution.
+
+As an example, let us look at the file src/library/base/man/load.Rd which
+documents the R function load. 
+>
+	\name{load}
+	\alias{load}
+	\title{Reload Saved Datasets}
+	\description{
+	  Reload the datasets written to a file with the function
+	  \code{save}.
+	}
+	\usage{
+	load(file, envir = parent.frame())
+	}
+	\arguments{
+	  \item{file}{a connection or a character string giving the
+	    name of the file to load.}
+	  \item{envir}{the environment where the data should be
+	    loaded.}
+	}
+	\seealso{
+	  \code{\link{save}}.
+	}
+	\examples{
+	## save all data
+	save(list = ls(), file= "all.Rdata")
+
+	## restore the saved values to the current environment
+	load("all.Rdata")
+
+	## restore the saved values to the workspace
+	load("all.Rdata", .GlobalEnv)
+	}
+	\keyword{file}
+
+An Rd file consists of three parts. The header gives basic information about
+the name of the file, the topics documented, a title, a short textual
+description and R usage information for the objects documented. The body gives
+further information (for example, on the function's arguments and return
+value, as in the above example). Finally, there is a footer with keyword
+information. The header and footer are mandatory.
+
+See the “Guidelines for Rd files” for guidelines for writing documentation in
+Rd format which should be useful for package writers. 
+
+--------------------------------------------------------------------------------
+
+DOCUMENTING FUNCTIONS					*rdhelp-functions*
+
+The basic markup commands used for documenting R objects (in particular,
+functions) are given in this subsection.
+
+								*rdhelp-\name*
+\name{name}
+
+Name typically9 is the basename of the Rd file containing the documentation.
+It is the “name” of the Rd object represented by the file and has to be unique
+in a package.
+
+							       *rdhelp-\alias*
+
+\alias{topic}	
+
+The \alias entries specify all “topics” the file documents.  This information
+is collected into index data bases for lookup by the on-line (plain text and
+HTML) help systems. The topic can contain spaces, but (for historical reasons)
+leading and trailing spaces will be stripped.
+
+There may be several \alias entries. Quite often it is convenient to document
+several R objects in one file. For example, file Normal.Rd documents the
+density, distribution function, quantile function and generation of random
+variates for the normal distribution, and hence starts with
+>
+	\alias{Normal}
+	\alias{dnorm}
+	\alias{pnorm}
+	\alias{qnorm}
+	\alias{rnorm}
+
+Also, it is often convenient to have several different ways to refer to an R
+object, and an \alias does not need to be the name of an object.
+
+Note that the \name is not necessarily a topic documented, and if so desired
+it needs to have an explicit \alias entry (as in this example).
+
+							       *rdhelp-\title*
+\title{Title}
+
+Title information for the Rd file. This should be capitalized, not end in a
+period, and not use any markup (which would cause problems for hypertext
+search). Use of characters other than English text and punctuation (e.g., `<')
+may limit portability.
+
+							 *rdhelp-\description*
+\description{...}
+
+A short description of what the function(s) do(es) (one paragraph, a few lines
+only). (If a description is “too long” and cannot easily be shortened, the
+file probably tries to document too much at once.)
+
+							       *rdhelp-\usage*
+\usage{fun(arg1, arg2, ...)}
+
+One or more lines showing the synopsis of the function(s) and variables
+documented in the file. These are set in typewriter font. This is a
+verbatim-like command, so some characters need to be escaped (see Insertions).
+
+The usage information specified should match the function definition exactly
+(such that automatic checking for consistency between code and documentation
+is possible).
+
+It is no longer advisable to use \synopsis for the actual synopsis and show
+modified synopses in the \usage. Support for \synopsis will be removed
+eventually. To indicate that a function can be “used” in several different
+ways, depending on the named arguments specified, use section \details. E.g.,
+abline.Rd contains
+>
+      \details{
+	Typical usages are
+      \preformatted{
+      abline(a, b, untf = FALSE, \dots)
+      ......
+      }
+         
+Use \method{generic}{class} to indicate the name of an S3 method for the
+generic function generic for objects inheriting from class "class". In the
+printed versions, this will come out as generic (reflecting the understanding
+that methods should not be invoked directly but via method dispatch), but
+codoc() and other QC tools always have access to the full name.
+
+For example, print.ts.Rd contains
+>
+      \usage{
+      \method{print}{ts}(x, calendar, \dots)
+      }
+         
+hich will print as
+
+              Usage:
+              
+                   ## S3 method for class 'ts':
+                   print(x, calendar, ...)
+         
+Usage for replacement functions should be given in the style of dim(x) <-
+value rather than explicitly indicating the name of the replacement function
+("dim<-" in the above). Similarly, one can use
+\method{generic}{class}(arglist) <- value to indicate the usage of an S3
+replacement method for the generic replacement function "generic<-" for
+objects inheriting from class "class".
+
+Usage for S3 methods for extracting or replacing parts of an object, S3
+methods for members of the Ops group, and S3 methods for user-defined (binary)
+infix operators (`%xxx%') follows the above rules, using the appropriate
+function names. E.g., Extract.factor.Rd contains
+>
+      \usage{
+      \method{[}{factor}(x, \dots, drop = FALSE)
+      \method{[[}{factor}(x, i)
+      \method{[}{factor}(x, \dots) <- value
+      }
+         
+which will print as
+
+              Usage:
+              
+                   ## S3 method for class 'factor':
+                   x[..., drop = FALSE]
+                   ## S3 method for class 'factor':
+                   x[[i]]
+                   ## S3 replacement method for class 'factor':
+                   x[...] <- value
+         
+
+							   *rdhelp-\arguments*
+\arguments{...}
+
+Description of the function's arguments, using an entry of the form
+>
+      \item{arg_i}{Description of arg_i.}
+
+for each element of the argument list. There may be optional text before and
+after these entries.
+
+							     *rdhelp-\details*
+\details{...}
+
+A detailed if possible precise description of the functionality provided,
+extending the basic information in the \description slot.
+
+							       *rdhelp-\value*
+\value{...}
+
+Description of the function's return value.
+
+If a list with multiple values is returned, you can use entries of the form
+>
+      \item{comp_i}{Description of comp_i.}
+         
+for each component of the list returned. Optional text may precede this list
+(see the introductory example for rle).
+
+							  *rdhelp-\references*
+\references{...}
+
+A section with references to the literature. Use \url{} for web pointers.
+
+								*rdhelp-\note*
+\note{...}
+
+Use this for a special note you want to have pointed out.
+
+For example, pie.Rd contains
+>
+      \note{
+	Pie charts are a very bad way of displaying information.
+	The eye is good at judging linear measures and bad at
+	judging relative areas.
+	......
+      }
+<
+
+							      *rdhelp-\author*
+\author{...}
+
+Information about the author(s) of the Rd file. Use \email{} without extra
+delimiters (`( )' or `< >') to specify email addresses, or \url{} for web
+pointers.
+
+							     *rdhelp-\seealso*
+\seealso{...}
+
+Pointers to related R objects, using \code{\link{...}} to refer to them (\code
+is the correct markup for R object names, and \link produces hyperlinks in
+output formats which support this. See Marking text, and Cross-references).
+
+							    *rdhelp-\examples*
+\examples{...}
+
+Examples of how to use the function. These are set as formatted in typewriter
+font: see Insertions for when characters need to be escaped. (Markup \link and
+\var will be interpreted, but no other.)
+
+Examples are not only useful for documentation purposes, but also provide test
+code used for diagnostic checking of R. By default, text inside \examples{}
+will be displayed in the output of the help page and run by R CMD check. You
+can use \dontrun{} for commands that should only be shown, but not run, and
+\dontshow{} for extra commands for testing that should not be shown to users,
+but will be run by example(). (Previously this was called \testonly, and that
+is still accepted.)
+
+For example,
+>
+      x <- runif(10)       # Shown and run.
+      \dontrun{plot(x)}    # Only shown.
+      \dontshow{log(x)}    # Only run.
+         
+Thus, example code not included in \dontrun must be executable! In addition,
+it should not use any system-specific features or require special facilities
+(such as Internet access or write permission to specific directories). Code
+included in \dontrun is indicated by comments in the processed help files.
+
+Data needed for making the examples executable can be obtained by random
+number generation (for example, x <- rnorm(100)), or by using standard data
+sets listed by data() (see ?data for more info).
+
+							     *rdhelp-\keyword*
+\keyword{key}
+
+Each \keyword entry should specify one of the standard keywords as listed in
+file KEYWORDS in the R documentation directory (default R_HOME/doc). Use e.g.
+file.show(file.path(R.home("doc"), "KEYWORDS")) to inspect the standard
+keywords from within R. There must be at least one \keyword entry, but can be
+more than one if the R object being documented falls into more than one
+category.
+
+The special keyword `internal' marks a page of internal objects that are not
+part of the packages' API. If the help page for object foo has keyword
+`internal', then help(foo) gives this help page, but foo is excluded from
+several object indices, like the alphabetical list of objects in the HTML help
+system. 
+
+The R function prompt facilitates the construction of files documenting R
+objects. If foo is an R function, then prompt(foo) produces file foo.Rd which
+already contains the proper function and argument names of foo, and a
+structure which can be filled in with information. 
+
+--------------------------------------------------------------------------------
+
+DOCUMENTING DATA SETS 					*rdhelp-datasets*
+
+The structure of Rd files which document R data sets is slightly different.
+Whereas sections such as \arguments and \value are not needed, the format and
+source of the data should be explained.
+
+As an example, let us look at src/library/datasets/man/rivers.Rd which
+documents the standard R data set rivers.
+>
+      \name{rivers}
+      \docType{data}
+      \alias{rivers}
+      \title{Lengths of Major North American Rivers}
+      \description{
+	This data set gives the lengths (in miles) of 141 \dQuote{major}
+	rivers in North America, as compiled by the US Geological
+	Survey.
+      }
+      \usage{rivers}
+      \format{A vector containing 141 observations.}
+      \source{World Almanac and Book of Facts, 1975, page 406.}
+      \references{
+	McNeil, D. R. (1977) \emph{Interactive Data Analysis}.
+	New York: Wiley.
+      }
+      \keyword{datasets}
+         
+This uses the following additional markup commands.
+
+							     *rdhelp-\docType*
+\docType{...}
+
+Indicates the “type” of the documentation object. Always `data' for data sets.
+
+							      *rdhelp-\format*
+\format{...}
+
+A description of the format of the data set (as a vector, matrix, data frame,
+time series, ...). For matrices and data frames this should give a description
+of each column, preferably as a list or table. See Lists and tables, for more
+information.
+
+							      *rdhelp-\source*
+\source{...}
+
+Details of the original source (a reference or URL). In addition, section
+\references could give secondary sources and usages. 
+
+Note also that when documenting data set bar,
+
+    o	The \usage entry is always bar or (for packages which do not use
+	lazy-loading of data) data(bar). (In particular, only document a
+	single data object per Rd file.)
+
+    o	The \keyword entry is always `datasets'. 
+
+If bar is a data frame, documenting it as a data set can be initiated via
+prompt(bar). 
+
+--------------------------------------------------------------------------------
+
+DOCUMENTING S-FOUR CLASSES AND METHODS 			*rdhelp-s4classes*
+
+There are special ways to use the `?' operator, namely `class?topic' and
+`methods?topic', to access documentation for S4 classes and methods,
+respectively. This mechanism depends on conventions for the topic names used
+in \alias entries. The topic names for S4 classes and methods respectively are
+of the form
+>
+     class-class
+     generic,signature_list-method
+
+where signature_list contains the names of the classes in the signature of the
+method (without quotes) separated by `,' (without whitespace), with `ANY' used
+for arguments without an explicit specification. E.g., `genericFunction-class'
+is the topic name for documentation for the S4 class "genericFunction", and
+`coerce,ANY,NULL-method' is the topic name for documentation for the S4 method
+for coerce for signature c("ANY", "NULL").
+
+							    *rdhelp-\S4method*
+Skeletons of documentation for S4 classes and methods can be generated by
+using the functions promptClass() and promptMethods() from package methods. If
+it is necessary or desired to provide an explicit function declaration (in a
+\usage section) for an S4 method (e.g., if it has “surprising arguments” to be
+mentioned explicitly), one can use the special markup
+>
+     \S4method{generic}{signature_list}(argument_list)
+
+(e.g., `\S4method{coerce}{ANY,NULL}(from, to)').
+
+To allow for making full use of the potential of the on-line documentation
+system, all user-visible S4 classes and methods in a package should at least
+have a suitable \alias entry in one of the package's Rd files. If a package
+has methods for a function defined originally somewhere else, and does not
+change the underlying default method for the function, the package is
+responsible for documenting the methods it creates, but not for the function
+itself or the default method.
+
+See help("Documentation", package = "methods") for more information on using
+and creating on-line documentation for S4 classes and methods. 
+
+--------------------------------------------------------------------------------
+
+DOCUMENTING PACKAGES					*rdhelp-packages*
+
+Packages may have an overview man page with an \alias pkgname-package, e.g.
+`utils-package' for the utils package, when package?pkgname will open that
+help page. If a topic named pkgname does not exist in another Rd file, it is
+helpful to use this as an additional \alias.
+
+Skeletons of documentation for a package can be generated using the function
+promptPackage(). If the final = TRUE argument is used, then the Rd file will
+be generated in final form, containing the information that would be produced
+by library(help = pkgname). Otherwise (the default) comments will be inserted
+giving suggestions for content.
+
+The only requirement for this page is that it include a \docType{package}
+statement. All other content is optional. We suggest that it should be a short
+overview, to give a reader unfamiliar with the package enough information to
+get started. More extensive documentation is better placed into a package
+vignette (see Writing package vignettes) and referenced from this page, or
+into individual man pages for the functions, datasets, or classes. 
+
+================================================================================
+
+SECTIONING						 *rdhelp-sectioning*
+
+							     *rdhelp-\section*
+To begin a new paragraph or leave a blank line in an example, just insert an
+empty line (as in (La)TeX). To break a line, use \cr. In addition to the
+predefined sections (such as \description{}, \value{}, etc.), you can “define”
+arbitrary ones by \section{section_title}{...}. For example
+>
+     \section{Warning}{You must not call this function unless ...}
+
+For consistency with the pre-assigned sections, the section name (the first
+argument to \section) should be capitalized (but not all upper case).
+
+Note that additional named sections are always inserted at a fixed position in
+the output (before \note, \seealso and the examples), no matter where they
+appear in the input (but in the same order as the input).
+
+--------------------------------------------------------------------------------
+
+MARKING TEXT 						*rdhelp-marking-text*
+
+					       *rdhelp-\emph* *rdhelp-\strong*
+The following logical markup commands are available for emphasizing or quoting
+text.
+
+\emph{text} 
+\strong{text}
+
+								*rdhelp-\bold*
+Emphasize text using italic and bold font if possible; \strong is stronger.
+
+\bold{text}
+
+Set text in bold font if possible.
+
+					     *rdhelp-\sQuote* *rdhelp-\dQuote*
+\sQuote{text}
+\dQuote{text}
+
+Portably single or double quote text (without hard-wiring the quotation marks). 
+
+The following logical markup commands are available for indicating specific
+kinds of text.
+
+								*rdhelp-\code*
+\code{text}
+
+Indicate text that is a literal example of a piece of a program, e.g., a
+fragment of R code or the name of an R object, using typewriter font if
+possible. Some characters will need to be escaped (see Insertions). The only
+markup interpreted inside \code is \link and \var.
+
+							*rdhelp-\preformatted*
+\preformatted{text}
+
+Indicate text that is a literal example of a piece of a program, using
+typewriter font if possible. The same characters need to be escaped as for
+\code. All other formatting, e.g. line breaks, is preserved. The closing brace
+should be on a line by itself.
+
+								 *rdhelp-\kbd*
+\kbd{keyboard-characters}
+Indicate keyboard input, using slanted typewriter font if possible, so users
+can distinguish the characters they are supposed to type from those the
+computer outputs.
+
+								*rdhelp-\samp*
+\samp{text}
+
+Indicate text that is a literal example of a sequence of characters.
+
+								 *rdhelp-\pkg*
+\pkg{package_name}
+
+Indicate the name of an R package.
+
+								*rdhelp-\file*
+\file{file_name}
+
+Indicate the name of a file. Note that special characters do need to be escaped.
+
+							       *rdhelp-\email*
+\email{email_address}
+
+Indicate an electronic mail address.
+
+								 *rdhelp-\url*
+\url{uniform_resource_locator}
+
+Indicate a uniform resource locator (URL) for the World Wide Web.
+
+								 *rdhelp-\var*
+\var{metasyntactic_variable}
+
+Indicate a metasyntactic variable. In some cases this will be rendered
+distinctly, e.g. in italic, but not in all10.
+
+								 *rdhelp-\env*
+\env{environment_variable}
+
+Indicate an environment variable.
+
+							     *rdhelp-\options*
+\option{option}
+
+Indicate a command-line option.
+
+							     *rdhelp-\command*
+\command{command_name}
+
+Indicate the name of a command.
+
+								 *rdhelp-\dfn*
+\dfn{term}
+
+Indicate the introductory or defining use of a term.
+
+								*rdhelp-\cite*
+\cite{reference}
+
+Indicate a reference without a direct cross-reference via \link (see
+Cross-references), such as the name of a book.
+
+							     *rdhelp-\acronym*
+\acronym{acronym}
+
+Indicate an acronym (an abbreviation written in all capital letters), such as
+GNU. 
+
+Note that unless explicitly stated otherwise, special characters (see
+Insertions) must be escaped inside the above markup commands.
+
+================================================================================
+
+LISTS AND TABLES 					*rdhelp-lists-tables*
+
+							     *rdhelp-\itemize*
+							   *rdhelp-\enumerate*
+								*rdhelp-\item*
+The \itemize and \enumerate commands take a single argument, within which
+there may be one or more \item commands. The text following each \item is
+formatted as one or more paragraphs, suitably indented and with the first
+paragraph marked with a bullet point (\itemize) or a number (\enumerate).
+
+\itemize and \enumerate commands may be nested.
+
+							    *rdhelp-\describe*
+The \describe command is similar to \itemize but allows initial labels to be
+specified. The \items take two arguments, the label and the body of the item,
+in exactly the same way as argument and value \items. \describe commands are
+mapped to <DL> lists in HTML and \description lists in LaTeX.
+
+							     *rdhelp-\tabular*
+The \tabular command takes two arguments. The first gives for each of the
+columns the required alignment (`l' for left-justification, `r' for
+right-justification or `c' for centring.) The second argument consists of an
+arbitrary number of lines separated by \cr, and with fields separated by \tab.
+For example:
+>
+       \tabular{rlll}{
+         [,1] \tab Ozone   \tab numeric \tab Ozone (ppb)\cr
+         [,2] \tab Solar.R \tab numeric \tab Solar R (lang)\cr
+         [,3] \tab Wind    \tab numeric \tab Wind (mph)\cr
+         [,4] \tab Temp    \tab numeric \tab Temperature (degrees F)\cr
+         [,5] \tab Month   \tab numeric \tab Month (1--12)\cr
+         [,6] \tab Day     \tab numeric \tab Day of month (1--31)
+       }
+
+There must be the same number of fields on each line as there are alignments
+in the first argument, and they must be non-empty (but can contain only
+spaces).
+
+================================================================================
+
+CROSS-REFERENCES 					*rdhelp-crossreferences*
+
+								*rdhelp-\link*
+The markup \link{foo} (usually in the combination \code{\link{foo}}) produces
+a hyperlink to the help for foo. Here foo is a topic, that is the argument of
+\alias markup in another Rd file (possibly in another package). Hyperlinks are
+supported in some of the formats to which Rd files are converted, for example
+HTML and PDF, but ignored in others, e.g. the text and S nroff formats.
+
+One main usage of \link is in the \seealso section of the help page, see Rd
+format.
+
+Note that whereas leading and trailing spaces are stripped when extracting a
+topic from a \alias, they are not stripped when looking up the topic of a
+\link.
+
+							 *rdhelp-\linkS4class*
+You can specify a link to a different topic than its name by
+\link[=dest]{name} which links to topic dest with name name. This can be used
+to refer to the documentation for S3/4 classes, for example
+\code{"\link[=abc-class]{abc}"} would be a way to refer to the documentation
+of an S4 class "abc" defined in your package, and
+\code{"\link[=terms.object]{terms}"} to the S3 "terms" class (in package
+stats). To make these easy to read, \code{"\linkS4class{abc}"} expands to the
+form given above.
+
+There are two other forms of optional argument specified as \link[pkg]{foo}
+and \link[pkg:bar]{foo} to link to the package pkg, to files foo.html and
+bar.html respectively. These are rarely needed, perhaps to refer to
+not-yet-installed packages (but there the HTML help system will resolve the
+link at run time) or in the normally undesirable event that more than one
+package offers help on a topic11 (in which case the present package has
+precedence so this is only needed to refer to other packages). They are only
+in used in (C)HTML help (and not for hyperlinks in LaTeX nor S sgml
+conversions of help pages), and link to the file rather than the topic (since
+there is no way to know which topics are in which files in an uninstalled
+package).
+
+================================================================================
+
+MATHEMATICS 						*rdhelp-mathematics*
+
+								 *rdhelp-\eqn*
+								*rdhelp-\deqn*
+Mathematical formulae should be set beautifully for printed documentation yet
+we still want something useful for text and HTML online help. To this end, the
+two commands \eqn{latex}{ascii} and \deqn{latex}{ascii} are used. Where \eqn
+is used for “inline” formulae (corresponding to TeX's $...$, \deqn gives
+“displayed equations” (as in LaTeX's displaymath environment, or TeX's
+$$...$$).
+
+Both commands can also be used as \eqn{latexascii} (only one argument) which
+then is used for both latex and ascii.
+
+The following example is from Poisson.Rd:
+>
+       \deqn{p(x) = \frac{\lambda^x e^{-\lambda}}{x!}}{%
+             p(x) = lambda^x exp(-lambda)/x!}
+       for \eqn{x = 0, 1, 2, \ldots}.
+
+For HTML and text on-line help we get
+
+                  p(x) = lambda^x exp(-lambda)/x!
+              
+              for x = 0, 1, 2, ....
+         
+================================================================================
+
+INSERTIONS *rdhelp-insertions*
+
+								   *rdhelp-\R*
+								*rdhelp-\dots*
+							       *rdhelp-\ldots*
+Use \R for the R system itself (you don't need extra `{}' or `\'). Use \dots
+for the dots in function argument lists `...', and \ldots for ellipsis dots in
+ordinary text.
+
+*rdhelp-%*
+After a `%', you can put your own comments regarding the help text. The rest
+of the line will be completely disregarded, normally. Therefore, you can also
+use it to make part of the “help” invisible.
+
+You can produce a backslash (`\') by escaping it by another backslash. (Note
+that \cr is used for generating line breaks.)
+
+The “comment” character `%' and unpaired braces12 always need to be escaped by
+`\', and `\\' can be used for backslash and needs to be when there two or more
+adjacent backslashes). Inside the verbatim-like commands (usage, \code,
+\preformatted and \examples), no other characters are special. Note that \file
+is not a verbatim-like command.
+
+In “regular” text (not verbatim-like, no \eqn, ...), you currently must escape
+most LaTeX special characters, i.e., besides `%', `{', and `}', the specials
+`$', `#', and `_' are produced by preceding each with a `\'. (`&' can also be
+escaped, but need not be.) Further, enter `^' as
+\eqn{\mbox{\textasciicircum}}{^}, and `~' by \eqn{\mbox{\textasciitilde}}{~}
+or \eqn{\sim}{~} (for a short and long tilde respectively). Also, `<', `>',
+and `|' must only be used in math mode, i.e., within \eqn or \deqn.
+
+								 *rdhelp-\enc*
+Text which might need to be represented differently in different encodings
+should be marked by \enc, e.g. \enc{Jöreskog}{Joreskog} where the first
+argument will be used where encodings are allowed and the second should be
+ASCII (and is used for e.g. the text conversion).
+
+================================================================================
+
+INDICES							 *rdhelp-indices*
+
+The \alias command (see Documenting functions) is used to specify the “topics”
+documented, which should include all R objects in a package such as functions
+and variables, data sets, and S4 classes and methods (see Documenting S4
+classes and methods). The on-line help system searches the index data base
+consisting of all alias topics.
+
+							     *rdhelp-\concept*
+In addition, it is possible to provide “concept index entries” using \concept,
+which can be used for help.search() lookups. E.g., file cor.test.Rd in the
+standard package stats contains
+
+     \concept{Kendall correlation coefficient}
+     \concept{Pearson correlation coefficient}
+     \concept{Spearman correlation coefficient}
+
+so that e.g. help.search("Spearman") will succeed in finding the help page for
+the test for association between paired samples using Spearman's rho. (Note
+that concepts are not currently supported by the HTML search accessed via
+`help.start()'.)
+
+(Note that help.search() only uses “sections” of documentation objects with no
+additional markup.)
+
+If you want to cross reference such items from other help files via \link, you
+need to use \alias and not \concept.
+
+================================================================================
+
+PLATFORM-SPECIFIC DOCUMENTATION 		*rdhelp-platform-specific*
+
+Sometimes the documentation needs to differ by platform. Currently two
+OS-specific options are available, `unix' and `windows', and lines in the help
+source file can be enclosed in
+>
+     #ifdef OS
+        ...
+     #endif
+
+or
+>
+     #ifndef OS
+        ...
+     #endif
+
+for OS-specific inclusion or exclusion.
+
+If the differences between platforms are extensive or the R objects documented
+are only relevant to one platform, platform-specific Rd files can be put in a
+unix or windows subdirectory.
+
+================================================================================
+
+ENCODING 						*rdhelp-encoding*
+
+							    *rdhelp-\encoding*
+Rd files are text files and so it is impossible to deduce the encoding they
+are written in unless ASCII: files with 8-bit characters could be UTF-8,
+Latin-1, Latin-9, KOI8-R, EUC-JP, etc. So the \encoding{} directive must be
+used to specify the encoding if it is not ASCII. (The \encoding{} directive
+must be on a line by itself, and in particular one containing no non-ASCII
+characters. As from R 2.6.0 the encoding declared in the DESCRIPTION file will
+be used if none is declared in the file.) This is used when creating the
+header of the HTML conversion (if not present, for back-compatibility the
+processing to HTML assumes that the file is in Latin-1 (ISO-8859-1)) and to
+add comments to the text and examples conversions. It is also used to indicate
+to LaTeX how to process the file (see below).
+
+Wherever possible, avoid non-ASCII chars in Rd files, and even symbols such as
+`<', `>', `$', `^', `&', `|', `@', `~', and `*' outside verbatim environments
+(since they may disappear in fonts designed to render text).
+
+For convenience, encoding names `latin1' and `latin2' are always recognized:
+these and `UTF-8' are likely to work fairly widely.
+
+The \enc command (see Insertions) can be used to provide transliterations
+which will be used in conversions that do not support the declared encoding.
+
+The LaTeX conversion converts an explicit encoding of the file to a
+>
+     \inputencoding{some_encoding}
+
+command, and this needs to be matched by a suitable invocation of the
+\usepackage{inputenc} command. The R utility R CMD Rd2dvi looks at the
+converted code and includes the encodings used: it might for example use
+>
+     \usepackage[latin1,latin9,utf8]{inputenc}
+
+(Use of utf8 as an encoding requires LaTeX dated 2003/12/01 or later.)
+
+Note that this mechanism works best with letters and for example the copyright
+symbol may be rendered as a subscript and the plus–minus symbol cannot be used
+in text.
+
+================================================================================
+
+PROCESSING RD FORMAT 					*rdhelp-processing*
+
+There are several commands to process Rd files from the system command line.
+All of these need Perl to be installed.
+
+Using R CMD Rdconv one can convert R documentation format to other formats, or
+extract the executable examples for run-time testing. Currently, conversions
+to plain text, HTML, LaTeX, and S version 3 or 4 documentation formats are
+supported.
+
+In addition to this low-level conversion tool, the R distribution provides two
+user-level programs for processing Rd format. R CMD Rd2txt produces “pretty”
+plain text output from an Rd file, and is particularly useful as a previewer
+when writing Rd format documentation within Emacs. R CMD Rd2dvi generates DVI
+(or, if option --pdf is given, PDF) output from documentation in Rd files,
+which can be specified either explicitly or by the path to a directory with
+the sources of a package (or bundle). In the latter case, a reference manual
+for all documented objects in the package is created, including the
+information in the DESCRIPTION files.
+
+R CMD Sd2Rd converts S version 3 documentation files (which use an extended
+Nroff format) and S version 4 documentation (which uses SGML markup) to Rd
+format. This is useful when porting a package originally written for the S
+system to R. S version 3 files usually have extension .d, whereas version 4
+ones have extension .sgml or .sgm.
+
+R CMD Sweave and R CMD Stangle process `Sweave' documentation files (usually
+with extension `.Snw' or `.Rnw'): R CMD Stangle is use to extract the R code
+fragments.
+
+The exact usage and a detailed list of available options for all but the last
+two of the above commands can be obtained by running R CMD command --help,
+e.g., R CMD Rdconv --help. All available commands can be listed using R --help
+(or Rcmd --help under Windows).
+
+All of these work under Windows. You will need to have installed the files in
+the R binary Windows distribution for installing source packages (this is true
+for a default installation), and for R CMD Rd2dvi also the tools to build
+packages from source as described in the “R Installation and Administration”
+manual. 
+
+================================================================================
+vim:tw=78:noet:wrap:ts=8:ft=help:norl: 

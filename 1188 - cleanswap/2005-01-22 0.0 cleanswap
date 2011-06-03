@@ -1,0 +1,17 @@
+for q in ~/.vim/swap/*; do
+  vim -X -r "$q" \
+      -c "w! /tmp/vim.recovery.txt" \
+      -c "let fn=expand('%')" \
+      -c "new /tmp/vim.recovery.fn" \
+      -c ":exec setline( 1, fn )" \
+      -c w\! \
+      -c "qa"
+  if diff --brief $(cat /tmp/vim.recovery.fn) /tmp/vim.recovery.txt; then
+    echo removing redundant $q
+    rm $q
+  else
+    echo $q contains changes
+    vim -n -d $(cat /tmp/vim.recovery.fn) /tmp/vim.recovery.txt
+    rm -i $q
+  fi
+done

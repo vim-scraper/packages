@@ -1,0 +1,40 @@
+#!/bin/bash
+
+#first, compile vim with debug enabled:
+#  run ./configure with your favourite options
+#  edit ./Makefile and src/Makefile:
+#    put CFLAGS=-ggdb3 and LDFLAGS=-ggdb3 to the first lines
+#    comment out any line containing strip STRIP Strip etc
+#  then make and install your vim
+
+
+#modify as you wish
+if [ "x$DATESTR" == "x" ] ; then
+  export DATESTR=`date +%Y%m%d_%H%M%S`
+fi
+if [ "x$DEBUGWHERE" == "x" ] ; then
+  export DEBUGWHERE="$HOME/vimdebug/"
+fi
+if [ "x$VIM" == "x" ] ; then
+  export VIM=...        #where your debug-enabled vim resides
+  export VIMRUNTIME=... #good idea to set it up
+fi
+
+export WHICHTTY=`tty`
+export GDBSCRIPT="$DEBUGWHERE/vimdebugscr_$DATESTR"
+export GDBOUTPUT="$DEBUGWHERE/vimdebugout_$DATESTR"
+
+
+function makegdbscript(){
+ gawk -v whichtty=$WHICHTTY 'BEGIN{printf "tty " whichtty " \nrun "} {for (i=1 ; i<= NF ; i++){printf  $i " "}} END{printf "\nbacktrace\nquit\n" }'
+# gdb h4x0rs may get more detailed info with further tricky gdb commands...
+#WARNING: this function does not handle filenames with spaces,tabs,newlines
+#         and other funny chars correctly! Try it out before rely on it.
+}
+
+echo -n  "$@" | makegdbscript >"$GDBSCRIPT"
+
+echo "GDBOUTPUT = $GDBOUTPUT"
+
+gdb -nx -x "$GDBSCRIPT" -batch -f "$VIM" >"$GDBOUTPUT" 2>&1
+

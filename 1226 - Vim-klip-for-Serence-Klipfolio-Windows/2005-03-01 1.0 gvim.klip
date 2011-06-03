@@ -1,0 +1,137 @@
+<klip>
+	<owner>
+		<author>Mayuresh Kadu</author>
+		<copyright> Copyleft 2005 Mayuresh</copyright>
+		<email>mskadu(at)gmail dot com</email>
+		<web>http://mytechieself.blogspot.com</web>
+	</owner>
+
+	<identity>
+		<title>Vim Scripts (beta) - http://vim.sourceforge.net</title>
+		<uniqueid>gnuvim_mskadu</uniqueid>
+		<version>1.0</version>
+		<lastmodified>2005.01.03:0000</lastmodified>
+		<description>
+			A klip for Vim lovers updated with new scripts from vim.org. 			
+			Note: I am working on getting Tips too, so expect a few quick 
+			upgrade(s) soon. This klip is dedicated to the wonderful vi
+			community out there! (Made in GVim)
+		</description>
+		<keywords>vim vi editor scripts tips mayuresh mskadu gvim vi Bram  moolenar</keywords>
+	</identity>
+
+	<locations>
+		<defaultlink>http://www.vim.org/index.php</defaultlink>
+		<contentsource>
+			http://vim.sourceforge.net/
+		</contentsource>
+		<icon>http://www.vim.org/images/vim16x16.gif</icon>
+		<banner>http://www.vim.org/images/vim_header.gif</banner>
+		<help>http://vim.sourceforge.net/</help>
+		<!--
+		<kliplocation>
+			<!-- TODO: Add a link to script on vi site -->
+		</kliplocation>	
+		-->
+	</locations>
+
+	<setup>
+		<refresh>120</refresh>
+		<country>in</country>
+		<language>en</language>
+	</setup>
+
+	<messages>
+		<loading>
+			Looking up recent scripts.
+		</loading>
+		<nodata>
+			No new scripts.
+		</nodata>
+	</messages>
+
+	<klipscript>
+		<![CDATA[
+
+		var categories = new Array (
+			'Scripts',
+			'Tips'
+		);
+
+		function onLoad()
+		{
+			/* Create a tag and add tips and Scripts textboxes */
+			/*
+			var tab = Setup.addTab('Categories');		
+			tab.addText('Show new items only for the following categories');
+			
+			for( i=0	; i<categories.length; i++ ) {
+				var chk = tab.addCheckbox( categories[i] );
+				//chk.onClick = categoryClick;
+				chk.index = i;
+				}*/
+		}
+		
+		function onRefresh()
+		{
+			for( i=0 ; i<categories.length ; i++ )	{
+				//trace( "Obtaining " + categories[i] );
+				getContent( i );
+			}			
+		}
+
+		function getContent( categ_idx )
+		{
+			var contentSourcePrefix = Prefs.contentsource;	
+			var contentCateg = categories[i].toLowerCase();	
+			var urlPrefix = contentSourcePrefix + "/" + contentCateg; 
+			var url = urlPrefix + "/index.php"; 
+
+			request = Engines.HTTP.newRequest( url );
+			if( !request.send() )
+			{
+				return false;
+			}
+
+			data = request.response.data;
+			newEntryTableRegExp = new RegExp('<span class="txth1">Recent Script Updates</span>([^]*?)</table>');
+			myTableMatch = newEntryTableRegExp(data);
+			if( myTableMatch )
+			{
+				data = myTableMatch[1];
+				
+				newEntryRowRegExp = new RegExp("<tr>([^]*?)</tr>", "g");
+				while( myRowMatch=newEntryRowRegExp.exec(data) )
+				{
+					rowData = myRowMatch[1];
+					newItemDateRegExp = new RegExp('<td class="newsdate" nowrap valign="top">([^]*?)</td>');
+					newItemLinkRegExp = new RegExp('<td>&nbsp;<a href="([^]*?)">([^]*?)</a> : ([^]*?)</td>');
+
+					myItemDateData = newItemDateRegExp.exec(rowData);
+					myItemLinkData = newItemLinkRegExp(rowData);
+
+					//Data
+					if( myItemDateData )
+					{
+						myItemDate = myItemDateData[1];
+						myItemLink = myItemLinkData[1];
+						myItemLinkTitle = myItemLinkData[2];
+						myItemDescription = myItemLinkData[3];
+
+						/*
+						trace( "Item Date: " + myItemDate );
+						trace( "Item Link: " + myItemLink );
+						trace( "Item Title: " + myItemLinkTitle );
+						trace( "Item Description: " + myItemDescription );
+						*/
+
+						idx = Items.create( myItemDate + ' ' + myItemLinkTitle, urlPrefix + "/" + myItemLink );
+						Items[idx].note = myItemDescription;
+					}
+				}
+			}
+		}
+		]]>
+	</klipscript>
+
+</klip>

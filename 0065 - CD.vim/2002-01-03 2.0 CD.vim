@@ -1,0 +1,1 @@
+com! CD cd %:p:h

@@ -1,0 +1,199 @@
+#!/usr/bin/perl
+#
+# multiAPIsyntax v1.3, 2004-09-12
+# (w)by Pawel Stolowski <yogin@linux.bydg.org>
+#
+# homepage: http://linux.bydg.org/~yogin
+#
+# Creates vim syntax file and classes list for:
+# * Qt 3.x library (http://www.trolltech.com)
+# * wxWidgets library (http://www.wxwidgets.org)
+# * KDE 3.x libraries (http://www.kde.org)
+# * GTK 1.2.x libraries (http://www.gtk.org)
+# * GTK 2.x libraries (http://www.gtk.org)
+#
+# by scanning all includes and gaining class names.
+#
+# Vim syntax file allows vim to highlight class names.
+# Classes list may be used e.g. with cvim plugin for class names completion.
+#
+# example usage (creates syntax file and list of classes for Qt and wxWidgets):
+# ./multiAPIsyntax --qt --wx -s ~/.vim/after/c.vim -l ~/.vim/wordlist/classes.list
+#
+# Changelog:
+#
+# * v1.3 (2004-09-12): qtvimsyntax renamed to multiAPIsyntax; support for KDE, GTK1, GTK2, wxWidgets added
+#
+# * v1.2 (2003-12-06): fixed regexp to catch missed classes; added highlighting for 
+#                      connect, slots, signals, SIGNAL, SLOT keywords
+# * v1.1 (2003-10-15): fixed small typo in regexp matching that caused many basic classes
+#                      to be missed
+# * v1.0 (2003-10-11): initial release
+#
+
+use File::Find;
+use Getopt::Long;
+
+#
+# class names ripping function
+#
+# params: directory, class names regex
+#
+sub rip {#{{{
+	my ($dir, $fpatt, $reg) = (@_[0], @_[1], @_[2]);
+	my %class;
+	$File::Find::prune = 1;
+	find {  'follow' => 1,
+		'follow_skip' => 2,
+		'wanted' => sub {
+			print $Find::File::fullname;
+			if ( /$fpatt/ )
+			{
+				my $file = $File::Find::name;
+				open(IFILE, '<', $file) || die "error opening $file\n";
+				while (<IFILE>)
+				{
+					$class{$2}='' if /$reg/;
+				}
+				close(IFILE);
+			}
+		}
+	}, $dir;
+	return sort keys %class;
+}#}}}
+
+sub ripQt {#{{{
+	my $dir = $ENV{QTDIR};
+	my $inc = ($dir eq '') ? '/usr/lib/qt/include' : $dir.'/include';
+	print STDERR "scanning $inc for QT includes....\n";
+	return rip($inc, '^q.*\.h$', "^class (Q_[A-Z]+ )*(Q[A-Za-z]+)");
+}#}}}
+
+sub ripKDE {#{{{
+	my $dir = $ENV{KDEDIR};
+	my $inc = ($dir eq '') ? '/opt/kde/include' : $dir.'/include';
+	print STDERR "scanning $inc for KDE includes....\n";
+	return rip($inc, '^[kK].+\.h$', "^class (K[A-Z]+ )*(K[A-Za-z]+)");
+}#}}}
+
+sub ripGTK1 {#{{{
+	my $dir = `gtk-config --prefix`;
+	chomp $dir;
+	my $inc = ($dir eq '') ? '/usr/include/gtk-1.2' : $dir.'/include/gtk-1.2';
+	print STDERR "scanning $inc for GTK-1.2.x includes....\n";
+	return rip($inc, '^g.*\.h', "^typedef struct (_G[dt]k[A-Za-z]+ ).+(G[dt]k[A-Za-z]+)");
+}#}}}
+
+sub ripGTK2 {#{{{
+	my $dir = `pkg-config --variable=includedir "gtk+-2.0"`;
+	chomp $dir;
+	my $inc = ($dir eq '') ? '/usr/include/gtk-2.0' : $dir.'/gtk-2.0';
+	print STDERR "scanning $inc for GTK-2.x includes....\n";
+	return rip($inc, '^g.*\.h', "^typedef struct (_G[dt]k[A-Za-z]+ ).+(G[dt]k[A-Za-z]+)");
+}#}}}
+
+sub ripWx {#{{{
+	my $dir = `wx-config --prefix`;
+	chomp $dir;
+	my $inc = ($dir eq '') ? '/usr/include/wx' : $dir.'/include/wx';
+	print STDERR "scanning $inc for wxWidgets includes....\n";
+	return rip($inc, '.*.\h$', "^class ([A-Z]+ )*(wx[A-Za-z]+)");
+}#}}}
+
+#print "syn keyword cppStatement connect\n";
+#print "syn keyword cppAccess signals slots\n";
+#print "syn keyword cppOperator SIGNAL SLOT\n";
+#print "syn keyword cType ";
+
+#
+# user supplied flags
+my $wantWx = 0;
+my $wantQt = 0;
+my $wantKDE = 0;
+my $wantGTK1 = 0;
+my $wantGTK2 = 0;
+my $help = 0;
+my $syntaxFile;
+my $listFile;
+
+my @words;
+my $lib = 0;
+
+$res = GetOptions("wx"   => \$wantWx,
+	          "qt"   => \$wantQt,
+		  "kde"  => \$wantKDE,
+		  "gtk1" => \$wantGTK1,
+		  "gtk2" => \$wantGTK2,
+		  "s=s"  => \$syntaxFile, #create vim syntax file
+		  "l=s"  => \$listFile,   #create list of classes
+		  "h"    => \$help,
+		  "help" => \$help
+	  );
+
+if ( $syntaxFile eq '' and $listFile eq '' )#{{{
+{
+	print STDERR "No output files specified\n";
+	exit 1;
+}#}}}
+if ( $help )#{{{
+{
+	print << '_ENDHELP';
+multiAPIsyntax v1.3
+(w)by Pawel Stolowski <pawel.stolowski@wp.pl>
+
+Usage: multiAPIsyntax [options]
+Options:
+  --qt     parses Qt includes; uses $QTDIR env variable
+  --kde    parses KDE includes; uses $KDEDIR env variable
+  --gtk1   parses GTK 1.2.x includes; uses gtk-config"
+  --gtk2   parses GTK 2.x includes; uses pkg-config
+  --wx     parses wxWindows includes; uses wx-config
+  -s file  save vim syntax in file
+  -l file  save classes list in file
+  -h      this help
+_ENDHELP
+	exit 0;
+}#}}}
+if ( $wantGTK1 )#{{{
+{
+	@words = (@words, ripGTK1());
+	$lib++;
+}#}}}
+if ( $wantGTK2 )#{{{
+{
+	@words = (@words, ripGTK2());
+	$lib++;
+}#}}}
+if ( $wantQt )#{{{
+{
+	@words = ripQt();
+	$lib++;
+}#}}}
+if ( $wantWx )#{{{
+{
+	@words = (@words, ripWx());
+	$lib++;
+}#}}}
+if ( $wantKDE )#{{{
+{
+	@words = (@words, ripKDE());
+	$lib++;
+}#}}}
+if ( $lib == 0 )#{{{
+{
+	print STDERR "No classes found or no libraries specifiled\n";
+	exit 1;
+}#}}}
+if ( $syntaxFile ne '' )#{{{
+{
+	open(OFILE, '>', $syntaxFile) || die "error opening $syntaxFile\n";
+	print OFILE "syn keyword cType ".join(" ", @words)."\n";
+	close(OFILE);
+}#}}}
+if ( $listFile ne '' )#{{{
+{
+	open(OFILE, '>', $listFile) || die "error opening $listFile\n";
+	print OFILE join("\n", @words);
+	close(OFILE);
+}#}}}
+
