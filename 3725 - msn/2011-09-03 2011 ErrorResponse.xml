@@ -1,0 +1,6 @@
+<ErrorResponseTable>
+    <Feature type="0" name="Login">
+        <Entry hr="*" action="3">
+        </Entry>
+    </Feature>
+</ErrorResponseTable>

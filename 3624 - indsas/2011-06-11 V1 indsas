@@ -1,0 +1,107 @@
+#!/usr/bin/perl -w
+
+#####################################################
+### Perl Script for SAS style Indentation V.1     ###
+###                                               ###
+### Usage:                                        ###
+### 1) cat your_sas_script.sas|indsas             ###
+###                                               ###
+###    OR                                         ###
+###                                               ###
+### 2) Put the following line in .vimrc and you   ###
+###    can use = to indent code in VI/VIM.        ###
+###    set ep=your_path_to_indsas/indsas          ###
+###                                               ###
+### Created by David Yeung (shinedark@gmail.com)  ###
+### Last Update: 06/11/2011                       ###
+###                                               ###
+#####################################################
+
+$0=~/.*\/(.*)/;
+
+my $numtab = 0;
+my @status = ("root");
+
+
+for (<STDIN>)
+{
+	chomp $_;
+
+	#strip preceding spaces;
+	$_=~s/^\s+//g;
+	$_=~s/^\t+//g;
+
+
+	#pull current status;
+	my $curr_status = $status[-1];
+
+
+	#check if indent is ending
+ 	if (  ($_=~/^run;/i && not($_=~/proc\s+/i) && not($_=~/data\s+/i)) ||
+		  $_=~/\%mend.*;/i || 
+		  ($_=~/^%*end;/i) ||
+		  ($_=~/^quit;/i  ) ||
+		  ($_=~/;/ && $curr_status eq "input" ) ||
+		  ($_=~/;/ && $curr_status eq "merge")  
+	   )
+	{	
+		if ($curr_status ne "root")
+		{
+			$numtab+=-1;
+			pop @status;
+		}
+	}
+ 
+
+	#print current line with indents.
+	my $header = "\t"x$numtab;
+	##print $header.$curr_status.$_."\n";
+	print $header.$_."\n";
+
+
+	#get indent status for next;
+	my $next_status = "nodo";
+
+ 	if ( $_=~/proc\s+/i && not($_=~/\Wrun;/) && not($_=~/\s+sql\s*;/i))
+	{	$next_status = "proc";
+	}      
+	elsif ($_=~/^data\s+/i && not($_=~/run;/))
+	{
+		$next_status = "data";
+	}
+	elsif ($_=~/^\%macro\s+/i && not($_=~/\%mend;/))
+	{
+		$next_status = "macro";
+	}
+	elsif ($_=~/^proc sql/i && not($_=~/quit;/))
+	{
+		$next_status = "sql";
+	}
+	elsif ($_=~/%*then %*do;/i)
+	{
+		$next_status = "if";
+	}
+	elsif ($_=~/^%*else %*do/ )
+	{
+		$next_status = "else";	
+	}
+	elsif ($_=~/input(\s|$)/i && not($_=~/;/))
+	{	$next_status = "input";
+	}
+	elsif ($_=~/^%*do\s+/i )
+	{	$next_status = "do";
+	}
+	elsif ($_=~/merge(\s|$)/i && not($_=~/;/))
+	{	$next_status = "merge";
+	}
+
+
+	#push next indent status to queue and adjust numtab
+	if ($next_status ne "nodo" ) 
+	{
+		push @status,$next_status;
+		$numtab+=1;
+	}
+
+}
+
